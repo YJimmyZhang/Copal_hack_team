@@ -1,6 +1,6 @@
 # Instructions for every AI agent in this repo (Claude and Codex)
 
-Team: product team = Semen, <name>. Business team = <name>, <name>.
+Team: product team = Semen, Jimmy. Business team = Vikas, Flavian.
 Ask your human which team they are on if you don't know.
 
 Shared memory lives in memory/:
