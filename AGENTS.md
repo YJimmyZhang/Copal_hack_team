@@ -10,7 +10,7 @@ Shared memory lives in memory/:
 
 Start of every session: run `git pull`, read every file in memory/, then answer.
 
-When your human says "save".
+When your human says "save" or a decision is made: update your team's file.
 - Use short bullets, newest first, max about one page.
 - Replace outdated lines instead of adding new ones.
 - Then: git add memory/<file> → git commit → git pull --rebase → git push.
