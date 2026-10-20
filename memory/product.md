@@ -7,7 +7,7 @@
 - 20 Oct: Split the core programs between two product members (names not yet assigned):
   - Person A, predictions & analysis: Readiness Radar (succession score 0-100 + reasons), Valuation & Projections (value range = EBITDA x sector multiple, 3-5 yr forecast), Match Engine (fit score + shortlist), fake demo data.
   - Person B, customer screens: Relationship Manager Cockpit, Owner Space ("Next Owner" in KBC Business app, the star screen), Headhunter Portal, Ready-to-Own Candidate Portal.
-- 20 Oct: Out of scope for the demo (mention in pitch only): Deal Room, financing calculator, consent manager, outcome dashboard, accountant flag, training partner link, KBC Securities.
+- 20 Oct: Out of scope for the demo (mention in pitch only): financing calculator logic, consent manager, outcome dashboard, accountant flag, training partner link, KBC Securities.
 
 ## Current state
 - Saved version 1 (20 Oct): demo/index.html = full demo, 5 screens (RM radar, Owner, Headhunter, Candidate, RM Deal Room). demo/overview.html + overview.png = the one-slide summary.
