@@ -1,0 +1,77 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* Problem in numbers, 1920x1080, navy section style. */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#003768;--navy-2:#00284d;--blue:#009fdf;--blue-2:#4fc3f7;--muted:#b8cde0}
+body{width:1920px;height:1080px;color:#fff;font-family:"Nunito Sans",Inter,"DejaVu Sans",sans-serif;position:relative;overflow:hidden;
+  background:radial-gradient(circle at 50% 45%,#0a4a85 0%,var(--navy) 45%,var(--navy-2) 100%)}
+
+.logo{position:absolute;right:96px;top:62px;width:112px}
+.kicker{position:absolute;left:96px;top:70px;font-size:22px;font-weight:800;letter-spacing:.18em;color:var(--blue-2)}
+h1{position:absolute;left:94px;top:108px;font-size:56px;font-weight:900;letter-spacing:-.5px}
+.sub{position:absolute;left:96px;top:188px;font-size:28px;color:var(--muted)}
+
+.cards{position:absolute;left:96px;right:96px;top:290px;height:600px;display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.card{border-radius:22px;padding:40px 44px;display:flex;flex-direction:column;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14)}
+.card small{font-size:17px;font-weight:800;letter-spacing:.16em;color:var(--blue-2)}
+.card .vis{flex:1;display:flex;flex-direction:column;justify-content:center}
+.card p{font-size:27px;line-height:1.35;color:var(--muted)}
+.card p b{color:#fff}
+.big{font-size:150px;font-weight:900;line-height:1;letter-spacing:-.02em}
+
+.card.hl{background:var(--blue);border-color:var(--blue);box-shadow:0 24px 60px rgba(0,0,0,.3)}
+.card.hl small{color:#eaf7fe}.card.hl p{color:#eaf7fe}
+
+/* 1 in 2 pictogram */
+.people{display:flex;gap:26px;align-items:flex-end;margin-bottom:16px}
+.people svg{width:96px;height:120px}
+.ratio{font-size:96px;font-weight:900;line-height:1;color:var(--blue-2)}
+
+/* Survival bars: one measure, two groups */
+.bar{margin:14px 0 22px}
+.bar .lab{display:flex;justify-content:space-between;font-size:24px;font-weight:700;margin-bottom:10px}
+.bar .lab span{color:var(--muted);font-weight:600}
+.track{height:34px;border-radius:4px;background:rgba(255,255,255,.08)}
+.fill{height:100%;border-radius:4px}
+
+.src{position:absolute;left:96px;right:96px;bottom:44px;font-size:18px;color:#9fbbd4}
+</style></head><body>
+
+<div class="kicker">THE PROBLEM</div>
+<h1>Thousands of healthy companies have no next owner</h1>
+<div class="sub">The handover wave is already here, and most owners face it unprepared.</div>
+<img class="logo" src="kbc-logo-white.svg" alt="KBC">
+
+<div class="cards">
+  <div class="card hl">
+    <small>OWNERS 55+</small>
+    <div class="vis"><div class="big">54,000</div></div>
+    <p>Flemish SMEs are led by someone aged <b style="color:#fff">55 or older</b></p>
+  </div>
+
+  <div class="card">
+    <small>NO SUCCESSOR</small>
+    <div class="vis">
+      <div class="people">
+        <svg viewBox="0 0 24 30"><circle cx="12" cy="7" r="6" fill="#4fc3f7"/><path d="M1 29c0-8 5-13 11-13s11 5 11 13z" fill="#4fc3f7"/></svg>
+        <svg viewBox="0 0 24 30" fill="none" stroke="rgba(184,205,224,.7)" stroke-width="1.6" stroke-dasharray="2.2 2"><circle cx="12" cy="7" r="5.5"/><path d="M1.8 28.5c0-7.5 4.6-12 10.2-12s10.2 4.5 10.2 12z"/></svg>
+      </div>
+      <div class="ratio">1 in 2</div>
+    </div>
+    <p>firms planning a transfer within 5 years <b>have no successor yet</b></p>
+  </div>
+
+  <div class="card">
+    <small>STILL ACTIVE AFTER 5 YEARS</small>
+    <div class="vis">
+      <div class="bar"><div class="lab">Takeovers <b>90%</b></div><div class="track"><div class="fill" style="width:90%;background:var(--blue-2)"></div></div></div>
+      <div class="bar"><div class="lab"><span>Start-ups</span> <b>50%</b></div><div class="track"><div class="fill" style="width:50%;background:rgba(184,205,224,.55)"></div></div></div>
+    </div>
+    <p>A takeover is the <b>safer way to start</b> a business</p>
+  </div>
+</div>
+
+<div class="src">Sources: VLAIO; Overnamemarkt.be "Bedrijfsoverdracht in Vlaanderen"; UNIZO (2025).</div>
+</body></html>
