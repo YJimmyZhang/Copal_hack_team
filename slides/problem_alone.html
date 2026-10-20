@@ -1,0 +1,88 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* Problem slide: owner, successor and KBC act separately today. 1920x1080, navy section style. */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#003768;--navy-2:#00284d;--blue:#009fdf;--blue-2:#4fc3f7;--muted:#b8cde0}
+body{width:1920px;height:1080px;color:#fff;font-family:"Nunito Sans",Inter,"DejaVu Sans",sans-serif;position:relative;overflow:hidden;
+  background:radial-gradient(circle at 50% 40%,#0a4a85 0%,var(--navy) 45%,var(--navy-2) 100%)}
+
+.logo{position:absolute;right:96px;top:62px;width:112px}
+.kicker{position:absolute;left:96px;top:70px;font-size:22px;font-weight:800;letter-spacing:.18em;color:var(--blue-2)}
+h1{position:absolute;left:94px;top:104px;font-size:66px;font-weight:900;letter-spacing:-.5px}
+.sub{position:absolute;left:96px;top:190px;font-size:28px;color:var(--muted);max-width:1300px}
+.sub b{color:#fff}
+
+/* Three actors, not connected */
+.actors{position:absolute;left:96px;right:96px;top:300px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.actor{text-align:center;padding:0 20px}
+.ic{width:128px;height:128px;border-radius:50%;margin:0 auto 26px;display:grid;place-items:center;
+  background:#fff;color:var(--navy);box-shadow:0 18px 44px rgba(0,0,0,.3)}
+.ic svg{width:60px;height:60px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.ic img{width:82px}
+.actor.kbc .ic{background:var(--navy-2);box-shadow:0 0 0 4px var(--blue-2),0 18px 44px rgba(0,0,0,.3)}
+.actor b{display:block;font-size:36px;font-weight:900}
+.actor .tag{display:block;font-size:25px;font-weight:800;color:var(--blue-2);margin:6px 0 12px}
+.actor p{font-size:21px;line-height:1.45;color:var(--muted);max-width:470px;margin:0 auto}
+
+/* Broken links between the actors */
+.gap{position:absolute;top:364px;width:300px;height:2px;display:flex;align-items:center;justify-content:center}
+.gap::before,.gap::after{content:"";flex:1;border-top:3px dashed rgba(184,205,224,.45)}
+.gap span{width:44px;height:44px;margin:0 14px;border-radius:50%;border:2px solid rgba(184,205,224,.6);color:var(--muted);
+  display:grid;place-items:center;font-size:24px;font-weight:700;line-height:1}
+.g1{left:445px}.g2{left:1175px}
+
+/* Evidence */
+.bottom{position:absolute;left:96px;right:96px;top:770px;display:grid;grid-template-columns:1fr 1.35fr;gap:24px}
+.box{border-radius:16px;padding:26px 32px;display:flex;gap:26px;align-items:center}
+.box small{display:block;font-size:16px;font-weight:800;letter-spacing:.16em;margin-bottom:6px}
+.box p{font-size:21px;line-height:1.4}
+.scale{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14)}
+.scale .num{font-size:66px;font-weight:900;color:var(--blue-2);line-height:1;flex:none}
+.scale small{color:var(--blue-2)}.scale p{color:var(--muted)}
+.gapbox{background:var(--blue)}
+.gapbox small{color:#eaf7fe}.gapbox p{color:#fff}.gapbox p b{font-weight:900}
+
+.foot{position:absolute;left:96px;right:96px;bottom:44px;display:flex;justify-content:space-between;font-size:20px;color:#9fbbd4;font-weight:600}
+</style></head><body>
+
+<div class="kicker">THE PROBLEM TODAY</div>
+<h1>Everyone stands alone in the deal</h1>
+<div class="sub">Business succession is fragmented: each party acts on its own, <b>too late and without the full picture.</b></div>
+<img class="logo" src="kbc-logo-white.svg" alt="KBC">
+
+<div class="actors">
+  <div class="actor">
+    <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 10l2-6h14l2 6M4 10v10h16V10M3 10h18M9 20v-5h6v5"/></svg></div>
+    <b>The owner</b>
+    <span class="tag">Searches alone, often too late</span>
+    <p>Starts only when age or health forces it. Relies on brokers, listings and personal network, with no clear view of the company's value or exit options.</p>
+  </div>
+  <div class="actor">
+    <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></div>
+    <b>The successor</b>
+    <span class="tag">Ready to lead, but invisible</span>
+    <p>Has the skills and some capital, but no way to reach owners who are quietly preparing to sell. Financing stays uncertain until late in the deal.</p>
+  </div>
+  <div class="actor kbc">
+    <div class="ic"><img src="kbc-logo-white.svg" alt="KBC"></div>
+    <b>KBC</b>
+    <span class="tag">Sees the signals, stays passive</span>
+    <p>Already holds the data that predicts a succession: owner age, shareholding, investment, cash. Yet joins only at the end, as one of several lenders.</p>
+  </div>
+</div>
+<div class="gap g1"><span>×</span></div>
+<div class="gap g2"><span>×</span></div>
+
+<div class="bottom">
+  <div class="box scale">
+    <div class="num">54,000</div>
+    <div><small>THE SCALE</small><p>Flemish SMEs are led by someone aged 55+. Over half expect a transfer within 5 years; 1 in 2 an external sale (VLAIO).</p></div>
+  </div>
+  <div class="box gapbox">
+    <div><small>THE GAP</small><p><b>Today's tools are listings</b> (Overnamemarkt, Match'it, Belfius Bizz Matcher). None finds the owner early, or delivers a prepared buyer who can be financed.</p></div>
+  </div>
+</div>
+
+<div class="foot"><span>Tectonic finals · KBC case</span><span>Next Owner</span></div>
+</body></html>
