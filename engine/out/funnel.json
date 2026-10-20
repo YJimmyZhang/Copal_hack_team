@@ -1,8 +1,8 @@
 {
-  "business_clients": 300,
-  "flagged_by_radar": 76,
-  "conversation_by_rm": 38,
-  "opted_in": 12,
-  "with_3_matches": 12,
+  "business_clients": 301,
+  "flagged_by_radar": 80,
+  "conversation_by_rm": 40,
+  "opted_in": 13,
+  "with_3_matches": 13,
   "note": "Fake data. Conversation step is an assumed 50% of flagged owners."
 }

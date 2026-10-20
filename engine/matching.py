@@ -34,6 +34,8 @@ def hard_filters(company, cand, fin, dist):
         return f"Too far ({dist:.0f} km)"
     if not fin["ok"]:
         return "Financing gap too large"
+    if w.get("require_sector_experience") and sector_fit(company, cand) < 1.0:
+        return "No experience in this sector"
     return None
 
 

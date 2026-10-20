@@ -1,5 +1,102 @@
 [
   {
+    "company_id": "C000",
+    "name": "Bakkerij Peeters",
+    "owner_name": "Jan Peeters",
+    "sector": "food_production",
+    "region": "Antwerp",
+    "lat": 51.2194,
+    "lon": 4.4025,
+    "founded_year": 2010,
+    "employees": 32,
+    "revenue": {
+      "2021": 3921490,
+      "2022": 4058742,
+      "2023": 4200798,
+      "2024": 4347826,
+      "2025": 4500000
+    },
+    "ebitda": {
+      "2021": 495000,
+      "2022": 518000,
+      "2023": 540000,
+      "2024": 559000,
+      "2025": 578000
+    },
+    "net_debt": 102450,
+    "owner_age": 63,
+    "next_gen_in_shares": false,
+    "years_since_investment_loan": 6,
+    "capex_trend": -0.4,
+    "cash_buildup": 0.22,
+    "dividend_trend": 0.05,
+    "owner_pension_saving_up": true,
+    "opted_in": true,
+    "wishes": {
+      "keep_staff": true,
+      "transition_months": 12,
+      "timing_years": 2,
+      "role_after_sale": "adviser",
+      "allowed_types": [
+        "experienced_manager",
+        "staff_mbo",
+        "search_funder",
+        "strategic_buyer"
+      ],
+      "allow_trial": true,
+      "require_sector_experience": true
+    },
+    "readiness": {
+      "score": 78,
+      "level": "high",
+      "reasons": [
+        "Owner is 63",
+        "No family heir among shareholders",
+        "No investment loan for 6 years",
+        "Investment down 40%",
+        "Cash is piling up in the company",
+        "Owner is saving more for pension"
+      ]
+    },
+    "valuation": {
+      "ebitda_normalised": 559000,
+      "multiple_range": [
+        4.5,
+        6.6
+      ],
+      "equity_low": 2413000.0,
+      "equity_mid": 3000000.0,
+      "equity_high": 3587000.0
+    },
+    "projections": {
+      "historical_growth": 0.035,
+      "outlook": [
+        {
+          "year": 2026,
+          "revenue_low": 4523000.0,
+          "revenue_base": 4658000.0,
+          "revenue_high": 4793000.0,
+          "ebitda_base": 579000.0
+        },
+        {
+          "year": 2027,
+          "revenue_low": 4545000.0,
+          "revenue_base": 4821000.0,
+          "revenue_high": 5104000.0,
+          "ebitda_base": 599000.0
+        },
+        {
+          "year": 2028,
+          "revenue_low": 4568000.0,
+          "revenue_base": 4989000.0,
+          "revenue_high": 5436000.0,
+          "ebitda_base": 620000.0
+        }
+      ]
+    },
+    "max_acquisition_loan": 1956000.0
+  },
+  {
     "company_id": "C001",
     "name": "Willems Bouw",
     "sector": "construction",
@@ -33,7 +130,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 12,
+      "score": 11,
       "level": "low",
       "reasons": [
         "Owner is taking out more dividends",
@@ -76,7 +173,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 461000.0
+    "max_acquisition_loan": 538000.0
   },
   {
     "company_id": "C002",
@@ -115,9 +212,9 @@
       "score": 59,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 58",
-        "Investment spending is falling",
+        "Investment down 44%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
@@ -159,7 +256,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 194000.0
+    "max_acquisition_loan": 226000.0
   },
   {
     "company_id": "C003",
@@ -199,8 +296,8 @@
       "level": "high",
       "reasons": [
         "Owner is 64",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 22%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Company is 25 years old"
@@ -242,7 +339,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 584000.0
+    "max_acquisition_loan": 681000.0
   },
   {
     "company_id": "C004",
@@ -320,7 +417,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 2114000.0
+    "max_acquisition_loan": 2467000.0
   },
   {
     "company_id": "C005",
@@ -361,7 +458,7 @@
       "reasons": [
         "Owner is 72",
         "No investment loan for 8 years",
-        "Investment spending is falling",
+        "Investment down 25%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -404,7 +501,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 23000.0
+    "max_acquisition_loan": 27000.0
   },
   {
     "company_id": "C006",
@@ -443,7 +540,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 28 years old"
       ]
     },
@@ -483,7 +580,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 177000.0
+    "max_acquisition_loan": 206000.0
   },
   {
     "company_id": "C007",
@@ -522,7 +619,7 @@
       "score": 52,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Owner is 57",
         "Cash is piling up in the company"
@@ -564,7 +661,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 594000.0
+    "max_acquisition_loan": 693000.0
   },
   {
     "company_id": "C008",
@@ -603,9 +700,9 @@
       "score": 59,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 58",
-        "Investment spending is falling",
+        "Investment down 15%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
@@ -647,7 +744,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 352000.0
+    "max_acquisition_loan": 411000.0
   },
   {
     "company_id": "C009",
@@ -683,7 +780,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 44,
+      "score": 43,
       "level": "medium",
       "reasons": [
         "Owner is 67",
@@ -728,7 +825,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 763000.0
+    "max_acquisition_loan": 891000.0
   },
   {
     "company_id": "C010",
@@ -768,8 +865,8 @@
       "level": "high",
       "reasons": [
         "Owner is 75",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 15%",
         "Cash is piling up in the company",
         "Owner is saving more for pension"
       ]
@@ -810,7 +907,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 155000.0
+    "max_acquisition_loan": 181000.0
   },
   {
     "company_id": "C011",
@@ -849,7 +946,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension"
       ]
     },
@@ -889,7 +986,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1229000.0
+    "max_acquisition_loan": 1434000.0
   },
   {
     "company_id": "C012",
@@ -925,7 +1022,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 7,
+      "score": 6,
       "level": "low",
       "reasons": [
         "Owner is taking out more dividends"
@@ -967,7 +1064,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 426000.0
+    "max_acquisition_loan": 497000.0
   },
   {
     "company_id": "C013",
@@ -1007,7 +1104,7 @@
       "level": "high",
       "reasons": [
         "Owner is 69",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 7 years",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
@@ -1051,7 +1148,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 378000.0
+    "max_acquisition_loan": 441000.0
   },
   {
     "company_id": "C014",
@@ -1090,7 +1187,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 37 years old"
       ]
     },
@@ -1130,7 +1227,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1300000.0
+    "max_acquisition_loan": 1516000.0
   },
   {
     "company_id": "C015",
@@ -1166,11 +1263,11 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 62,
+      "score": 61,
       "level": "high",
       "reasons": [
         "Owner is 61",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Company is 29 years old"
@@ -1212,7 +1309,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 955000.0
+    "max_acquisition_loan": 1114000.0
   },
   {
     "company_id": "C016",
@@ -1251,7 +1348,7 @@
       "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 56"
       ]
     },
@@ -1291,7 +1388,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 179000.0
+    "max_acquisition_loan": 208000.0
   },
   {
     "company_id": "C017",
@@ -1330,7 +1427,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 40 years old"
       ]
     },
@@ -1370,7 +1467,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 460000.0
+    "max_acquisition_loan": 536000.0
   },
   {
     "company_id": "C018",
@@ -1418,10 +1515,10 @@
       "allow_trial": true
     },
     "readiness": {
-      "score": 64,
+      "score": 63,
       "level": "high",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 10 years",
         "Owner is 59",
         "Cash is piling up in the company",
@@ -1465,7 +1562,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 303000.0
+    "max_acquisition_loan": 353000.0
   },
   {
     "company_id": "C019",
@@ -1504,7 +1601,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 30 years old"
       ]
     },
@@ -1544,7 +1641,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 839000.0
+    "max_acquisition_loan": 978000.0
   },
   {
     "company_id": "C020",
@@ -1584,8 +1681,8 @@
       "level": "high",
       "reasons": [
         "Owner is 63",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 15%",
         "Cash is piling up in the company",
         "Owner is saving more for pension"
       ]
@@ -1626,7 +1723,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 414000.0
+    "max_acquisition_loan": 483000.0
   },
   {
     "company_id": "C021",
@@ -1662,12 +1759,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 68,
+      "score": 69,
       "level": "high",
       "reasons": [
         "Owner is 60",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 17%",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
         "Company is 42 years old"
@@ -1709,7 +1806,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 361000.0
+    "max_acquisition_loan": 421000.0
   },
   {
     "company_id": "C022",
@@ -1748,8 +1845,8 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 12%",
         "Company is 35 years old"
       ]
     },
@@ -1789,7 +1886,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 183000.0
+    "max_acquisition_loan": 214000.0
   },
   {
     "company_id": "C023",
@@ -1829,7 +1926,7 @@
       "level": "high",
       "reasons": [
         "Owner is 67",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 11 years",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
@@ -1873,7 +1970,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 809000.0
+    "max_acquisition_loan": 944000.0
   },
   {
     "company_id": "C024",
@@ -1912,7 +2009,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 35 years old"
       ]
     },
@@ -1952,7 +2049,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 417000.0
+    "max_acquisition_loan": 487000.0
   },
   {
     "company_id": "C025",
@@ -1992,8 +2089,8 @@
       "level": "high",
       "reasons": [
         "Owner is 61",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 17%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Company is 35 years old"
@@ -2035,7 +2132,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 249000.0
+    "max_acquisition_loan": 291000.0
   },
   {
     "company_id": "C026",
@@ -2074,7 +2171,7 @@
       "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 56"
       ]
     },
@@ -2114,7 +2211,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 268000.0
+    "max_acquisition_loan": 313000.0
   },
   {
     "company_id": "C027",
@@ -2161,13 +2258,13 @@
       "allow_trial": false
     },
     "readiness": {
-      "score": 64,
+      "score": 63,
       "level": "high",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Owner is 59",
-        "Investment spending is falling",
+        "Investment down 12%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
       ]
@@ -2208,7 +2305,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 678000.0
+    "max_acquisition_loan": 790000.0
   },
   {
     "company_id": "C028",
@@ -2244,7 +2341,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 15,
+      "score": 16,
       "level": "low",
       "reasons": [
         "Owner is 55",
@@ -2287,7 +2384,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 221000.0
+    "max_acquisition_loan": 257000.0
   },
   {
     "company_id": "C029",
@@ -2323,7 +2420,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 15,
+      "score": 16,
       "level": "low",
       "reasons": [
         "Owner is 55",
@@ -2366,7 +2463,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 749000.0
+    "max_acquisition_loan": 874000.0
   },
   {
     "company_id": "C030",
@@ -2406,8 +2503,8 @@
       "level": "high",
       "reasons": [
         "Owner is 67",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 20%",
         "Cash is piling up in the company",
         "Owner is saving more for pension"
       ]
@@ -2448,7 +2545,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 412000.0
+    "max_acquisition_loan": 481000.0
   },
   {
     "company_id": "C031",
@@ -2484,10 +2581,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 30,
+      "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Company is 39 years old"
       ]
@@ -2528,7 +2625,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1895000.0
+    "max_acquisition_loan": 2211000.0
   },
   {
     "company_id": "C032",
@@ -2610,7 +2707,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 257000.0
+    "max_acquisition_loan": 300000.0
   },
   {
     "company_id": "C033",
@@ -2650,7 +2747,7 @@
       "level": "high",
       "reasons": [
         "Owner is 75",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -2693,7 +2790,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 123000.0
+    "max_acquisition_loan": 143000.0
   },
   {
     "company_id": "C034",
@@ -2729,10 +2826,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 30,
+      "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Company is 39 years old"
       ]
@@ -2773,7 +2870,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 384000.0
+    "max_acquisition_loan": 448000.0
   },
   {
     "company_id": "C035",
@@ -2851,7 +2948,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1182000.0
+    "max_acquisition_loan": 1379000.0
   },
   {
     "company_id": "C036",
@@ -2929,7 +3026,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 600000.0
+    "max_acquisition_loan": 701000.0
   },
   {
     "company_id": "C037",
@@ -2965,7 +3062,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 15,
+      "score": 16,
       "level": "low",
       "reasons": [
         "Owner is 55",
@@ -3008,7 +3105,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 171000.0
+    "max_acquisition_loan": 199000.0
   },
   {
     "company_id": "C038",
@@ -3048,7 +3145,7 @@
       "level": "high",
       "reasons": [
         "Owner is 63",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 7 years",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
@@ -3091,7 +3188,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 258000.0
+    "max_acquisition_loan": 301000.0
   },
   {
     "company_id": "C039",
@@ -3171,7 +3268,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 312000.0
+    "max_acquisition_loan": 364000.0
   },
   {
     "company_id": "C040",
@@ -3250,7 +3347,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 764000.0
+    "max_acquisition_loan": 891000.0
   },
   {
     "company_id": "C041",
@@ -3326,7 +3423,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 414000.0
+    "max_acquisition_loan": 483000.0
   },
   {
     "company_id": "C042",
@@ -3365,7 +3462,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 31 years old"
       ]
     },
@@ -3405,7 +3502,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1034000.0
+    "max_acquisition_loan": 1206000.0
   },
   {
     "company_id": "C043",
@@ -3444,7 +3541,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension"
       ]
     },
@@ -3484,7 +3581,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 132000.0
+    "max_acquisition_loan": 154000.0
   },
   {
     "company_id": "C044",
@@ -3523,7 +3620,7 @@
       "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 55"
       ]
     },
@@ -3563,7 +3660,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 539000.0
+    "max_acquisition_loan": 629000.0
   },
   {
     "company_id": "C045",
@@ -3599,10 +3696,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 36,
+      "score": 37,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Company is 29 years old"
       ]
@@ -3643,7 +3740,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 452000.0
+    "max_acquisition_loan": 527000.0
   },
   {
     "company_id": "C046",
@@ -3682,10 +3779,10 @@
       "score": 77,
       "level": "high",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 9 years",
         "Owner is 58",
-        "Investment spending is falling",
+        "Investment down 21%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -3728,7 +3825,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 582000.0
+    "max_acquisition_loan": 679000.0
   },
   {
     "company_id": "C047",
@@ -3764,12 +3861,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 47,
+      "score": 48,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 55",
-        "Investment spending is falling",
+        "Investment down 14%",
         "Owner is saving more for pension",
         "Company is 33 years old"
       ]
@@ -3810,7 +3907,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 244000.0
+    "max_acquisition_loan": 285000.0
   },
   {
     "company_id": "C048",
@@ -3846,10 +3943,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 30,
+      "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
       ]
@@ -3890,7 +3987,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 403000.0
+    "max_acquisition_loan": 470000.0
   },
   {
     "company_id": "C049",
@@ -3926,10 +4023,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 30,
+      "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Company is 26 years old"
       ]
@@ -3970,7 +4067,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 448000.0
+    "max_acquisition_loan": 522000.0
   },
   {
     "company_id": "C050",
@@ -4009,8 +4106,8 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 12%",
         "Company is 38 years old"
       ]
     },
@@ -4050,7 +4147,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 540000.0
+    "max_acquisition_loan": 629000.0
   },
   {
     "company_id": "C051",
@@ -4086,11 +4183,11 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 35,
+      "score": 34,
       "level": "low",
       "reasons": [
         "No investment loan for 5 years",
-        "Investment spending is falling",
+        "Investment down 10%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
       ]
@@ -4131,7 +4228,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 532000.0
+    "max_acquisition_loan": 620000.0
   },
   {
     "company_id": "C052",
@@ -4213,7 +4310,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1537000.0
+    "max_acquisition_loan": 1793000.0
   },
   {
     "company_id": "C053",
@@ -4252,7 +4349,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -4291,7 +4388,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 145000.0
+    "max_acquisition_loan": 169000.0
   },
   {
     "company_id": "C054",
@@ -4332,7 +4429,7 @@
       "reasons": [
         "Owner is 65",
         "No investment loan for 10 years",
-        "Investment spending is falling",
+        "Investment down 14%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
@@ -4374,7 +4471,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 188000.0
+    "max_acquisition_loan": 219000.0
   },
   {
     "company_id": "C055",
@@ -4410,7 +4507,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 21,
+      "score": 20,
       "level": "low",
       "reasons": [
         "No investment loan for 5 years",
@@ -4453,7 +4550,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 269000.0
+    "max_acquisition_loan": 314000.0
   },
   {
     "company_id": "C056",
@@ -4489,10 +4586,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 27,
+      "score": 28,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company"
       ]
     },
@@ -4532,7 +4629,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 395000.0
+    "max_acquisition_loan": 461000.0
   },
   {
     "company_id": "C057",
@@ -4571,7 +4668,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 33 years old"
       ]
     },
@@ -4611,7 +4708,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 327000.0
+    "max_acquisition_loan": 382000.0
   },
   {
     "company_id": "C058",
@@ -4647,7 +4744,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 53,
+      "score": 52,
       "level": "medium",
       "reasons": [
         "Owner is 60",
@@ -4693,7 +4790,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1112000.0
+    "max_acquisition_loan": 1297000.0
   },
   {
     "company_id": "C059",
@@ -4732,7 +4829,7 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company",
         "Company is 25 years old"
       ]
@@ -4773,7 +4870,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 159000.0
+    "max_acquisition_loan": 186000.0
   },
   {
     "company_id": "C060",
@@ -4851,7 +4948,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 928000.0
+    "max_acquisition_loan": 1083000.0
   },
   {
     "company_id": "C061",
@@ -4897,11 +4994,11 @@
       "allow_trial": false
     },
     "readiness": {
-      "score": 59,
-      "level": "medium",
+      "score": 60,
+      "level": "high",
       "reasons": [
         "Owner is 62",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 6 years",
         "Owner is saving more for pension"
       ]
@@ -4942,7 +5039,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 106000.0
+    "max_acquisition_loan": 123000.0
   },
   {
     "company_id": "C062",
@@ -5018,7 +5115,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 385000.0
+    "max_acquisition_loan": 449000.0
   },
   {
     "company_id": "C063",
@@ -5058,9 +5155,9 @@
       "level": "high",
       "reasons": [
         "Owner is 61",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 6 years",
-        "Investment spending is falling",
+        "Investment down 23%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
       ]
@@ -5101,7 +5198,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 310000.0
+    "max_acquisition_loan": 362000.0
   },
   {
     "company_id": "C064",
@@ -5140,8 +5237,8 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 14%",
         "Company is 28 years old"
       ]
     },
@@ -5181,7 +5278,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 428000.0
+    "max_acquisition_loan": 499000.0
   },
   {
     "company_id": "C065",
@@ -5220,7 +5317,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 34 years old"
       ]
     },
@@ -5260,7 +5357,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1386000.0
+    "max_acquisition_loan": 1617000.0
   },
   {
     "company_id": "C066",
@@ -5296,7 +5393,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 12,
+      "score": 11,
       "level": "low",
       "reasons": [
         "Owner is taking out more dividends",
@@ -5339,7 +5436,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 620000.0
+    "max_acquisition_loan": 723000.0
   },
   {
     "company_id": "C067",
@@ -5378,7 +5475,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 35 years old"
       ]
     },
@@ -5418,7 +5515,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 380000.0
+    "max_acquisition_loan": 443000.0
   },
   {
     "company_id": "C068",
@@ -5454,10 +5551,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 36,
+      "score": 37,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
         "Company is 30 years old"
@@ -5499,7 +5596,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 366000.0
+    "max_acquisition_loan": 428000.0
   },
   {
     "company_id": "C069",
@@ -5538,7 +5635,7 @@
       "score": 25,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends"
       ]
     },
@@ -5578,7 +5675,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 888000.0
+    "max_acquisition_loan": 1036000.0
   },
   {
     "company_id": "C070",
@@ -5630,8 +5727,8 @@
       "level": "high",
       "reasons": [
         "Owner is 64",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 15%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -5674,7 +5771,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 324000.0
+    "max_acquisition_loan": 378000.0
   },
   {
     "company_id": "C071",
@@ -5713,7 +5810,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 44 years old"
       ]
     },
@@ -5753,7 +5850,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 96000.0
+    "max_acquisition_loan": 113000.0
   },
   {
     "company_id": "C072",
@@ -5789,13 +5886,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 85,
+      "score": 84,
       "level": "high",
       "reasons": [
         "Owner is 71",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 7 years",
-        "Investment spending is falling",
+        "Investment down 25%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
@@ -5837,7 +5934,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 286000.0
+    "max_acquisition_loan": 333000.0
   },
   {
     "company_id": "C073",
@@ -5915,7 +6012,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 134000.0
+    "max_acquisition_loan": 156000.0
   },
   {
     "company_id": "C074",
@@ -5954,7 +6051,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -5993,7 +6090,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 647000.0
+    "max_acquisition_loan": 755000.0
   },
   {
     "company_id": "C075",
@@ -6032,7 +6129,7 @@
       "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 56"
       ]
     },
@@ -6072,7 +6169,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 548000.0
+    "max_acquisition_loan": 639000.0
   },
   {
     "company_id": "C076",
@@ -6112,9 +6209,9 @@
       "level": "high",
       "reasons": [
         "Owner is 64",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 8 years",
-        "Investment spending is falling",
+        "Investment down 12%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -6157,7 +6254,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 834000.0
+    "max_acquisition_loan": 973000.0
   },
   {
     "company_id": "C077",
@@ -6196,7 +6293,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 29 years old"
       ]
     },
@@ -6236,7 +6333,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 44000.0
+    "max_acquisition_loan": 51000.0
   },
   {
     "company_id": "C078",
@@ -6272,7 +6369,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 15,
+      "score": 16,
       "level": "low",
       "reasons": [
         "Owner is 57",
@@ -6315,7 +6412,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 224000.0
+    "max_acquisition_loan": 262000.0
   },
   {
     "company_id": "C079",
@@ -6351,10 +6448,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 36,
+      "score": 37,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Company is 37 years old"
       ]
@@ -6395,7 +6492,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 613000.0
+    "max_acquisition_loan": 715000.0
   },
   {
     "company_id": "C080",
@@ -6431,10 +6528,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 35,
+      "score": 34,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
         "Company is 36 years old"
@@ -6476,7 +6573,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 270000.0
+    "max_acquisition_loan": 316000.0
   },
   {
     "company_id": "C081",
@@ -6512,13 +6609,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 82,
+      "score": 83,
       "level": "high",
       "reasons": [
         "Owner is 73",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 12 years",
-        "Investment spending is falling",
+        "Investment down 24%",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
         "Company is 36 years old"
@@ -6560,7 +6657,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1069000.0
+    "max_acquisition_loan": 1247000.0
   },
   {
     "company_id": "C082",
@@ -6638,7 +6735,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 468000.0
+    "max_acquisition_loan": 546000.0
   },
   {
     "company_id": "C083",
@@ -6714,7 +6811,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 190000.0
+    "max_acquisition_loan": 221000.0
   },
   {
     "company_id": "C084",
@@ -6794,7 +6891,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 496000.0
+    "max_acquisition_loan": 578000.0
   },
   {
     "company_id": "C085",
@@ -6835,7 +6932,7 @@
       "reasons": [
         "Owner is 62",
         "No investment loan for 12 years",
-        "Investment spending is falling",
+        "Investment down 15%",
         "Owner is saving more for pension",
         "Company is 28 years old"
       ]
@@ -6876,7 +6973,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 110000.0
+    "max_acquisition_loan": 129000.0
   },
   {
     "company_id": "C086",
@@ -6912,10 +7009,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 30,
+      "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Company is 32 years old"
       ]
@@ -6956,7 +7053,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 498000.0
+    "max_acquisition_loan": 581000.0
   },
   {
     "company_id": "C087",
@@ -7034,7 +7131,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 323000.0
+    "max_acquisition_loan": 376000.0
   },
   {
     "company_id": "C088",
@@ -7070,12 +7167,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 59,
-      "level": "medium",
+      "score": 60,
+      "level": "high",
       "reasons": [
         "Owner is 64",
         "No investment loan for 10 years",
-        "Investment spending is falling",
+        "Investment down 30%",
         "Cash is piling up in the company",
         "Company is 36 years old"
       ]
@@ -7116,7 +7213,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 282000.0
+    "max_acquisition_loan": 328000.0
   },
   {
     "company_id": "C089",
@@ -7167,7 +7264,7 @@
       "level": "high",
       "reasons": [
         "Owner is 75",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 8 years",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
@@ -7211,7 +7308,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 892000.0
+    "max_acquisition_loan": 1040000.0
   },
   {
     "company_id": "C090",
@@ -7250,7 +7347,7 @@
       "score": 34,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 57",
         "Company is 35 years old"
       ]
@@ -7291,7 +7388,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 422000.0
+    "max_acquisition_loan": 492000.0
   },
   {
     "company_id": "C091",
@@ -7327,10 +7424,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 30,
+      "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Company is 42 years old"
       ]
@@ -7371,7 +7468,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 540000.0
+    "max_acquisition_loan": 629000.0
   },
   {
     "company_id": "C092",
@@ -7410,7 +7507,7 @@
       "score": 14,
       "level": "low",
       "reasons": [
-        "Investment spending is falling",
+        "Investment down 13%",
         "Company is 44 years old"
       ]
     },
@@ -7450,7 +7547,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 320000.0
+    "max_acquisition_loan": 373000.0
   },
   {
     "company_id": "C093",
@@ -7490,9 +7587,9 @@
       "level": "high",
       "reasons": [
         "Owner is 64",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 11 years",
-        "Investment spending is falling",
+        "Investment down 18%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
       ]
@@ -7533,7 +7630,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 389000.0
+    "max_acquisition_loan": 453000.0
   },
   {
     "company_id": "C094",
@@ -7572,7 +7669,7 @@
       "score": 52,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Owner is 56",
         "Owner is saving more for pension",
@@ -7615,7 +7712,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 445000.0
+    "max_acquisition_loan": 520000.0
   },
   {
     "company_id": "C095",
@@ -7651,11 +7748,11 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 41,
+      "score": 40,
       "level": "medium",
       "reasons": [
         "Owner is 58",
-        "Investment spending is falling",
+        "Investment down 27%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Company is 39 years old"
@@ -7697,7 +7794,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 73000.0
+    "max_acquisition_loan": 85000.0
   },
   {
     "company_id": "C096",
@@ -7733,10 +7830,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 36,
+      "score": 37,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Company is 45 years old"
       ]
@@ -7777,7 +7874,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 150000.0
+    "max_acquisition_loan": 175000.0
   },
   {
     "company_id": "C097",
@@ -7816,7 +7913,7 @@
       "score": 39,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Company is 36 years old"
@@ -7858,7 +7955,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 78000.0
+    "max_acquisition_loan": 91000.0
   },
   {
     "company_id": "C098",
@@ -7897,7 +7994,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -7936,7 +8033,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 331000.0
+    "max_acquisition_loan": 387000.0
   },
   {
     "company_id": "C099",
@@ -7972,12 +8069,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 62,
+      "score": 61,
       "level": "high",
       "reasons": [
         "Owner is 64",
         "No investment loan for 11 years",
-        "Investment spending is falling",
+        "Investment down 25%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends"
       ]
@@ -8018,7 +8115,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 817000.0
+    "max_acquisition_loan": 954000.0
   },
   {
     "company_id": "C100",
@@ -8057,10 +8154,10 @@
       "score": 52,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Owner is 57",
-        "Investment spending is falling"
+        "Investment down 12%"
       ]
     },
     "valuation": {
@@ -8099,7 +8196,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 203000.0
+    "max_acquisition_loan": 237000.0
   },
   {
     "company_id": "C101",
@@ -8146,11 +8243,11 @@
       "allow_trial": false
     },
     "readiness": {
-      "score": 53,
+      "score": 52,
       "level": "medium",
       "reasons": [
         "Owner is 65",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
       ]
@@ -8191,7 +8288,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 263000.0
+    "max_acquisition_loan": 307000.0
   },
   {
     "company_id": "C102",
@@ -8227,11 +8324,11 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 27,
+      "score": 28,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
-        "Investment spending is falling"
+        "No family heir among shareholders",
+        "Investment down 12%"
       ]
     },
     "valuation": {
@@ -8270,7 +8367,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1171000.0
+    "max_acquisition_loan": 1366000.0
   },
   {
     "company_id": "C103",
@@ -8309,7 +8406,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -8348,7 +8445,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 236000.0
+    "max_acquisition_loan": 275000.0
   },
   {
     "company_id": "C104",
@@ -8384,12 +8481,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 68,
+      "score": 69,
       "level": "high",
       "reasons": [
         "Owner is 67",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 23%",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
         "Company is 31 years old"
@@ -8431,7 +8528,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 477000.0
+    "max_acquisition_loan": 556000.0
   },
   {
     "company_id": "C105",
@@ -8507,7 +8604,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 213000.0
+    "max_acquisition_loan": 248000.0
   },
   {
     "company_id": "C106",
@@ -8585,7 +8682,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 426000.0
+    "max_acquisition_loan": 497000.0
   },
   {
     "company_id": "C107",
@@ -8637,7 +8734,7 @@
       "level": "high",
       "reasons": [
         "Owner is 61",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 6 years",
         "Cash is piling up in the company"
       ]
@@ -8678,7 +8775,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 342000.0
+    "max_acquisition_loan": 399000.0
   },
   {
     "company_id": "C108",
@@ -8714,11 +8811,11 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 68,
+      "score": 69,
       "level": "high",
       "reasons": [
         "Owner is 67",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 7 years",
         "Cash is piling up in the company",
         "Owner is saving more for pension"
@@ -8760,7 +8857,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 52000.0
+    "max_acquisition_loan": 61000.0
   },
   {
     "company_id": "C109",
@@ -8840,7 +8937,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 487000.0
+    "max_acquisition_loan": 569000.0
   },
   {
     "company_id": "C110",
@@ -8879,7 +8976,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 36 years old"
       ]
     },
@@ -8919,7 +9016,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 52000.0
+    "max_acquisition_loan": 61000.0
   },
   {
     "company_id": "C111",
@@ -8999,7 +9096,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 122000.0
+    "max_acquisition_loan": 142000.0
   },
   {
     "company_id": "C112",
@@ -9039,7 +9136,7 @@
       "level": "medium",
       "reasons": [
         "Owner is 64",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company",
         "Company is 25 years old"
       ]
@@ -9080,7 +9177,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 258000.0
+    "max_acquisition_loan": 301000.0
   },
   {
     "company_id": "C113",
@@ -9119,7 +9216,7 @@
       "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 57"
       ]
     },
@@ -9159,7 +9256,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 185000.0
+    "max_acquisition_loan": 216000.0
   },
   {
     "company_id": "C114",
@@ -9199,9 +9296,9 @@
       "level": "high",
       "reasons": [
         "Owner is 71",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
-        "Investment spending is falling",
+        "Investment down 19%",
         "Owner is taking out more dividends",
         "Company is 45 years old"
       ]
@@ -9242,7 +9339,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 153000.0
+    "max_acquisition_loan": 179000.0
   },
   {
     "company_id": "C115",
@@ -9288,13 +9385,13 @@
       "allow_trial": false
     },
     "readiness": {
-      "score": 68,
+      "score": 69,
       "level": "high",
       "reasons": [
         "Owner is 61",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
-        "Investment spending is falling",
+        "Investment down 14%",
         "Owner is saving more for pension"
       ]
     },
@@ -9334,7 +9431,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 519000.0
+    "max_acquisition_loan": 606000.0
   },
   {
     "company_id": "C116",
@@ -9374,7 +9471,7 @@
       "level": "high",
       "reasons": [
         "Owner is 62",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 8 years",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
@@ -9417,7 +9514,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 133000.0
+    "max_acquisition_loan": 155000.0
   },
   {
     "company_id": "C117",
@@ -9456,7 +9553,7 @@
       "score": 41,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Cash is piling up in the company"
       ]
@@ -9497,7 +9594,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 571000.0
+    "max_acquisition_loan": 666000.0
   },
   {
     "company_id": "C118",
@@ -9536,7 +9633,7 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company",
         "Owner is saving more for pension"
       ]
@@ -9577,7 +9674,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 473000.0
+    "max_acquisition_loan": 552000.0
   },
   {
     "company_id": "C119",
@@ -9617,7 +9714,7 @@
       "level": "low",
       "reasons": [
         "Owner is 57",
-        "Investment spending is falling",
+        "Investment down 11%",
         "Company is 38 years old"
       ]
     },
@@ -9657,7 +9754,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1463000.0
+    "max_acquisition_loan": 1707000.0
   },
   {
     "company_id": "C120",
@@ -9697,9 +9794,9 @@
       "level": "high",
       "reasons": [
         "Owner is 64",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 8 years",
-        "Investment spending is falling",
+        "Investment down 26%",
         "Owner is taking out more dividends"
       ]
     },
@@ -9739,7 +9836,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 190000.0
+    "max_acquisition_loan": 222000.0
   },
   {
     "company_id": "C121",
@@ -9775,10 +9872,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 55,
+      "score": 54,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 59",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
@@ -9822,7 +9919,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 132000.0
+    "max_acquisition_loan": 154000.0
   },
   {
     "company_id": "C122",
@@ -9900,7 +9997,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 621000.0
+    "max_acquisition_loan": 724000.0
   },
   {
     "company_id": "C123",
@@ -9978,7 +10075,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 331000.0
+    "max_acquisition_loan": 386000.0
   },
   {
     "company_id": "C124",
@@ -10017,7 +10114,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension"
       ]
     },
@@ -10057,7 +10154,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1755000.0
+    "max_acquisition_loan": 2047000.0
   },
   {
     "company_id": "C125",
@@ -10093,10 +10190,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 44,
+      "score": 43,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Owner is taking out more dividends",
         "Company is 40 years old"
@@ -10138,7 +10235,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1472000.0
+    "max_acquisition_loan": 1717000.0
   },
   {
     "company_id": "C126",
@@ -10177,7 +10274,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -10216,7 +10313,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 701000.0
+    "max_acquisition_loan": 818000.0
   },
   {
     "company_id": "C127",
@@ -10256,7 +10353,7 @@
       "level": "high",
       "reasons": [
         "Owner is 61",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 12 years",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
@@ -10300,7 +10397,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 865000.0
+    "max_acquisition_loan": 1009000.0
   },
   {
     "company_id": "C128",
@@ -10339,7 +10436,7 @@
       "score": 25,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends"
       ]
     },
@@ -10379,7 +10476,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 199000.0
+    "max_acquisition_loan": 232000.0
   },
   {
     "company_id": "C129",
@@ -10457,7 +10554,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 206000.0
+    "max_acquisition_loan": 240000.0
   },
   {
     "company_id": "C130",
@@ -10493,13 +10590,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 82,
+      "score": 83,
       "level": "high",
       "reasons": [
         "Owner is 63",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
-        "Investment spending is falling",
+        "Investment down 17%",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
         "Company is 31 years old"
@@ -10541,7 +10638,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 167000.0
+    "max_acquisition_loan": 195000.0
   },
   {
     "company_id": "C131",
@@ -10619,7 +10716,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 216000.0
+    "max_acquisition_loan": 252000.0
   },
   {
     "company_id": "C132",
@@ -10655,11 +10752,11 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 62,
+      "score": 61,
       "level": "high",
       "reasons": [
         "Owner is 64",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Owner is taking out more dividends"
       ]
@@ -10700,7 +10797,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 63000.0
+    "max_acquisition_loan": 74000.0
   },
   {
     "company_id": "C133",
@@ -10739,7 +10836,7 @@
       "score": 59,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 7 years",
         "Owner is 58",
         "Owner is taking out more dividends",
@@ -10783,7 +10880,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 453000.0
+    "max_acquisition_loan": 529000.0
   },
   {
     "company_id": "C134",
@@ -10819,10 +10916,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 41,
+      "score": 40,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 56",
         "Owner is taking out more dividends",
         "Company is 33 years old"
@@ -10864,7 +10961,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 187000.0
+    "max_acquisition_loan": 218000.0
   },
   {
     "company_id": "C135",
@@ -10945,7 +11042,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 99000.0
+    "max_acquisition_loan": 115000.0
   },
   {
     "company_id": "C136",
@@ -11024,7 +11121,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 131000.0
+    "max_acquisition_loan": 153000.0
   },
   {
     "company_id": "C137",
@@ -11060,10 +11157,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 36,
+      "score": 37,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
         "Company is 25 years old"
@@ -11105,7 +11202,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 640000.0
+    "max_acquisition_loan": 747000.0
   },
   {
     "company_id": "C138",
@@ -11144,9 +11241,9 @@
       "score": 41,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
-        "Investment spending is falling"
+        "Investment down 22%"
       ]
     },
     "valuation": {
@@ -11185,7 +11282,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 244000.0
+    "max_acquisition_loan": 285000.0
   },
   {
     "company_id": "C139",
@@ -11265,7 +11362,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1676000.0
+    "max_acquisition_loan": 1956000.0
   },
   {
     "company_id": "C140",
@@ -11301,13 +11398,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 77,
+      "score": 78,
       "level": "high",
       "reasons": [
         "Owner is 67",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 12 years",
-        "Investment spending is falling",
+        "Investment down 30%",
         "Cash is piling up in the company",
         "Company is 33 years old"
       ]
@@ -11348,7 +11445,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 643000.0
+    "max_acquisition_loan": 750000.0
   },
   {
     "company_id": "C141",
@@ -11388,8 +11485,8 @@
       "level": "high",
       "reasons": [
         "Owner is 65",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 21%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
         "Company is 45 years old"
@@ -11431,7 +11528,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 187000.0
+    "max_acquisition_loan": 218000.0
   },
   {
     "company_id": "C142",
@@ -11470,7 +11567,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 27 years old"
       ]
     },
@@ -11510,7 +11607,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 82000.0
+    "max_acquisition_loan": 96000.0
   },
   {
     "company_id": "C143",
@@ -11549,7 +11646,7 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years"
       ]
     },
@@ -11589,7 +11686,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 74000.0
+    "max_acquisition_loan": 86000.0
   },
   {
     "company_id": "C144",
@@ -11628,7 +11725,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -11667,7 +11764,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 631000.0
+    "max_acquisition_loan": 736000.0
   },
   {
     "company_id": "C145",
@@ -11703,12 +11800,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 47,
+      "score": 48,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 59",
-        "Investment spending is falling",
+        "Investment down 16%",
         "Owner is saving more for pension",
         "Company is 28 years old"
       ]
@@ -11749,7 +11846,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 302000.0
+    "max_acquisition_loan": 352000.0
   },
   {
     "company_id": "C146",
@@ -11790,7 +11887,7 @@
       "reasons": [
         "Owner is 66",
         "No investment loan for 11 years",
-        "Investment spending is falling",
+        "Investment down 16%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -11833,7 +11930,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 495000.0
+    "max_acquisition_loan": 577000.0
   },
   {
     "company_id": "C147",
@@ -11911,7 +12008,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 127000.0
+    "max_acquisition_loan": 149000.0
   },
   {
     "company_id": "C148",
@@ -11950,7 +12047,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 40 years old"
       ]
     },
@@ -11990,7 +12087,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 574000.0
+    "max_acquisition_loan": 669000.0
   },
   {
     "company_id": "C149",
@@ -12029,10 +12126,10 @@
       "score": 77,
       "level": "high",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 8 years",
         "Owner is 58",
-        "Investment spending is falling",
+        "Investment down 19%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -12075,7 +12172,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 862000.0
+    "max_acquisition_loan": 1006000.0
   },
   {
     "company_id": "C150",
@@ -12111,12 +12208,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 68,
+      "score": 69,
       "level": "high",
       "reasons": [
         "Owner is 60",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 25%",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
         "Company is 29 years old"
@@ -12158,7 +12255,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 256000.0
+    "max_acquisition_loan": 299000.0
   },
   {
     "company_id": "C151",
@@ -12238,7 +12335,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 477000.0
+    "max_acquisition_loan": 556000.0
   },
   {
     "company_id": "C152",
@@ -12278,7 +12375,7 @@
       "level": "medium",
       "reasons": [
         "Owner is 62",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company",
         "Owner is saving more for pension"
       ]
@@ -12319,7 +12416,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 156000.0
+    "max_acquisition_loan": 182000.0
   },
   {
     "company_id": "C153",
@@ -12359,9 +12456,9 @@
       "level": "high",
       "reasons": [
         "Owner is 64",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 12 years",
-        "Investment spending is falling",
+        "Investment down 22%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
       ]
@@ -12402,7 +12499,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 90000.0
+    "max_acquisition_loan": 105000.0
   },
   {
     "company_id": "C154",
@@ -12441,7 +12538,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -12480,7 +12577,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 373000.0
+    "max_acquisition_loan": 435000.0
   },
   {
     "company_id": "C155",
@@ -12519,7 +12616,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -12558,7 +12655,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 94000.0
+    "max_acquisition_loan": 110000.0
   },
   {
     "company_id": "C156",
@@ -12594,10 +12691,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 36,
+      "score": 37,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Company is 43 years old"
       ]
@@ -12638,7 +12735,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1602000.0
+    "max_acquisition_loan": 1870000.0
   },
   {
     "company_id": "C157",
@@ -12674,12 +12771,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 62,
+      "score": 61,
       "level": "high",
       "reasons": [
         "Owner is 68",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 13%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
       ]
@@ -12720,7 +12817,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 446000.0
+    "max_acquisition_loan": 520000.0
   },
   {
     "company_id": "C158",
@@ -12759,7 +12856,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 26 years old"
       ]
     },
@@ -12799,7 +12896,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 514000.0
+    "max_acquisition_loan": 599000.0
   },
   {
     "company_id": "C159",
@@ -12877,7 +12974,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 240000.0
+    "max_acquisition_loan": 279000.0
   },
   {
     "company_id": "C160",
@@ -12916,7 +13013,7 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company",
         "Company is 37 years old"
       ]
@@ -12957,7 +13054,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 103000.0
+    "max_acquisition_loan": 121000.0
   },
   {
     "company_id": "C161",
@@ -12996,7 +13093,7 @@
       "score": 34,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 55",
         "Company is 44 years old"
       ]
@@ -13037,7 +13134,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 436000.0
+    "max_acquisition_loan": 509000.0
   },
   {
     "company_id": "C162",
@@ -13077,7 +13174,7 @@
       "level": "high",
       "reasons": [
         "Owner is 67",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 8 years",
         "Owner is saving more for pension",
         "Company is 45 years old"
@@ -13119,7 +13216,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 220000.0
+    "max_acquisition_loan": 256000.0
   },
   {
     "company_id": "C163",
@@ -13158,7 +13255,7 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years"
       ]
     },
@@ -13198,7 +13295,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 2982000.0
+    "max_acquisition_loan": 3479000.0
   },
   {
     "company_id": "C164",
@@ -13238,8 +13335,8 @@
       "level": "high",
       "reasons": [
         "Owner is 66",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 26%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -13282,7 +13379,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 353000.0
+    "max_acquisition_loan": 411000.0
   },
   {
     "company_id": "C165",
@@ -13318,7 +13415,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 21,
+      "score": 20,
       "level": "low",
       "reasons": [
         "No investment loan for 5 years",
@@ -13361,7 +13458,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 335000.0
+    "max_acquisition_loan": 391000.0
   },
   {
     "company_id": "C166",
@@ -13397,12 +13494,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 62,
+      "score": 61,
       "level": "high",
       "reasons": [
         "Owner is 61",
         "No investment loan for 6 years",
-        "Investment spending is falling",
+        "Investment down 10%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
         "Company is 31 years old"
@@ -13444,7 +13541,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 197000.0
+    "max_acquisition_loan": 230000.0
   },
   {
     "company_id": "C167",
@@ -13480,10 +13577,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 35,
+      "score": 34,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
         "Company is 44 years old"
@@ -13525,7 +13622,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1228000.0
+    "max_acquisition_loan": 1432000.0
   },
   {
     "company_id": "C168",
@@ -13564,7 +13661,7 @@
       "score": 25,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends"
       ]
     },
@@ -13604,7 +13701,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 251000.0
+    "max_acquisition_loan": 292000.0
   },
   {
     "company_id": "C169",
@@ -13643,7 +13740,7 @@
       "score": 36,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 56",
         "Owner is taking out more dividends"
       ]
@@ -13684,7 +13781,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 591000.0
+    "max_acquisition_loan": 690000.0
   },
   {
     "company_id": "C170",
@@ -13762,7 +13859,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 495000.0
+    "max_acquisition_loan": 578000.0
   },
   {
     "company_id": "C171",
@@ -13802,9 +13899,9 @@
       "level": "high",
       "reasons": [
         "Owner is 68",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 12 years",
-        "Investment spending is falling",
+        "Investment down 11%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
         "Company is 40 years old"
@@ -13846,7 +13943,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 315000.0
+    "max_acquisition_loan": 368000.0
   },
   {
     "company_id": "C172",
@@ -13886,9 +13983,9 @@
       "level": "high",
       "reasons": [
         "Owner is 71",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 8 years",
-        "Investment spending is falling",
+        "Investment down 19%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
       ]
@@ -13929,7 +14026,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 248000.0
+    "max_acquisition_loan": 290000.0
   },
   {
     "company_id": "C173",
@@ -13969,7 +14066,7 @@
       "level": "medium",
       "reasons": [
         "Owner is 73",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends"
       ]
     },
@@ -14009,7 +14106,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 269000.0
+    "max_acquisition_loan": 314000.0
   },
   {
     "company_id": "C174",
@@ -14048,7 +14145,7 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years"
       ]
     },
@@ -14088,7 +14185,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 36000.0
+    "max_acquisition_loan": 42000.0
   },
   {
     "company_id": "C175",
@@ -14127,7 +14224,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension"
       ]
     },
@@ -14167,7 +14264,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 157000.0
+    "max_acquisition_loan": 184000.0
   },
   {
     "company_id": "C176",
@@ -14206,7 +14303,7 @@
       "score": 59,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 10 years",
         "Owner is 58",
         "Owner is taking out more dividends",
@@ -14250,7 +14347,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 342000.0
+    "max_acquisition_loan": 399000.0
   },
   {
     "company_id": "C177",
@@ -14290,8 +14387,8 @@
       "level": "high",
       "reasons": [
         "Owner is 67",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 30%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
@@ -14333,7 +14430,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 800000.0
+    "max_acquisition_loan": 933000.0
   },
   {
     "company_id": "C178",
@@ -14411,7 +14508,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 225000.0
+    "max_acquisition_loan": 262000.0
   },
   {
     "company_id": "C179",
@@ -14491,7 +14588,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 412000.0
+    "max_acquisition_loan": 481000.0
   },
   {
     "company_id": "C180",
@@ -14530,7 +14627,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension"
       ]
     },
@@ -14570,7 +14667,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 752000.0
+    "max_acquisition_loan": 877000.0
   },
   {
     "company_id": "C181",
@@ -14606,10 +14703,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 27,
+      "score": 28,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension",
         "Company is 39 years old"
       ]
@@ -14650,7 +14747,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 702000.0
+    "max_acquisition_loan": 819000.0
   },
   {
     "company_id": "C182",
@@ -14689,7 +14786,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -14728,7 +14825,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 643000.0
+    "max_acquisition_loan": 750000.0
   },
   {
     "company_id": "C183",
@@ -14764,13 +14861,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 85,
+      "score": 84,
       "level": "high",
       "reasons": [
         "Owner is 75",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
-        "Investment spending is falling",
+        "Investment down 16%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
@@ -14812,7 +14909,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 168000.0
+    "max_acquisition_loan": 196000.0
   },
   {
     "company_id": "C184",
@@ -14851,7 +14948,7 @@
       "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 55"
       ]
     },
@@ -14891,7 +14988,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1265000.0
+    "max_acquisition_loan": 1476000.0
   },
   {
     "company_id": "C185",
@@ -14927,12 +15024,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 68,
+      "score": 69,
       "level": "high",
       "reasons": [
         "Owner is 62",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 24%",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
         "Company is 25 years old"
@@ -14974,7 +15071,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 396000.0
+    "max_acquisition_loan": 462000.0
   },
   {
     "company_id": "C186",
@@ -15014,9 +15111,9 @@
       "level": "high",
       "reasons": [
         "Owner is 60",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 6 years",
-        "Investment spending is falling",
+        "Investment down 17%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
         "Company is 33 years old"
@@ -15058,7 +15155,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 985000.0
+    "max_acquisition_loan": 1150000.0
   },
   {
     "company_id": "C187",
@@ -15098,9 +15195,9 @@
       "level": "high",
       "reasons": [
         "Owner is 61",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
-        "Investment spending is falling",
+        "Investment down 10%",
         "Owner is taking out more dividends"
       ]
     },
@@ -15140,7 +15237,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 543000.0
+    "max_acquisition_loan": 634000.0
   },
   {
     "company_id": "C188",
@@ -15179,7 +15276,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -15218,7 +15315,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 98000.0
+    "max_acquisition_loan": 115000.0
   },
   {
     "company_id": "C189",
@@ -15258,9 +15355,9 @@
       "level": "high",
       "reasons": [
         "Owner is 72",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 10 years",
-        "Investment spending is falling",
+        "Investment down 11%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -15303,7 +15400,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 176000.0
+    "max_acquisition_loan": 205000.0
   },
   {
     "company_id": "C190",
@@ -15342,7 +15439,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 38 years old"
       ]
     },
@@ -15382,7 +15479,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 646000.0
+    "max_acquisition_loan": 754000.0
   },
   {
     "company_id": "C191",
@@ -15418,12 +15515,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 47,
+      "score": 48,
       "level": "medium",
       "reasons": [
         "No investment loan for 5 years",
         "Owner is 59",
-        "Investment spending is falling",
+        "Investment down 20%",
         "Cash is piling up in the company",
         "Owner is saving more for pension"
       ]
@@ -15464,7 +15561,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1095000.0
+    "max_acquisition_loan": 1278000.0
   },
   {
     "company_id": "C192",
@@ -15500,13 +15597,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 77,
+      "score": 78,
       "level": "high",
       "reasons": [
         "Owner is 71",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 11 years",
-        "Investment spending is falling",
+        "Investment down 20%",
         "Cash is piling up in the company",
         "Owner is saving more for pension"
       ]
@@ -15547,7 +15644,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 638000.0
+    "max_acquisition_loan": 744000.0
   },
   {
     "company_id": "C193",
@@ -15587,7 +15684,7 @@
       "level": "high",
       "reasons": [
         "Owner is 65",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 10 years",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
@@ -15630,7 +15727,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 513000.0
+    "max_acquisition_loan": 598000.0
   },
   {
     "company_id": "C194",
@@ -15666,12 +15763,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 59,
-      "level": "medium",
+      "score": 60,
+      "level": "high",
       "reasons": [
         "Owner is 60",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 36%",
         "Cash is piling up in the company"
       ]
     },
@@ -15711,7 +15808,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 929000.0
+    "max_acquisition_loan": 1084000.0
   },
   {
     "company_id": "C195",
@@ -15752,7 +15849,7 @@
       "reasons": [
         "Owner is 70",
         "No investment loan for 9 years",
-        "Investment spending is falling",
+        "Investment down 13%",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
         "Company is 45 years old"
@@ -15794,7 +15891,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 258000.0
+    "max_acquisition_loan": 302000.0
   },
   {
     "company_id": "C196",
@@ -15830,12 +15927,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 45,
+      "score": 46,
       "level": "medium",
       "reasons": [
         "Owner is 74",
         "No investment loan for 11 years",
-        "Investment spending is falling"
+        "Investment down 11%"
       ]
     },
     "valuation": {
@@ -15874,7 +15971,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 241000.0
+    "max_acquisition_loan": 281000.0
   },
   {
     "company_id": "C197",
@@ -15910,12 +16007,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 62,
+      "score": 61,
       "level": "high",
       "reasons": [
         "Owner is 62",
         "No investment loan for 9 years",
-        "Investment spending is falling",
+        "Investment down 20%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
         "Company is 26 years old"
@@ -15957,7 +16054,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1171000.0
+    "max_acquisition_loan": 1366000.0
   },
   {
     "company_id": "C198",
@@ -15993,10 +16090,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 56,
+      "score": 57,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 6 years",
         "Owner is 58",
         "Cash is piling up in the company",
@@ -16039,7 +16136,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 171000.0
+    "max_acquisition_loan": 200000.0
   },
   {
     "company_id": "C199",
@@ -16079,7 +16176,7 @@
       "level": "high",
       "reasons": [
         "Owner is 62",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 8 years",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -16122,7 +16219,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 317000.0
+    "max_acquisition_loan": 370000.0
   },
   {
     "company_id": "C200",
@@ -16162,9 +16259,9 @@
       "level": "high",
       "reasons": [
         "Owner is 68",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 10 years",
-        "Investment spending is falling",
+        "Investment down 10%",
         "Owner is saving more for pension",
         "Company is 27 years old"
       ]
@@ -16205,7 +16302,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 218000.0
+    "max_acquisition_loan": 255000.0
   },
   {
     "company_id": "C201",
@@ -16253,13 +16350,13 @@
       "allow_trial": true
     },
     "readiness": {
-      "score": 56,
+      "score": 57,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 10 years",
         "Owner is 59",
-        "Investment spending is falling",
+        "Investment down 16%",
         "Owner is saving more for pension"
       ]
     },
@@ -16299,7 +16396,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 441000.0
+    "max_acquisition_loan": 515000.0
   },
   {
     "company_id": "C202",
@@ -16377,7 +16474,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1613000.0
+    "max_acquisition_loan": 1882000.0
   },
   {
     "company_id": "C203",
@@ -16417,8 +16514,8 @@
       "level": "high",
       "reasons": [
         "Owner is 68",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 23%",
         "Cash is piling up in the company",
         "Company is 41 years old"
       ]
@@ -16459,7 +16556,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 357000.0
+    "max_acquisition_loan": 417000.0
   },
   {
     "company_id": "C204",
@@ -16538,7 +16635,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 417000.0
+    "max_acquisition_loan": 486000.0
   },
   {
     "company_id": "C205",
@@ -16577,7 +16674,7 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company",
         "Company is 29 years old"
       ]
@@ -16618,7 +16715,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 130000.0
+    "max_acquisition_loan": 152000.0
   },
   {
     "company_id": "C206",
@@ -16657,8 +16754,8 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 10%",
         "Owner is saving more for pension"
       ]
     },
@@ -16698,7 +16795,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 125000.0
+    "max_acquisition_loan": 146000.0
   },
   {
     "company_id": "C207",
@@ -16780,7 +16877,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 368000.0
+    "max_acquisition_loan": 429000.0
   },
   {
     "company_id": "C208",
@@ -16819,7 +16916,7 @@
       "score": 34,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 57",
         "Company is 36 years old"
       ]
@@ -16860,7 +16957,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 202000.0
+    "max_acquisition_loan": 235000.0
   },
   {
     "company_id": "C209",
@@ -16940,7 +17037,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 137000.0
+    "max_acquisition_loan": 160000.0
   },
   {
     "company_id": "C210",
@@ -16976,11 +17073,11 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 36,
+      "score": 37,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 17%",
         "Owner is saving more for pension",
         "Company is 45 years old"
       ]
@@ -17021,7 +17118,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 262000.0
+    "max_acquisition_loan": 305000.0
   },
   {
     "company_id": "C211",
@@ -17099,7 +17196,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 985000.0
+    "max_acquisition_loan": 1149000.0
   },
   {
     "company_id": "C212",
@@ -17135,13 +17232,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 65,
+      "score": 66,
       "level": "high",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 9 years",
         "Owner is 58",
-        "Investment spending is falling",
+        "Investment down 25%",
         "Cash is piling up in the company",
         "Company is 30 years old"
       ]
@@ -17182,7 +17279,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 172000.0
+    "max_acquisition_loan": 201000.0
   },
   {
     "company_id": "C213",
@@ -17222,8 +17319,8 @@
       "level": "high",
       "reasons": [
         "Owner is 60",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 15%",
         "Cash is piling up in the company",
         "Owner is saving more for pension"
       ]
@@ -17264,7 +17361,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 356000.0
+    "max_acquisition_loan": 415000.0
   },
   {
     "company_id": "C214",
@@ -17303,7 +17400,7 @@
       "score": 41,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Owner is saving more for pension",
         "Company is 39 years old"
@@ -17345,7 +17442,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 421000.0
+    "max_acquisition_loan": 491000.0
   },
   {
     "company_id": "C215",
@@ -17425,7 +17522,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 480000.0
+    "max_acquisition_loan": 560000.0
   },
   {
     "company_id": "C216",
@@ -17464,7 +17561,7 @@
       "score": 9,
       "level": "low",
       "reasons": [
-        "Investment spending is falling"
+        "Investment down 11%"
       ]
     },
     "valuation": {
@@ -17503,7 +17600,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 125000.0
+    "max_acquisition_loan": 146000.0
   },
   {
     "company_id": "C217",
@@ -17539,13 +17636,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 70,
+      "score": 71,
       "level": "high",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 6 years",
         "Owner is 58",
-        "Investment spending is falling",
+        "Investment down 22%",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
         "Company is 32 years old"
@@ -17587,7 +17684,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1039000.0
+    "max_acquisition_loan": 1212000.0
   },
   {
     "company_id": "C218",
@@ -17623,7 +17720,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 15,
+      "score": 16,
       "level": "low",
       "reasons": [
         "Owner is 57",
@@ -17666,7 +17763,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1361000.0
+    "max_acquisition_loan": 1587000.0
   },
   {
     "company_id": "C219",
@@ -17705,7 +17802,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -17744,7 +17841,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 448000.0
+    "max_acquisition_loan": 522000.0
   },
   {
     "company_id": "C220",
@@ -17784,7 +17881,7 @@
       "level": "low",
       "reasons": [
         "No investment loan for 5 years",
-        "Investment spending is falling"
+        "Investment down 13%"
       ]
     },
     "valuation": {
@@ -17823,7 +17920,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 262000.0
+    "max_acquisition_loan": 306000.0
   },
   {
     "company_id": "C221",
@@ -17899,7 +17996,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 490000.0
+    "max_acquisition_loan": 571000.0
   },
   {
     "company_id": "C222",
@@ -17935,7 +18032,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 15,
+      "score": 16,
       "level": "low",
       "reasons": [
         "Owner is 57",
@@ -17978,7 +18075,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 746000.0
+    "max_acquisition_loan": 870000.0
   },
   {
     "company_id": "C223",
@@ -18018,7 +18115,7 @@
       "level": "medium",
       "reasons": [
         "Owner is 75",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension",
         "Company is 41 years old"
       ]
@@ -18059,7 +18156,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 472000.0
+    "max_acquisition_loan": 550000.0
   },
   {
     "company_id": "C224",
@@ -18110,8 +18207,8 @@
       "level": "medium",
       "reasons": [
         "Owner is 69",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 18%",
         "Company is 41 years old"
       ]
     },
@@ -18151,7 +18248,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 223000.0
+    "max_acquisition_loan": 260000.0
   },
   {
     "company_id": "C225",
@@ -18229,7 +18326,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 280000.0
+    "max_acquisition_loan": 327000.0
   },
   {
     "company_id": "C226",
@@ -18269,9 +18366,9 @@
       "level": "high",
       "reasons": [
         "Owner is 66",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 8 years",
-        "Investment spending is falling",
+        "Investment down 25%",
         "Owner is taking out more dividends",
         "Company is 31 years old"
       ]
@@ -18312,7 +18409,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 526000.0
+    "max_acquisition_loan": 614000.0
   },
   {
     "company_id": "C227",
@@ -18348,7 +18445,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 12,
+      "score": 11,
       "level": "low",
       "reasons": [
         "Owner is taking out more dividends",
@@ -18391,7 +18488,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1710000.0
+    "max_acquisition_loan": 1995000.0
   },
   {
     "company_id": "C228",
@@ -18431,7 +18528,7 @@
       "level": "medium",
       "reasons": [
         "Owner is 71",
-        "Investment spending is falling",
+        "Investment down 18%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -18474,7 +18571,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 800000.0
+    "max_acquisition_loan": 933000.0
   },
   {
     "company_id": "C229",
@@ -18514,8 +18611,8 @@
       "level": "high",
       "reasons": [
         "Owner is 64",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 30%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends"
       ]
@@ -18556,7 +18653,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 153000.0
+    "max_acquisition_loan": 178000.0
   },
   {
     "company_id": "C230",
@@ -18595,10 +18692,10 @@
       "score": 61,
       "level": "high",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 11 years",
         "Owner is 58",
-        "Investment spending is falling",
+        "Investment down 11%",
         "Cash is piling up in the company"
       ]
     },
@@ -18638,7 +18735,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 376000.0
+    "max_acquisition_loan": 439000.0
   },
   {
     "company_id": "C231",
@@ -18679,7 +18776,7 @@
       "reasons": [
         "No investment loan for 5 years",
         "Owner is 59",
-        "Investment spending is falling",
+        "Investment down 14%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -18722,7 +18819,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 237000.0
+    "max_acquisition_loan": 276000.0
   },
   {
     "company_id": "C232",
@@ -18800,7 +18897,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 187000.0
+    "max_acquisition_loan": 218000.0
   },
   {
     "company_id": "C233",
@@ -18876,7 +18973,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 539000.0
+    "max_acquisition_loan": 629000.0
   },
   {
     "company_id": "C234",
@@ -18916,7 +19013,7 @@
       "level": "high",
       "reasons": [
         "Owner is 60",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 9 years",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
@@ -18960,7 +19057,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1887000.0
+    "max_acquisition_loan": 2202000.0
   },
   {
     "company_id": "C235",
@@ -18996,10 +19093,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 27,
+      "score": 28,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension",
         "Company is 36 years old"
       ]
@@ -19040,7 +19137,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 170000.0
+    "max_acquisition_loan": 198000.0
   },
   {
     "company_id": "C236",
@@ -19116,7 +19213,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 191000.0
+    "max_acquisition_loan": 222000.0
   },
   {
     "company_id": "C237",
@@ -19152,10 +19249,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 27,
+      "score": 28,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension",
         "Company is 36 years old"
       ]
@@ -19196,7 +19293,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 67000.0
+    "max_acquisition_loan": 78000.0
   },
   {
     "company_id": "C238",
@@ -19232,11 +19329,11 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 27,
+      "score": 28,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
-        "Investment spending is falling"
+        "No family heir among shareholders",
+        "Investment down 16%"
       ]
     },
     "valuation": {
@@ -19275,7 +19372,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 256000.0
+    "max_acquisition_loan": 299000.0
   },
   {
     "company_id": "C239",
@@ -19327,8 +19424,8 @@
       "level": "high",
       "reasons": [
         "Owner is 60",
-        "No next generation among shareholders",
-        "Investment spending is falling",
+        "No family heir among shareholders",
+        "Investment down 16%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Company is 45 years old"
@@ -19370,7 +19467,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 205000.0
+    "max_acquisition_loan": 239000.0
   },
   {
     "company_id": "C240",
@@ -19406,10 +19503,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 27,
+      "score": 28,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension",
         "Company is 37 years old"
       ]
@@ -19450,7 +19547,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 205000.0
+    "max_acquisition_loan": 239000.0
   },
   {
     "company_id": "C241",
@@ -19486,13 +19583,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 64,
+      "score": 63,
       "level": "high",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Owner is 56",
-        "Investment spending is falling",
+        "Investment down 16%",
         "Owner is taking out more dividends",
         "Company is 31 years old"
       ]
@@ -19533,7 +19630,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 495000.0
+    "max_acquisition_loan": 577000.0
   },
   {
     "company_id": "C242",
@@ -19611,7 +19708,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 331000.0
+    "max_acquisition_loan": 386000.0
   },
   {
     "company_id": "C243",
@@ -19650,7 +19747,7 @@
       "score": 41,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Owner is saving more for pension",
         "Company is 25 years old"
@@ -19692,7 +19789,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 60000.0
+    "max_acquisition_loan": 70000.0
   },
   {
     "company_id": "C244",
@@ -19728,10 +19825,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 27,
+      "score": 28,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension",
         "Company is 43 years old"
       ]
@@ -19772,7 +19869,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 110000.0
+    "max_acquisition_loan": 128000.0
   },
   {
     "company_id": "C245",
@@ -19811,7 +19908,7 @@
       "score": 50,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 59",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
@@ -19854,7 +19951,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 2162000.0
+    "max_acquisition_loan": 2523000.0
   },
   {
     "company_id": "C246",
@@ -19933,7 +20030,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 255000.0
+    "max_acquisition_loan": 298000.0
   },
   {
     "company_id": "C247",
@@ -20015,7 +20112,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 225000.0
+    "max_acquisition_loan": 262000.0
   },
   {
     "company_id": "C248",
@@ -20051,13 +20148,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 85,
+      "score": 84,
       "level": "high",
       "reasons": [
         "Owner is 65",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 7 years",
-        "Investment spending is falling",
+        "Investment down 28%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
@@ -20099,7 +20196,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1428000.0
+    "max_acquisition_loan": 1666000.0
   },
   {
     "company_id": "C249",
@@ -20138,7 +20235,7 @@
       "score": 9,
       "level": "low",
       "reasons": [
-        "Investment spending is falling"
+        "Investment down 13%"
       ]
     },
     "valuation": {
@@ -20177,7 +20274,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 4750000.0
+    "max_acquisition_loan": 5542000.0
   },
   {
     "company_id": "C250",
@@ -20216,10 +20313,10 @@
       "score": 68,
       "level": "high",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 6 years",
         "Owner is 58",
-        "Investment spending is falling",
+        "Investment down 19%",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
         "Company is 25 years old"
@@ -20261,7 +20358,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 146000.0
+    "max_acquisition_loan": 170000.0
   },
   {
     "company_id": "C251",
@@ -20300,7 +20397,7 @@
       "score": 59,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 11 years",
         "Owner is 58",
         "Cash is piling up in the company",
@@ -20343,7 +20440,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 179000.0
+    "max_acquisition_loan": 209000.0
   },
   {
     "company_id": "C252",
@@ -20379,10 +20476,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 27,
+      "score": 28,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company"
       ]
     },
@@ -20422,7 +20519,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1075000.0
+    "max_acquisition_loan": 1254000.0
   },
   {
     "company_id": "C253",
@@ -20458,11 +20555,11 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 35,
+      "score": 34,
       "level": "low",
       "reasons": [
         "No investment loan for 5 years",
-        "Investment spending is falling",
+        "Investment down 13%",
         "Owner is taking out more dividends",
         "Company is 41 years old"
       ]
@@ -20503,7 +20600,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 2390000.0
+    "max_acquisition_loan": 2788000.0
   },
   {
     "company_id": "C254",
@@ -20539,7 +20636,7 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 15,
+      "score": 16,
       "level": "low",
       "reasons": [
         "Owner is 57",
@@ -20582,7 +20679,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 174000.0
+    "max_acquisition_loan": 203000.0
   },
   {
     "company_id": "C255",
@@ -20621,7 +20718,7 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company",
         "Company is 32 years old"
       ]
@@ -20662,7 +20759,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 424000.0
+    "max_acquisition_loan": 495000.0
   },
   {
     "company_id": "C256",
@@ -20698,10 +20795,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 30,
+      "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Company is 30 years old"
       ]
@@ -20742,7 +20839,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 309000.0
+    "max_acquisition_loan": 360000.0
   },
   {
     "company_id": "C257",
@@ -20778,10 +20875,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 30,
+      "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Company is 43 years old"
       ]
@@ -20822,7 +20919,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 940000.0
+    "max_acquisition_loan": 1096000.0
   },
   {
     "company_id": "C258",
@@ -20862,7 +20959,7 @@
       "level": "high",
       "reasons": [
         "Owner is 60",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 11 years",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
@@ -20904,7 +21001,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 172000.0
+    "max_acquisition_loan": 201000.0
   },
   {
     "company_id": "C259",
@@ -20940,10 +21037,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 27,
+      "score": 28,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension",
         "Company is 36 years old"
       ]
@@ -20984,7 +21081,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 163000.0
+    "max_acquisition_loan": 190000.0
   },
   {
     "company_id": "C260",
@@ -21020,10 +21117,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 36,
+      "score": 37,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Company is 29 years old"
       ]
@@ -21064,7 +21161,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 231000.0
+    "max_acquisition_loan": 269000.0
   },
   {
     "company_id": "C261",
@@ -21143,7 +21240,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 263000.0
+    "max_acquisition_loan": 307000.0
   },
   {
     "company_id": "C262",
@@ -21184,7 +21281,7 @@
       "reasons": [
         "No investment loan for 5 years",
         "Owner is 57",
-        "Investment spending is falling"
+        "Investment down 10%"
       ]
     },
     "valuation": {
@@ -21223,7 +21320,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 221000.0
+    "max_acquisition_loan": 257000.0
   },
   {
     "company_id": "C263",
@@ -21259,11 +21356,11 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 44,
+      "score": 43,
       "level": "medium",
       "reasons": [
         "Owner is 62",
-        "Investment spending is falling",
+        "Investment down 10%",
         "Owner is taking out more dividends",
         "Company is 31 years old"
       ]
@@ -21304,7 +21401,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 518000.0
+    "max_acquisition_loan": 604000.0
   },
   {
     "company_id": "C264",
@@ -21352,13 +21449,13 @@
       "allow_trial": true
     },
     "readiness": {
-      "score": 77,
+      "score": 78,
       "level": "high",
       "reasons": [
         "Owner is 74",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
-        "Investment spending is falling",
+        "Investment down 10%",
         "Cash is piling up in the company",
         "Owner is saving more for pension"
       ]
@@ -21399,7 +21496,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 167000.0
+    "max_acquisition_loan": 195000.0
   },
   {
     "company_id": "C265",
@@ -21439,7 +21536,7 @@
       "level": "low",
       "reasons": [
         "No investment loan for 5 years",
-        "Investment spending is falling"
+        "Investment down 11%"
       ]
     },
     "valuation": {
@@ -21478,7 +21575,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 425000.0
+    "max_acquisition_loan": 495000.0
   },
   {
     "company_id": "C266",
@@ -21517,7 +21614,7 @@
       "score": 25,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends"
       ]
     },
@@ -21557,7 +21654,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1443000.0
+    "max_acquisition_loan": 1683000.0
   },
   {
     "company_id": "C267",
@@ -21596,7 +21693,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 28 years old"
       ]
     },
@@ -21636,7 +21733,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 207000.0
+    "max_acquisition_loan": 242000.0
   },
   {
     "company_id": "C268",
@@ -21718,7 +21815,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 762000.0
+    "max_acquisition_loan": 889000.0
   },
   {
     "company_id": "C269",
@@ -21796,7 +21893,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 503000.0
+    "max_acquisition_loan": 587000.0
   },
   {
     "company_id": "C270",
@@ -21832,10 +21929,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 45,
+      "score": 46,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Cash is piling up in the company",
         "Company is 33 years old"
@@ -21877,7 +21974,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 202000.0
+    "max_acquisition_loan": 235000.0
   },
   {
     "company_id": "C271",
@@ -21916,7 +22013,7 @@
       "score": 45,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 59",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -21959,7 +22056,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 102000.0
+    "max_acquisition_loan": 119000.0
   },
   {
     "company_id": "C272",
@@ -21995,10 +22092,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 30,
+      "score": 29,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
       ]
@@ -22039,7 +22136,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 640000.0
+    "max_acquisition_loan": 747000.0
   },
   {
     "company_id": "C273",
@@ -22078,7 +22175,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 40 years old"
       ]
     },
@@ -22118,7 +22215,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 122000.0
+    "max_acquisition_loan": 142000.0
   },
   {
     "company_id": "C274",
@@ -22154,10 +22251,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 35,
+      "score": 34,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
         "Company is 27 years old"
@@ -22199,7 +22296,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1120000.0
+    "max_acquisition_loan": 1306000.0
   },
   {
     "company_id": "C275",
@@ -22238,7 +22335,7 @@
       "score": 50,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
@@ -22281,7 +22378,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1293000.0
+    "max_acquisition_loan": 1509000.0
   },
   {
     "company_id": "C276",
@@ -22317,10 +22414,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 27,
+      "score": 28,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company"
       ]
     },
@@ -22360,7 +22457,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 711000.0
+    "max_acquisition_loan": 829000.0
   },
   {
     "company_id": "C277",
@@ -22396,10 +22493,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 36,
+      "score": 37,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
         "Company is 40 years old"
       ]
@@ -22440,7 +22537,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 130000.0
+    "max_acquisition_loan": 152000.0
   },
   {
     "company_id": "C278",
@@ -22479,7 +22576,7 @@
       "score": 34,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 57",
         "Company is 25 years old"
       ]
@@ -22520,7 +22617,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 148000.0
+    "max_acquisition_loan": 172000.0
   },
   {
     "company_id": "C279",
@@ -22559,7 +22656,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -22598,7 +22695,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 951000.0
+    "max_acquisition_loan": 1110000.0
   },
   {
     "company_id": "C280",
@@ -22634,13 +22731,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 85,
+      "score": 84,
       "level": "high",
       "reasons": [
         "Owner is 65",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 10 years",
-        "Investment spending is falling",
+        "Investment down 25%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
@@ -22682,7 +22779,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 165000.0
+    "max_acquisition_loan": 193000.0
   },
   {
     "company_id": "C281",
@@ -22721,7 +22818,7 @@
       "score": 18,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders"
+        "No family heir among shareholders"
       ]
     },
     "valuation": {
@@ -22760,7 +22857,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 156000.0
+    "max_acquisition_loan": 182000.0
   },
   {
     "company_id": "C282",
@@ -22838,7 +22935,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 65000.0
+    "max_acquisition_loan": 76000.0
   },
   {
     "company_id": "C283",
@@ -22916,7 +23013,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 959000.0
+    "max_acquisition_loan": 1119000.0
   },
   {
     "company_id": "C284",
@@ -22952,13 +23049,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 85,
+      "score": 84,
       "level": "high",
       "reasons": [
         "Owner is 60",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 12 years",
-        "Investment spending is falling",
+        "Investment down 16%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
@@ -23000,7 +23097,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1255000.0
+    "max_acquisition_loan": 1465000.0
   },
   {
     "company_id": "C285",
@@ -23036,13 +23133,13 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 73,
+      "score": 72,
       "level": "high",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 10 years",
         "Owner is 59",
-        "Investment spending is falling",
+        "Investment down 13%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension"
@@ -23084,7 +23181,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 108000.0
+    "max_acquisition_loan": 126000.0
   },
   {
     "company_id": "C286",
@@ -23123,7 +23220,7 @@
       "score": 23,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Company is 37 years old"
       ]
     },
@@ -23163,7 +23260,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 311000.0
+    "max_acquisition_loan": 363000.0
   },
   {
     "company_id": "C287",
@@ -23202,7 +23299,7 @@
       "score": 34,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is 57",
         "Company is 33 years old"
       ]
@@ -23243,7 +23340,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 939000.0
+    "max_acquisition_loan": 1095000.0
   },
   {
     "company_id": "C288",
@@ -23323,7 +23420,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 420000.0
+    "max_acquisition_loan": 491000.0
   },
   {
     "company_id": "C289",
@@ -23363,7 +23460,7 @@
       "level": "medium",
       "reasons": [
         "Owner is 60",
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Cash is piling up in the company"
       ]
     },
@@ -23403,7 +23500,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 311000.0
+    "max_acquisition_loan": 363000.0
   },
   {
     "company_id": "C290",
@@ -23443,7 +23540,7 @@
       "level": "low",
       "reasons": [
         "Owner is 55",
-        "Investment spending is falling",
+        "Investment down 14%",
         "Company is 39 years old"
       ]
     },
@@ -23483,7 +23580,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 394000.0
+    "max_acquisition_loan": 459000.0
   },
   {
     "company_id": "C291",
@@ -23561,7 +23658,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 65000.0
+    "max_acquisition_loan": 76000.0
   },
   {
     "company_id": "C292",
@@ -23597,10 +23694,10 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 27,
+      "score": 28,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "Owner is saving more for pension",
         "Company is 43 years old"
       ]
@@ -23641,7 +23738,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 231000.0
+    "max_acquisition_loan": 269000.0
   },
   {
     "company_id": "C293",
@@ -23680,7 +23777,7 @@
       "score": 32,
       "level": "low",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years"
       ]
     },
@@ -23720,7 +23817,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 1456000.0
+    "max_acquisition_loan": 1699000.0
   },
   {
     "company_id": "C294",
@@ -23759,10 +23856,10 @@
       "score": 77,
       "level": "high",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 11 years",
         "Owner is 58",
-        "Investment spending is falling",
+        "Investment down 13%",
         "Cash is piling up in the company",
         "Owner is taking out more dividends",
         "Owner is saving more for pension",
@@ -23805,7 +23902,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 53000.0
+    "max_acquisition_loan": 62000.0
   },
   {
     "company_id": "C295",
@@ -23881,7 +23978,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 413000.0
+    "max_acquisition_loan": 481000.0
   },
   {
     "company_id": "C296",
@@ -23960,7 +24057,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 183000.0
+    "max_acquisition_loan": 213000.0
   },
   {
     "company_id": "C297",
@@ -24036,7 +24133,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 413000.0
+    "max_acquisition_loan": 482000.0
   },
   {
     "company_id": "C298",
@@ -24072,12 +24169,12 @@
     "opted_in": false,
     "wishes": null,
     "readiness": {
-      "score": 53,
+      "score": 52,
       "level": "medium",
       "reasons": [
-        "No next generation among shareholders",
+        "No family heir among shareholders",
         "No investment loan for 5 years",
-        "Investment spending is falling",
+        "Investment down 14%",
         "Owner is taking out more dividends",
         "Company is 29 years old"
       ]
@@ -24118,7 +24215,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 529000.0
+    "max_acquisition_loan": 618000.0
   },
   {
     "company_id": "C299",
@@ -24196,7 +24293,7 @@
         }
       ]
     },
-    "max_acquisition_loan": 58000.0
+    "max_acquisition_loan": 67000.0
   },
   {
     "company_id": "C300",
@@ -24236,7 +24333,7 @@
       "level": "medium",
       "reasons": [
         "No investment loan for 5 years",
-        "Investment spending is falling",
+        "Investment down 12%",
         "Cash is piling up in the company",
         "Owner is saving more for pension",
         "Company is 43 years old"
@@ -24278,6 +24375,6 @@
         }
       ]
     },
-    "max_acquisition_loan": 496000.0
+    "max_acquisition_loan": 579000.0
   }
 ]

@@ -1,0 +1,147 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+:root{
+  --navy:#0d2b6b; --blue:#1f5fbf; --sky:#29a3dc; --sky-soft:#e6f4fb;
+  --green:#1f8a4c; --green-soft:#e5f4ea; --amber:#b86a00; --amber-soft:#fff3e0;
+  --ink:#1b2333; --muted:#5a6475; --line:#d5dbe5; --panel:#f3f5f9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1920px;height:1080px;background:#fff;color:var(--ink);font-family:Inter,"DejaVu Sans",sans-serif;padding:44px 56px;display:flex;flex-direction:column;gap:18px}
+header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid var(--navy);padding-bottom:12px}
+h1{font-size:44px;font-weight:800;color:var(--navy);letter-spacing:-.5px}
+h1 span{font-weight:400;color:var(--blue);font-size:34px}
+.sub{font-size:19px;color:var(--muted);margin-top:4px}
+.legend{display:flex;gap:22px;font-size:16px;color:var(--muted);align-items:center}
+.lg{display:flex;align-items:center;gap:8px}
+.sw{width:22px;height:16px;border-radius:4px}
+.inputs{display:flex;gap:14px;align-items:stretch}
+.inp-label{writing-mode:vertical-rl;transform:rotate(180deg);font-size:14px;font-weight:700;letter-spacing:2px;color:var(--muted);text-transform:uppercase;text-align:center}
+.inp{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.inp b{display:block;font-size:17px;color:var(--navy)}
+.inp p{font-size:14.5px;color:var(--muted);margin-top:3px;line-height:1.35}
+.row{display:flex;align-items:stretch;gap:0}
+.stage{width:150px;flex:none;display:flex;flex-direction:column;justify-content:center;padding-right:14px}
+.stage .n{font-size:15px;font-weight:700;color:var(--sky);letter-spacing:1px}
+.stage .t{font-size:26px;font-weight:800;color:var(--navy);line-height:1.1}
+.stage .o{font-size:13.5px;color:var(--muted);margin-top:4px}
+.flow{flex:1;display:flex;align-items:stretch}
+.box{flex:1;border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:5px;min-width:0}
+.box b{font-size:18px;line-height:1.2}
+.box p{font-size:14.5px;line-height:1.38}
+.proc{background:var(--navy);color:#fff}
+.proc p{color:#d6e1f5}
+.proc.light{background:var(--blue)}
+.data{background:var(--sky-soft);border:2px solid var(--sky);color:var(--ink)}
+.data b{color:var(--navy)}
+.dec{background:var(--amber-soft);border:2px dashed var(--amber);flex:.78}
+.dec b{color:var(--amber)}
+.gate{background:var(--green-soft);border:2px solid var(--green);flex:.85}
+.gate b{color:var(--green);display:flex;align-items:center;gap:6px}
+.no{font-size:13.5px;color:var(--muted);border-top:1px solid rgba(0,0,0,.12);padding-top:5px;margin-top:auto}
+.dec .no{border-color:rgba(184,106,0,.35)}
+.gate .no{border-color:rgba(31,138,76,.35)}
+.arrow{width:34px;flex:none;display:flex;align-items:center;justify-content:center}
+.arrow svg{width:30px;height:22px}
+.turn{display:flex;justify-content:flex-end;padding-right:120px;height:14px;margin:-6px 0}
+.out{background:var(--green);color:#fff}
+.out p{color:#e3f5ea}
+.split{display:flex;flex-direction:column;gap:8px;flex:1.9}
+.split .box{flex:none}
+.mini{display:flex;align-items:stretch;gap:0}
+.mini .box{padding:9px 12px}
+.yes{align-self:flex-start;font-size:12px;font-weight:800;color:var(--blue);background:#fff;border-radius:4px;padding:1px 6px;letter-spacing:.6px}
+.row{flex:1}
+.box b{font-size:19px}
+.box p{font-size:15.5px}
+.foot{display:flex;gap:16px;margin-top:auto}
+.loop{flex:1.4;border:2px dashed var(--blue);border-radius:12px;padding:10px 16px;font-size:15.5px;color:var(--ink);display:flex;gap:12px;align-items:center}
+.loop b{color:var(--blue)}
+.note{flex:1;font-size:14px;color:var(--muted);align-self:center}
+.lock{width:16px;height:18px;flex:none}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="arr" viewBox="0 0 30 22"><path d="M2 11h22" stroke="#0d2b6b" stroke-width="3" fill="none"/><path d="M18 3l9 8-9 8" stroke="#0d2b6b" stroke-width="3" fill="none" stroke-linejoin="round"/></symbol>
+    <symbol id="lock" viewBox="0 0 16 18"><rect x="1.5" y="8" width="13" height="9" rx="2" fill="#1f8a4c"/><path d="M4.5 8V5.5a3.5 3.5 0 0 1 7 0V8" stroke="#1f8a4c" stroke-width="2" fill="none"/></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div>
+    <h1>KBC Next Owner <span>· how the engine decides</span></h1>
+    <div class="sub">Data and decision flow behind the demo. Rules with reasons, and a person or the customer decides at every gate.</div>
+  </div>
+  <div class="legend">
+    <div class="lg"><span class="sw" style="background:var(--navy)"></span>Engine step</div>
+    <div class="lg"><span class="sw" style="background:var(--sky-soft);border:2px solid var(--sky)"></span>Data</div>
+    <div class="lg"><span class="sw" style="background:var(--amber-soft);border:2px dashed var(--amber)"></span>Decision</div>
+    <div class="lg"><span class="sw" style="background:var(--green-soft);border:2px solid var(--green)"></span>Consent gate</div>
+  </div>
+</header>
+
+<div class="inputs">
+  <div class="inp-label">Inputs</div>
+  <div class="inp"><b>KBC bank data</b><p>Payments, loans, cash, dividends, pension saving, owner age</p></div>
+  <div class="inp"><b>Public data</b><p>Company register (KBO) shareholders, NBB annual accounts</p></div>
+  <div class="inp"><b>Owner input</b><p>Wishes: timing, keep staff, handover period, trial yes/no</p></div>
+  <div class="inp"><b>Candidate input</b><p>CV, Ready-to-Own tests, own funds, region, open to interim</p></div>
+  <div class="inp"><b>Partners</b><p>Headhunter sources per brief, accountant flags (with consent)</p></div>
+</div>
+
+<!-- ROW 1: SPOT -->
+<div class="row">
+  <div class="stage"><span class="n">STEP 1</span><span class="t">Spot</span><span class="o">monthly, all business clients</span></div>
+  <div class="flow">
+    <div class="box proc"><b>Readiness Radar</b><p>9 weighted rules: owner 60+, no next generation, no investment for 5+ years, cash piling up…</p><p><b style="font-size:15px">→ score 0–100 + reasons</b></p></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box dec"><b>Score ≥ 60?</b><p>Case goes to the relationship manager</p><div class="no">No → keep monitoring</div></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box proc light"><b>Conversation</b><p>RM opens the topic at the yearly review. Free 5-minute readiness check</p></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box gate"><b><svg class="lock"><use href="#lock"/></svg>Owner opts in?</b><p>Sets wishes and how proactive KBC may be</p><div class="no">No → "not now" or "never ask again"</div></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box data"><b>Valuation & Projections</b><p>Indicative value: sector multiple × avg EBITDA − net debt</p><p>3-year outlook (low / base / high)</p><p>Max acquisition loan the company can repay</p></div>
+  </div>
+</div>
+
+<!-- ROW 2: MATCH -->
+<div class="row">
+  <div class="stage"><span class="n">STEP 2</span><span class="t">Match</span><span class="o">per opted-in owner</span></div>
+  <div class="flow">
+    <div class="box data"><b>Candidate pool</b><p>Headhunter brief + Ready-to-Own pool + staff + strategic buyers</p><p>curious → qualified → ready</p></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box proc"><b>Hard filters</b><p>Type allowed by owner · qualified · within travel distance · financing OK · sector experience if the owner asks</p></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box proc"><b>Two-sided score</b><p>Owner's view: experience, values, staff plan, handover</p><p>Candidate's view: sector, distance, size, price</p><p><b style="font-size:15px">Fit = the lower of the two + reasons</b></p></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box dec"><b>Confident?</b><p>Top 3 shown with fit %, reasons, financing check</p><div class="no">Low → relationship manager reviews</div></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box gate"><b><svg class="lock"><use href="#lock"/></svg>Mutual yes?</b><p>Anonymous until both click "interested". Names after NDA</p><div class="no">No → next match</div></div>
+  </div>
+</div>
+
+<!-- ROW 3: DEAL -->
+<div class="row">
+  <div class="stage"><span class="n">STEP 3</span><span class="t">Deal</span><span class="o">KBC finances each step</span></div>
+  <div class="flow">
+    <div class="box dec" style="flex:.7"><b>Trial agreed?</b><p>Both open to "try before you buy"</p><div class="no">No → direct takeover</div></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box proc light"><span class="yes">IF YES</span><b>Interim trial · 6–12 months</b><p>Candidate runs the company as interim MD. Price formula locked today</p></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box proc light" style="flex:.7"><b>30% stake</b><p>Loan + vendor loan + own funds</p></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box proc light" style="flex:.7"><b>100% takeover</b><p>Remaining 70%</p></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box data"><b>Financing per step</b><p>KBC loan (≤ 65%, what EBITDA repays) + vendor loan (≤ 30%) + buyer's own cash (≥ 8%)</p></div>
+    <div class="arrow"><svg><use href="#arr"/></svg></div>
+    <div class="box out"><b>Measurable outcome</b><p>Transfer completed · jobs kept · months from signal to deal · company still a KBC client after 3 years</p></div>
+  </div>
+</div>
+
+<div class="foot">
+  <div class="loop"><b>Feedback loop</b><span>Every "not now", "not for me + reason" and signed deal feeds back into the rules and weights. No trained model until there are enough clean labels.</span></div>
+  <div class="note">Demo runs on fake data. Multiples, loan terms and thresholds are illustrative assumptions in <i>engine/config.py</i>.</div>
+</div>
+</body></html>

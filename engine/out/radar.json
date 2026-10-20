@@ -9,9 +9,9 @@
     "level": "high",
     "reasons": [
       "Owner is 64",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 8 years",
-      "Investment spending is falling",
+      "Investment down 12%",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
       "Owner is saving more for pension",
@@ -28,9 +28,9 @@
     "level": "high",
     "reasons": [
       "Owner is 72",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 10 years",
-      "Investment spending is falling",
+      "Investment down 11%",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
       "Owner is saving more for pension",
@@ -43,13 +43,13 @@
     "sector": "it_services",
     "region": "West Flanders",
     "employees": 4,
-    "score": 85,
+    "score": 84,
     "level": "high",
     "reasons": [
       "Owner is 71",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 7 years",
-      "Investment spending is falling",
+      "Investment down 25%",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
       "Owner is saving more for pension"
@@ -61,13 +61,13 @@
     "sector": "wholesale",
     "region": "Flemish Brabant",
     "employees": 6,
-    "score": 85,
+    "score": 84,
     "level": "high",
     "reasons": [
       "Owner is 75",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 5 years",
-      "Investment spending is falling",
+      "Investment down 16%",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
       "Owner is saving more for pension"
@@ -79,13 +79,13 @@
     "sector": "installation",
     "region": "Antwerp",
     "employees": 32,
-    "score": 85,
+    "score": 84,
     "level": "high",
     "reasons": [
       "Owner is 65",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 7 years",
-      "Investment spending is falling",
+      "Investment down 28%",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
       "Owner is saving more for pension"
@@ -97,13 +97,13 @@
     "sector": "wholesale",
     "region": "Antwerp",
     "employees": 10,
-    "score": 85,
+    "score": 84,
     "level": "high",
     "reasons": [
       "Owner is 65",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 10 years",
-      "Investment spending is falling",
+      "Investment down 25%",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
       "Owner is saving more for pension"
@@ -115,13 +115,13 @@
     "sector": "it_services",
     "region": "Brussels",
     "employees": 12,
-    "score": 85,
+    "score": 84,
     "level": "high",
     "reasons": [
       "Owner is 60",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 12 years",
-      "Investment spending is falling",
+      "Investment down 16%",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
       "Owner is saving more for pension"
@@ -133,13 +133,13 @@
     "sector": "business_services",
     "region": "Brussels",
     "employees": 12,
-    "score": 82,
+    "score": 83,
     "level": "high",
     "reasons": [
       "Owner is 73",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 12 years",
-      "Investment spending is falling",
+      "Investment down 24%",
       "Cash is piling up in the company",
       "Owner is saving more for pension",
       "Company is 36 years old"
@@ -151,13 +151,13 @@
     "sector": "joinery",
     "region": "West Flanders",
     "employees": 4,
-    "score": 82,
+    "score": 83,
     "level": "high",
     "reasons": [
       "Owner is 63",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 5 years",
-      "Investment spending is falling",
+      "Investment down 17%",
       "Cash is piling up in the company",
       "Owner is saving more for pension",
       "Company is 31 years old"
@@ -173,7 +173,7 @@
     "level": "high",
     "reasons": [
       "Owner is 69",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 7 years",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
@@ -191,7 +191,7 @@
     "level": "high",
     "reasons": [
       "Owner is 67",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 11 years",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
@@ -209,7 +209,7 @@
     "level": "high",
     "reasons": [
       "Owner is 75",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 8 years",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
@@ -227,7 +227,7 @@
     "level": "high",
     "reasons": [
       "Owner is 61",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 12 years",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
@@ -245,9 +245,9 @@
     "level": "high",
     "reasons": [
       "Owner is 68",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 12 years",
-      "Investment spending is falling",
+      "Investment down 11%",
       "Owner is taking out more dividends",
       "Owner is saving more for pension",
       "Company is 40 years old"
@@ -263,9 +263,9 @@
     "level": "high",
     "reasons": [
       "Owner is 60",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 6 years",
-      "Investment spending is falling",
+      "Investment down 17%",
       "Owner is taking out more dividends",
       "Owner is saving more for pension",
       "Company is 33 years old"
@@ -281,12 +281,80 @@
     "level": "high",
     "reasons": [
       "Owner is 60",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 9 years",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
       "Owner is saving more for pension",
       "Company is 42 years old"
+    ]
+  },
+  {
+    "company_id": "C000",
+    "name": "Bakkerij Peeters",
+    "sector": "food_production",
+    "region": "Antwerp",
+    "employees": 32,
+    "score": 78,
+    "level": "high",
+    "reasons": [
+      "Owner is 63",
+      "No family heir among shareholders",
+      "No investment loan for 6 years",
+      "Investment down 40%",
+      "Cash is piling up in the company",
+      "Owner is saving more for pension"
+    ]
+  },
+  {
+    "company_id": "C140",
+    "name": "Goossens Groothandel",
+    "sector": "wholesale",
+    "region": "Brussels",
+    "employees": 69,
+    "score": 78,
+    "level": "high",
+    "reasons": [
+      "Owner is 67",
+      "No family heir among shareholders",
+      "No investment loan for 12 years",
+      "Investment down 30%",
+      "Cash is piling up in the company",
+      "Company is 33 years old"
+    ]
+  },
+  {
+    "company_id": "C192",
+    "name": "Dubois Metaal",
+    "sector": "manufacturing",
+    "region": "Flemish Brabant",
+    "employees": 7,
+    "score": 78,
+    "level": "high",
+    "reasons": [
+      "Owner is 71",
+      "No family heir among shareholders",
+      "No investment loan for 11 years",
+      "Investment down 20%",
+      "Cash is piling up in the company",
+      "Owner is saving more for pension"
+    ]
+  },
+  {
+    "company_id": "C264",
+    "name": "Martens Metaal",
+    "sector": "manufacturing",
+    "region": "Flemish Brabant",
+    "employees": 6,
+    "score": 78,
+    "level": "high",
+    "reasons": [
+      "Owner is 74",
+      "No family heir among shareholders",
+      "No investment loan for 5 years",
+      "Investment down 10%",
+      "Cash is piling up in the company",
+      "Owner is saving more for pension"
     ]
   },
   {
@@ -298,31 +366,14 @@
     "score": 77,
     "level": "high",
     "reasons": [
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 9 years",
       "Owner is 58",
-      "Investment spending is falling",
+      "Investment down 21%",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
       "Owner is saving more for pension",
       "Company is 42 years old"
-    ]
-  },
-  {
-    "company_id": "C140",
-    "name": "Goossens Groothandel",
-    "sector": "wholesale",
-    "region": "Brussels",
-    "employees": 69,
-    "score": 77,
-    "level": "high",
-    "reasons": [
-      "Owner is 67",
-      "No next generation among shareholders",
-      "No investment loan for 12 years",
-      "Investment spending is falling",
-      "Cash is piling up in the company",
-      "Company is 33 years old"
     ]
   },
   {
@@ -334,48 +385,14 @@
     "score": 77,
     "level": "high",
     "reasons": [
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 8 years",
       "Owner is 58",
-      "Investment spending is falling",
+      "Investment down 19%",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
       "Owner is saving more for pension",
       "Company is 35 years old"
-    ]
-  },
-  {
-    "company_id": "C192",
-    "name": "Dubois Metaal",
-    "sector": "manufacturing",
-    "region": "Flemish Brabant",
-    "employees": 7,
-    "score": 77,
-    "level": "high",
-    "reasons": [
-      "Owner is 71",
-      "No next generation among shareholders",
-      "No investment loan for 11 years",
-      "Investment spending is falling",
-      "Cash is piling up in the company",
-      "Owner is saving more for pension"
-    ]
-  },
-  {
-    "company_id": "C264",
-    "name": "Martens Metaal",
-    "sector": "manufacturing",
-    "region": "Flemish Brabant",
-    "employees": 6,
-    "score": 77,
-    "level": "high",
-    "reasons": [
-      "Owner is 74",
-      "No next generation among shareholders",
-      "No investment loan for 5 years",
-      "Investment spending is falling",
-      "Cash is piling up in the company",
-      "Owner is saving more for pension"
     ]
   },
   {
@@ -387,10 +404,10 @@
     "score": 77,
     "level": "high",
     "reasons": [
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 11 years",
       "Owner is 58",
-      "Investment spending is falling",
+      "Investment down 13%",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
       "Owner is saving more for pension",
@@ -407,9 +424,9 @@
     "level": "high",
     "reasons": [
       "Owner is 61",
-      "No next generation among shareholders",
+      "No family heir among shareholders",
       "No investment loan for 6 years",
-      "Investment spending is falling",
+      "Investment down 23%",
       "Owner is taking out more dividends",
       "Owner is saving more for pension"
     ]
@@ -424,29 +441,12 @@
     "level": "high",
     "reasons": [
       "Owner is 64",
-      "No next generation among shareholders",
-      "Investment spending is falling",
+      "No family heir among shareholders",
+      "Investment down 15%",
       "Cash is piling up in the company",
       "Owner is taking out more dividends",
       "Owner is saving more for pension",
       "Company is 36 years old"
-    ]
-  },
-  {
-    "company_id": "C093",
-    "name": "Vermeulen Installaties",
-    "sector": "installation",
-    "region": "Limburg",
-    "employees": 6,
-    "score": 75,
-    "level": "high",
-    "reasons": [
-      "Owner is 64",
-      "No next generation among shareholders",
-      "No investment loan for 11 years",
-      "Investment spending is falling",
-      "Owner is taking out more dividends",
-      "Owner is saving more for pension"
     ]
   }
 ]

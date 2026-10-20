@@ -49,40 +49,45 @@ def max_acquisition_loan(c):
     return round(max(0, min(by_dscr, by_leverage)), -3)
 
 
+def split_price(c, price):
+    """Split a price into KBC loan + vendor loan + buyer's own funds."""
+    f = FINANCING
+    bank = round(min(max_acquisition_loan(c), f["max_bank_share"] * price), -3)
+    room = price - bank - f["min_own_share"] * price
+    vendor = max(0, min(f["max_vendor_share"] * price, room))
+    vendor = vendor // f["vendor_round"] * f["vendor_round"]
+    own = max(0, price - bank - vendor)
+    return bank, vendor, own
+
+
 def financing_check(c, own_funds, price=None):
     """Can a buyer with `own_funds` finance this company at `price` (default: mid value)?"""
     price = price or value_range(c)["equity_mid"]
-    vendor = round(FINANCING["vendor_loan_share"] * price, -3)
-    bank_room = price * (1 - FINANCING["vendor_loan_share"] - FINANCING["min_buyer_equity_share"])
-    loan = round(min(max_acquisition_loan(c), bank_room), -3)
-    gap = max(0, price - loan - vendor)
-    return {"price": price, "bank_loan": loan, "vendor_loan": vendor, "equity_needed": gap,
-            "own_funds": own_funds, "ok": own_funds >= gap}
+    bank, vendor, own = split_price(c, price)
+    return {"price": price, "bank_loan": bank, "vendor_loan": vendor, "equity_needed": own,
+            "own_funds": own_funds, "ok": own_funds >= own, "seller_receives_now": price - vendor}
 
 
-def phased_plan(c, own_funds, minority_share=0.3, trial_months=9):
+def phased_plan(c, own_funds, minority_share=0.3, trial_months=9, price=None):
     """'Try before you buy': interim trial -> minority stake -> full takeover.
 
-    The price formula is locked at the start (today's mid value), so the interim
-    manager has no incentive to push results down before buying.
+    The price is locked at the start, so the interim manager has no incentive
+    to push results down before buying.
     """
-    locked_price = value_range(c)["equity_mid"]
-    loan_cap = max_acquisition_loan(c)
+    locked_price = price or value_range(c)["equity_mid"]
     steps = [{"step": "Interim trial", "months": trial_months, "share": 0.0,
               "what": "Candidate runs the company as interim managing director, with a purchase "
-                      "option at the locked price formula. Either side can stop at the end."}]
+                      "option at the locked price. Either side can stop at the end."}]
     remaining_own = own_funds
     for name, share in (("Minority stake", minority_share), ("Full takeover", 1 - minority_share)):
-        price = round(locked_price * share, -3)
-        vendor = round(FINANCING["vendor_loan_share"] * price, -3)
-        bank_room = price * (1 - FINANCING["vendor_loan_share"] - FINANCING["min_buyer_equity_share"])
-        loan = round(min(loan_cap * share, bank_room), -3)
-        equity = max(0, price - loan - vendor)
-        steps.append({"step": name, "share": share, "price": price, "bank_loan": loan,
-                      "vendor_loan": vendor, "equity_needed": equity, "ok": remaining_own >= equity})
-        remaining_own -= equity
-    return {"locked_price": locked_price, "steps": steps,
-            "ok": all(s.get("ok", True) for s in steps)}
+        part = locked_price * share
+        bank, vendor, own = split_price(c, locked_price)
+        step = {"step": name, "share": share, "price": round(part, -3), "bank_loan": round(bank * share, -3),
+                "vendor_loan": round(vendor * share, -3), "equity_needed": round(own * share, -3)}
+        step["ok"] = remaining_own >= step["equity_needed"]
+        remaining_own -= step["equity_needed"]
+        steps.append(step)
+    return {"locked_price": locked_price, "steps": steps, "ok": all(s.get("ok", True) for s in steps)}
 
 
 def company_view(c):

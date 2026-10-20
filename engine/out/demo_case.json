@@ -1,0 +1,112 @@
+{
+  "company": "Bakkerij Peeters",
+  "owner": "Jan Peeters",
+  "owner_age": 63,
+  "region": "Antwerp",
+  "employees": 32,
+  "readiness": {
+    "score": 78,
+    "level": "high",
+    "reasons": [
+      "Owner is 63",
+      "No family heir among shareholders",
+      "No investment loan for 6 years",
+      "Investment down 40%",
+      "Cash is piling up in the company",
+      "Owner is saving more for pension"
+    ]
+  },
+  "value_range": [
+    2413000.0,
+    3587000.0
+  ],
+  "ebitda_2028_base": 620000.0,
+  "max_acquisition_loan": 1956000.0,
+  "pool_size": 131,
+  "passed_filters": 3,
+  "filtered_out": {
+    "Candidate not yet qualified": 22,
+    "No experience in this sector": 51,
+    "Too far": 27,
+    "Financing gap too large": 18,
+    "Owner excluded this type of successor": 10
+  },
+  "matches": [
+    {
+      "name": "Sarah Maes",
+      "profile": "Ops manager, food",
+      "fit": 86,
+      "reasons": [
+        "Experience in food production",
+        "10 km away",
+        "Financing OK: €250,000 own funds needed, has €250,000",
+        "Plans to keep all staff",
+        "Agrees with a ~12-month handover",
+        "Completed the Ready-to-Own track",
+        "Both open to a 6-12 month interim trial before buying"
+      ]
+    },
+    {
+      "name": "(own staff)",
+      "profile": "Own staff (MBO)",
+      "fit": 79,
+      "reasons": [
+        "Experience in food production",
+        "1 km away",
+        "Financing OK: €250,000 own funds needed, has €300,000",
+        "Plans to keep all staff",
+        "Agrees with a ~12-month handover"
+      ]
+    },
+    {
+      "name": "(search fund)",
+      "profile": "Search fund",
+      "fit": 71,
+      "reasons": [
+        "Experience in food production",
+        "27 km away",
+        "Financing OK: €250,000 own funds needed, has €1,200,000",
+        "Agrees with a ~12-month handover",
+        "Both open to a 6-12 month interim trial before buying"
+      ]
+    }
+  ],
+  "deal": {
+    "successor": "Sarah Maes",
+    "price": 3000000.0,
+    "bank_loan": 1950000.0,
+    "vendor_loan": 800000.0,
+    "own_funds": 250000.0,
+    "owner_wealth_plan": 2200000.0,
+    "phased_plan": {
+      "locked_price": 3000000.0,
+      "steps": [
+        {
+          "step": "Interim trial",
+          "months": 9,
+          "share": 0.0,
+          "what": "Candidate runs the company as interim managing director, with a purchase option at the locked price. Either side can stop at the end."
+        },
+        {
+          "step": "Minority stake",
+          "share": 0.3,
+          "price": 900000.0,
+          "bank_loan": 585000.0,
+          "vendor_loan": 240000.0,
+          "equity_needed": 75000.0,
+          "ok": true
+        },
+        {
+          "step": "Full takeover",
+          "share": 0.7,
+          "price": 2100000.0,
+          "bank_loan": 1365000.0,
+          "vendor_loan": 560000.0,
+          "equity_needed": 175000.0,
+          "ok": true
+        }
+      ],
+      "ok": true
+    }
+  }
+}

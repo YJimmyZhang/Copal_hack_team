@@ -18,7 +18,10 @@ SECTORS = {
     "it_services":    {"label": "IT services",             "multiple": (6.0, 9.0), "margin": 0.15, "related": ["business_services"]},
     "business_services": {"label": "Business services",    "multiple": (5.0, 7.0), "margin": 0.14, "related": ["it_services"]},
     "horeca":         {"label": "Hospitality",             "multiple": (3.0, 4.5), "margin": 0.08, "related": ["retail"]},
+    # Used only by the demo hero case (Bakkerij Peeters), not by the random data.
+    "food_production": {"label": "Food production",        "multiple": (4.5, 6.6), "margin": 0.12, "related": ["retail", "horeca", "wholesale"]},
 }
+RANDOM_SECTORS = [s for s in SECTORS if s != "food_production"]
 
 # Province centroids (lat, lon) for distance calculations.
 REGIONS = {
@@ -33,13 +36,16 @@ REGIONS = {
 CANDIDATE_TYPES = ["experienced_manager", "search_funder", "staff_mbo", "strategic_buyer", "start_it_founder"]
 
 # Financing assumptions (illustrative).
+# Price = KBC acquisition loan + vendor loan (seller) + buyer's own funds.
 FINANCING = {
-    "max_leverage": 3.0,          # acquisition loan <= 3x normalised EBITDA
+    "max_leverage": 3.5,          # acquisition loan <= 3.5x normalised EBITDA
     "loan_years": 7,
     "interest_rate": 0.05,
     "min_dscr": 1.3,              # EBITDA must cover yearly debt service 1.3x
-    "vendor_loan_share": 0.15,    # seller leaves 15% of the price as a vendor loan
-    "min_buyer_equity_share": 0.20,  # buyer always brings at least 20% of the price
+    "max_bank_share": 0.65,       # KBC finances at most 65% of the price
+    "max_vendor_share": 0.30,     # seller leaves at most 30% as a (subordinated) vendor loan
+    "min_own_share": 0.08,        # buyer always brings at least 8% of the price in cash
+    "vendor_round": 50_000,       # vendor loan rounded down to a clean amount
 }
 
 CURRENT_YEAR = 2026

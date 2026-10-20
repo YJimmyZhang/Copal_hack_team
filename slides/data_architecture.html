@@ -1,0 +1,103 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+:root{--navy:#0d2b6b;--blue:#1f5fbf;--sky:#29a3dc;--sky-soft:#e6f4fb;--green:#1f8a4c;--green-soft:#e5f4ea;--ink:#1b2333;--muted:#5a6475;--line:#d5dbe5;--panel:#f3f5f9}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1920px;height:1080px;background:#fff;color:var(--ink);font-family:Inter,"DejaVu Sans",sans-serif;padding:56px 72px;display:flex;flex-direction:column;gap:26px}
+header{border-bottom:3px solid var(--navy);padding-bottom:14px;display:flex;justify-content:space-between;align-items:flex-end}
+h1{font-size:52px;font-weight:800;color:var(--navy);letter-spacing:-.6px}
+h1 span{font-weight:400;color:var(--blue)}
+.sub{font-size:23px;color:var(--muted);margin-top:6px}
+.tag{font-size:18px;color:var(--navy);background:var(--sky-soft);border:2px solid var(--sky);border-radius:999px;padding:8px 18px;white-space:nowrap}
+.cols{display:flex;align-items:stretch;flex:1}
+.col{flex:1;display:flex;flex-direction:column;gap:12px;min-width:0}
+.col.engine{flex:1.15}
+.h{font-size:17px;font-weight:700;letter-spacing:1.5px;color:var(--sky);text-transform:uppercase}
+.ht{font-size:28px;font-weight:800;color:var(--navy);margin-top:-6px}
+.card{border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+.card b{font-size:21px}
+.card p{font-size:17px;line-height:1.35}
+.src{background:var(--panel);border:1px solid var(--line)}
+.src b{color:var(--navy)}
+.src p{color:var(--muted)}
+.dat{background:var(--sky-soft);border:2px solid var(--sky)}
+.dat b{color:var(--navy)}
+.eng{background:var(--navy);color:#fff}
+.eng p{color:#d6e1f5}
+.app{background:var(--blue);color:#fff}
+.app p{color:#dbe7fa}
+.stack{display:flex;flex-direction:column;gap:12px;flex:1;justify-content:center}
+.arrow{width:64px;flex:none;display:flex;align-items:center;justify-content:center}
+.band{display:flex;gap:18px}
+.gate{flex:1.5;background:var(--green-soft);border:2px solid var(--green);border-radius:12px;padding:14px 20px;display:flex;align-items:center;gap:16px}
+.gate b{color:var(--green);font-size:22px;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.gate span{font-size:18px}
+.loop{flex:1;border:2px dashed var(--blue);border-radius:12px;padding:14px 20px;display:flex;align-items:center;gap:14px;font-size:18px}
+.loop b{color:var(--blue);font-size:22px;white-space:nowrap}
+.lock{width:20px;height:22px}
+.stack{justify-content:stretch}
+.stack .card{flex:1;justify-content:center}
+.card b{font-size:25px}
+.card p{font-size:20px}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="arr" viewBox="0 0 30 22"><path d="M2 11h22" stroke="#0d2b6b" stroke-width="3" fill="none"/><path d="M18 3l9 8-9 8" stroke="#0d2b6b" stroke-width="3" fill="none" stroke-linejoin="round"/></symbol>
+  <symbol id="lock" viewBox="0 0 16 18"><rect x="1.5" y="8" width="13" height="9" rx="2" fill="#1f8a4c"/><path d="M4.5 8V5.5a3.5 3.5 0 0 1 7 0V8" stroke="#1f8a4c" stroke-width="2" fill="none"/></symbol>
+</defs></svg>
+
+<header>
+  <div><h1>Data architecture <span>· Next Owner</span></h1>
+  <div class="sub">Runs inside KBC. Existing data in, decisions out to the channels KBC already has.</div></div>
+  <div class="tag">Demo: Python + generated data</div>
+</header>
+
+<div class="cols">
+  <div class="col">
+    <span class="h">1 · Sources</span><span class="ht">Data in</span>
+    <div class="stack">
+      <div class="card src"><b>KBC bank & insurance</b><p>Accounts, loans, cash, dividends, pensions</p></div>
+      <div class="card src"><b>Public registers</b><p>Company register (KBO), NBB annual accounts</p></div>
+      <div class="card src"><b>Customer input</b><p>Owner wishes, candidate profiles and tests</p></div>
+      <div class="card src"><b>Partners</b><p>Headhunter candidates, training results</p></div>
+    </div>
+  </div>
+  <div class="arrow"><svg width="48" height="34"><use href="#arr"/></svg></div>
+
+  <div class="col">
+    <span class="h">2 · Prepare</span><span class="ht">Clean & combine</span>
+    <div class="stack">
+      <div class="card dat"><b>Monthly batch</b><p>Bank and register data, joined per company and owner</p></div>
+      <div class="card dat"><b>Feature table</b><p>Owner age, next generation, investment trend, cash, normalised EBITDA</p></div>
+      <div class="card dat"><b>Live events</b><p>App answers, opt-ins, "not now", match replies</p></div>
+    </div>
+  </div>
+  <div class="arrow"><svg width="48" height="34"><use href="#arr"/></svg></div>
+
+  <div class="col engine">
+    <span class="h">3 · Engine</span><span class="ht">Decide</span>
+    <div class="stack">
+      <div class="card eng"><b>Readiness Radar</b><p>Who should start planning, and why</p></div>
+      <div class="card eng"><b>Valuation & financing</b><p>Indicative value, max loan, phased plan</p></div>
+      <div class="card eng"><b>Match Engine</b><p>Filters, two-sided score, reasons</p></div>
+      <div class="card eng" style="background:#163d86"><b>Text to fields (optional AI)</b><p>Wishes and CVs into structured data</p></div>
+    </div>
+  </div>
+  <div class="arrow"><svg width="48" height="34"><use href="#arr"/></svg></div>
+
+  <div class="col">
+    <span class="h">4 · Serve</span><span class="ht">Data out</span>
+    <div class="stack">
+      <div class="card app"><b>Relationship manager</b><p>Ranked owner list with reasons</p></div>
+      <div class="card app"><b>KBC Business app + Kate</b><p>Readiness check, value, matches, deal room</p></div>
+      <div class="card app"><b>Candidate app</b><p>Ready-to-Own track, anonymous teasers</p></div>
+      <div class="card app"><b>Partner portal</b><p>Anonymised brief for the headhunter</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="band">
+  <div class="gate"><b><svg class="lock"><use href="#lock"/></svg>Consent & privacy layer</b><span>Every read checked against the customer's consent for that purpose · anonymised briefs and teasers · audit log</span></div>
+  <div class="loop"><b>Feedback loop</b><span>Replies and closed deals flow back to tune rules and weights</span></div>
+</div>
+</body></html>
