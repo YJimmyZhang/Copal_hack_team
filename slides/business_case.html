@@ -1,0 +1,107 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* Business case: after the deal, one client becomes two. 1920x1080, navy section style. */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#003768;--navy-2:#00284d;--blue:#009fdf;--blue-2:#4fc3f7;--gold:#f2c14e;--muted:#b8cde0}
+body{width:1920px;height:1080px;color:#fff;font-family:"Nunito Sans",Inter,"DejaVu Sans",sans-serif;position:relative;overflow:hidden;
+  background:radial-gradient(circle at 62% 52%,#0a4a85 0%,var(--navy) 45%,var(--navy-2) 100%)}
+
+.logo{position:absolute;right:96px;top:62px;width:112px}
+.kicker{position:absolute;left:96px;top:70px;font-size:22px;font-weight:800;letter-spacing:.18em;color:var(--blue-2)}
+h1{position:absolute;left:94px;top:108px;font-size:60px;font-weight:900;letter-spacing:-.5px}
+.sub{position:absolute;left:96px;top:192px;font-size:28px;color:var(--muted)}
+.sub b{color:#fff}
+
+/* Before */
+.before{position:absolute;left:96px;top:300px;width:500px;height:600px;border-radius:24px;
+  border:2px dashed rgba(184,205,224,.35);background:rgba(255,255,255,.03);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px}
+.before svg{width:190px;height:190px;margin-bottom:18px}
+.before small{font-size:17px;font-weight:800;letter-spacing:.16em;color:#8aa3bb}
+.before b{display:block;font-size:34px;font-weight:800;color:#c9d6e2;margin:8px 0 22px}
+.down{display:flex;flex-direction:column;gap:10px;align-items:center}
+.down span{background:rgba(255,255,255,.07);color:#a9bccd;border-radius:999px;padding:8px 20px;font-size:20px;font-weight:700}
+
+/* Split */
+svg.split{position:absolute;left:0;top:0}
+.deal{position:absolute;left:640px;top:578px;transform:translate(-50%,-50%);background:var(--blue);color:#fff;
+  border-radius:999px;padding:8px 20px;font-size:20px;font-weight:900;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+
+/* After */
+.client{position:absolute;left:820px;right:96px;height:270px;border-radius:24px;padding:36px 44px;
+  display:flex;gap:40px;align-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.c1{top:300px;border-left:8px solid var(--blue-2)}
+.c2{top:630px;border-left:8px solid var(--gold)}
+.av{width:170px;height:170px;border-radius:50%;flex:none;display:grid;place-items:center}
+.c1 .av{background:rgba(79,195,247,.15)}.c2 .av{background:rgba(242,193,78,.14)}
+.av svg{width:130px;height:130px}
+.client small{font-size:18px;font-weight:800;letter-spacing:.16em}
+.c1 small{color:var(--blue-2)}.c2 small{color:var(--gold)}
+.client b{display:block;font-size:40px;font-weight:900;margin:6px 0 18px}
+.chips{display:flex;gap:12px;flex-wrap:wrap}
+.chips span{border-radius:999px;padding:9px 20px;font-size:21px;font-weight:800;color:var(--navy-2)}
+.c1 .chips span{background:var(--blue-2)}.c2 .chips span{background:var(--gold)}
+
+.foot{position:absolute;left:96px;right:96px;bottom:44px;display:flex;justify-content:space-between;font-size:20px;color:#9fbbd4;font-weight:600}
+</style></head><body>
+
+<div class="kicker">THE BUSINESS CASE FOR KBC</div>
+<h1>After the deal, one client becomes two</h1>
+<div class="sub">KBC keeps the company, <b>gains a second client</b>, and finances the deal.</div>
+<img class="logo" src="kbc-logo-white.svg" alt="KBC">
+
+<div class="before">
+  <svg viewBox="0 0 120 120" fill="none">
+    <circle cx="52" cy="40" r="20" fill="#5f7891"/>
+    <path d="M14 112c0-26 17-42 38-42s38 16 38 42z" fill="#5f7891"/>
+    <path d="M78 14l12 12 8-6 14 18" stroke="#8aa3bb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M106 30l6 8-10 1" stroke="#8aa3bb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <small>TODAY · 1 CLIENT</small>
+  <b>The retiring owner</b>
+  <div class="down"><span>↓ Investing less</span><span>↓ Paying loans off</span><span>↓ Winding down</span></div>
+</div>
+
+<svg class="split" width="1920" height="1080" fill="none" stroke="#4fc3f7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M600 600 H640"/>
+  <path d="M640 600 C 720 600, 720 435, 786 435"/>
+  <path d="M784 422 L806 435 L784 448 Z" fill="#4fc3f7" stroke="none"/>
+  <path d="M640 600 C 720 600, 720 765, 786 765"/>
+  <path d="M784 752 L806 765 L784 778 Z" fill="#4fc3f7" stroke="none"/>
+</svg>
+<div class="deal" style="top:600px">the deal</div>
+
+<div class="client c1">
+  <div class="av"><svg viewBox="0 0 120 120" fill="none">
+    <circle cx="50" cy="40" r="19" fill="#4fc3f7"/>
+    <path d="M14 110c0-25 16-40 36-40s36 15 36 40z" fill="#4fc3f7"/>
+    <path d="M44 70l6 8 6-8-3 30h-6z" fill="#00284d"/>
+    <path d="M74 54l14-14 9 8 17-20" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M103 27l11 1-1 11" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg></div>
+  <div>
+    <small>CLIENT 1 · BUSINESS BANKING</small>
+    <b>The ambitious new owner</b>
+    <div class="chips"><span>↑ Experienced</span><span>↑ Growth plans</span><span>↑ More financing</span></div>
+  </div>
+</div>
+
+<div class="client c2">
+  <div class="av"><svg viewBox="0 0 120 120" fill="none">
+    <circle cx="46" cy="40" r="19" fill="#4fc3f7"/>
+    <path d="M10 110c0-25 16-40 36-40s36 15 36 40z" fill="#4fc3f7"/>
+    <path d="M86 62c-14 6-20 18-20 30 0 10 8 16 20 16s20-6 20-16c0-12-6-24-20-30z" fill="#f2c14e"/>
+    <path d="M80 56h12l-3 7h-6z" fill="#f2c14e"/>
+    <text x="86" y="98" text-anchor="middle" font-family="Nunito Sans,sans-serif" font-size="22" font-weight="900" fill="#00284d">€</text>
+  </svg></div>
+  <div>
+    <small>CLIENT 2 · PRIVATE BANKING</small>
+    <b>The wealthy former owner</b>
+    <div class="chips"><span>€ Cash from the sale</span><span>Wealth &amp; estate plan</span></div>
+  </div>
+</div>
+
+<div class="foot"><span>Tectonic finals · KBC case</span><span>Next Owner</span></div>
+</body></html>
