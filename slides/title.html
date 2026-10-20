@@ -1,0 +1,76 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* Title slide, 1920x1080, navy section style. */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#003768;--navy-2:#00284d;--blue:#009fdf;--blue-2:#4fc3f7;--muted:#b8cde0}
+body{width:1920px;height:1080px;color:#fff;font-family:"Nunito Sans",Inter,"DejaVu Sans",sans-serif;position:relative;overflow:hidden;
+  background:radial-gradient(circle at 74% 52%,#0b4d8a 0%,var(--navy) 40%,var(--navy-2) 100%)}
+
+.logo{position:absolute;left:120px;top:84px;width:120px}
+.text{position:absolute;left:120px;top:50%;transform:translateY(-46%);width:900px}
+.kicker{font-size:26px;font-weight:800;letter-spacing:.18em;color:var(--blue-2)}
+h1{font-size:150px;font-weight:900;line-height:.98;letter-spacing:-.02em;margin-top:16px}
+h1 span{color:var(--blue-2)}
+.rule{width:150px;height:10px;border-radius:5px;background:var(--blue);margin:40px 0 34px}
+.claim{font-size:46px;font-weight:800;line-height:1.2}
+.sub{font-size:30px;color:var(--muted);margin-top:16px;line-height:1.35}
+.sub b{color:#fff}
+.foot{position:absolute;left:120px;right:120px;bottom:64px;display:flex;justify-content:space-between;font-size:22px;color:#9fbbd4;font-weight:600}
+
+svg.shop{position:absolute;right:120px;top:170px;width:680px;height:740px}
+</style></head><body>
+
+<img class="logo" src="kbc-logo-white.svg" alt="KBC">
+
+<div class="text">
+  <div class="kicker">KBC CASE · ENTREPRENEURSHIP</div>
+  <h1>KBC Next<br><span>Owner</span></h1>
+  <div class="rule"></div>
+  <div class="claim">Every healthy company<br>deserves a next owner.</div>
+  <div class="sub">KBC finds, prepares and finances them,<br><b>before the owner asks.</b></div>
+</div>
+
+<!-- A healthy shop with the shutter half down and a sign: who takes over? -->
+<svg class="shop" viewBox="0 0 680 740" fill="none">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f8fb"/><stop offset="1" stop-color="#dfe9f1"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd98a"/><stop offset="1" stop-color="#f5b84a"/></linearGradient>
+    <linearGradient id="shutter" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5d7c9c"/><stop offset="1" stop-color="#3e5f80"/></linearGradient>
+    <pattern id="stripes" x="40" width="100" height="20" patternUnits="userSpaceOnUse"><rect width="50" height="20" fill="#009fdf"/><rect x="50" width="50" height="20" fill="#e8f6fd"/></pattern>
+    <clipPath id="win"><rect x="110" y="250" width="460" height="400"/></clipPath>
+  </defs>
+  <!-- glow + ground -->
+  <ellipse cx="340" cy="712" rx="330" ry="22" fill="#000" opacity=".25"/>
+  <!-- building -->
+  <rect x="40" y="70" width="600" height="640" rx="10" fill="url(#wall)"/>
+  <rect x="40" y="70" width="600" height="58" rx="10" fill="#c9d8e5"/>
+  <text x="340" y="110" text-anchor="middle" font-family="Nunito Sans,sans-serif" font-size="28" font-weight="900" fill="#003768" letter-spacing="6">BAKKERIJ</text>
+  <!-- awning -->
+  <path d="M70 160 H610 L640 230 H40 Z" fill="url(#stripes)"/>
+  <path d="M40 230 Q61 252 82 230 Q103 252 124 230 Q145 252 166 230 Q187 252 208 230 Q229 252 250 230 Q271 252 292 230 Q313 252 334 230 Q355 252 376 230 Q397 252 418 230 Q439 252 460 230 Q481 252 502 230 Q523 252 544 230 Q565 252 586 230 Q607 252 628 230 L640 230" fill="url(#stripes)"/>
+  <!-- window: warm light inside, shutter half down -->
+  <rect x="110" y="250" width="460" height="400" rx="4" fill="url(#glass)"/>
+  <g clip-path="url(#win)">
+    <rect x="150" y="520" width="380" height="16" rx="3" fill="#c98a2c"/>
+    <circle cx="210" cy="500" r="26" fill="#e7a043"/><circle cx="290" cy="505" r="22" fill="#d9903a"/><circle cx="470" cy="500" r="26" fill="#e7a043"/>
+    <rect x="360" y="480" width="70" height="40" rx="18" fill="#d9903a"/>
+    <rect x="110" y="250" width="460" height="230" fill="url(#shutter)"/>
+    <g stroke="#2f4f70" stroke-width="3">
+      <line x1="110" y1="280" x2="570" y2="280"/><line x1="110" y1="310" x2="570" y2="310"/><line x1="110" y1="340" x2="570" y2="340"/>
+      <line x1="110" y1="370" x2="570" y2="370"/><line x1="110" y1="400" x2="570" y2="400"/><line x1="110" y1="430" x2="570" y2="430"/><line x1="110" y1="460" x2="570" y2="460"/>
+    </g>
+    <rect x="110" y="470" width="460" height="12" fill="#29486a"/>
+  </g>
+  <rect x="110" y="250" width="460" height="400" rx="4" stroke="#9fb4c7" stroke-width="10"/>
+  <rect x="40" y="650" width="600" height="60" fill="#c9d8e5"/>
+  <!-- hanging sign -->
+  <g stroke="#ffffff" stroke-width="3"><line x1="250" y1="236" x2="215" y2="392"/><line x1="430" y1="236" x2="465" y2="392"/></g>
+  <g transform="rotate(-3 340 430)">
+    <rect x="160" y="388" width="360" height="96" rx="14" fill="#ffffff" stroke="#009fdf" stroke-width="5"/>
+    <text x="340" y="448" text-anchor="middle" font-family="Nunito Sans,sans-serif" font-size="36" font-weight="900" fill="#003768">Who takes over?</text>
+  </g>
+</svg>
+
+<div class="foot"><span>KBC Next Owner · [Team name] · Tectonic finals, 20 October 2026</span><span>Next Owner</span></div>
+</body></html>
