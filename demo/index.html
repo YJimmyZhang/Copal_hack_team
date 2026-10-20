@@ -4,136 +4,120 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KBC Next Owner - concept demo</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   /* Colours and shapes taken from the KBC mobile app (dark mode) */
   :root {
     --bg: #111314;
     --card: #1e2123;
-    --card-2: #262a2d;
+    --card-2: #2a2e31;
     --line: #33383c;
     --text: #ffffff;
     --muted: #a7adb2;
     --blue: #1ca0e6;
-    --blue-dark: #1b4f8c;
+    --navy: #1b4f8c;
     --green: #22b04b;
     --yellow: #f2c200;
     --red: #e5484d;
+    --accent: var(--blue); /* changes per role */
   }
   * { box-sizing: border-box; }
   body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Nunito Sans", system-ui, sans-serif;
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Nunito Sans", system-ui, sans-serif; font-size: 18px;
   }
 
-  /* Demo control: deliberately plain, not part of the product design */
+  /* Each role gets its own colour, like the app's theme tiles */
+  #rm         { --accent: var(--navy); }
+  #owner      { --accent: var(--blue); }
+  #headhunter { --accent: var(--yellow); }
+  #candidate  { --accent: var(--green); }
+
+  /* Demo-only control, deliberately plain */
   .demo-bar {
     display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
     padding: 6px 16px; background: #e9e9e9; color: #333;
-    font: 12px/1.4 ui-monospace, Menlo, Consolas, monospace;
+    font: 13px/1.4 ui-monospace, Menlo, Consolas, monospace;
   }
-  .demo-bar button {
-    font: inherit; border: 1px solid #999; background: #fff; color: #333;
-    padding: 2px 10px; cursor: pointer;
-  }
+  .demo-bar button { font: inherit; border: 1px solid #999; background: #fff; color: #333; padding: 2px 10px; cursor: pointer; }
   .demo-bar button.active { background: #333; color: #fff; border-color: #333; }
 
-  /* App top bar, like the app header with round icon buttons */
-  .appbar {
-    display: flex; align-items: center; gap: 16px;
-    padding: 16px 40px; border-bottom: 1px solid var(--line);
-  }
-  .logo {
-    width: 40px; height: 40px; border-radius: 50%; background: var(--blue);
-    display: grid; place-items: center; font-weight: 800; font-size: 13px; flex: none;
-  }
-  .appbar .title { flex: 1; }
-  .appbar .title b { display: block; font-size: 20px; font-weight: 800; line-height: 1.1; }
-  .appbar .title span { font-size: 13px; color: var(--muted); }
-  .round {
-    width: 44px; height: 44px; border-radius: 50%;
-    background: var(--card); border: 1px solid var(--line);
-    display: grid; place-items: center; flex: none; position: relative;
-  }
-  .round svg { width: 20px; height: 20px; stroke: var(--text); fill: none; stroke-width: 1.8; }
-  .bell::after {
-    content: ""; position: absolute; top: 9px; right: 9px;
-    width: 9px; height: 9px; border-radius: 50%; background: var(--red);
-  }
-  .user { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; }
+  main { max-width: 1200px; margin: 0 auto; padding: 36px 40px 64px; }
 
-  main { max-width: 1200px; margin: 0 auto; padding: 32px 40px 64px; }
-  .page-title { font-size: 32px; font-weight: 800; margin: 0 0 4px; }
-  .lead { color: var(--muted); margin: 0 0 28px; }
-  h2 { font-size: 20px; font-weight: 800; margin: 0 0 14px; }
-  p { margin: 0 0 8px; }
-  .muted { color: var(--muted); font-size: 14px; }
-  .tag { font-size: 11px; color: var(--blue); font-weight: 700; }
+  /* Big role banner: tells at a glance whose screen this is */
+  .role {
+    display: flex; align-items: center; gap: 24px;
+    padding-bottom: 24px; border-bottom: 4px solid var(--accent); margin-bottom: 24px;
+  }
+  .tile {
+    width: 96px; height: 96px; border-radius: 24px; flex: none;
+    background: var(--accent); display: grid; place-items: center;
+  }
+  .tile svg { width: 52px; height: 52px; stroke: #fff; fill: none; stroke-width: 1.8; }
+  #headhunter .tile svg { stroke: #111; }
+  .role .who { font-size: 16px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .role h1 { font-size: 48px; font-weight: 900; margin: 2px 0 0; line-height: 1.05; }
+  .role .kbc { margin-left: auto; font-weight: 900; font-size: 22px; color: var(--blue); }
 
-  .grid { display: grid; gap: 20px; }
+  /* Customer path: which step of the journey we are on */
+  .path { display: flex; gap: 8px; margin-bottom: 36px; flex-wrap: wrap; }
+  .path span {
+    flex: 1; min-width: 120px; text-align: center; padding: 10px 8px; border-radius: 999px;
+    background: var(--card); color: var(--muted); font-size: 15px; font-weight: 700;
+  }
+  .path span.on { background: var(--accent); color: #fff; }
+  #headhunter .path span.on { color: #111; }
+
+  .grid { display: grid; gap: 24px; }
   .g-2 { grid-template-columns: 1fr 1fr; }
-  .g-3-1 { grid-template-columns: 2fr 1fr; }
   .g-3 { grid-template-columns: repeat(3, 1fr); }
-  @media (max-width: 800px) { .g-2, .g-3-1, .g-3 { grid-template-columns: 1fr; } main, .appbar { padding-left: 16px; padding-right: 16px; } }
+  @media (max-width: 800px) { .g-2, .g-3 { grid-template-columns: 1fr; } main { padding: 24px 16px; } .role h1 { font-size: 34px; } }
 
-  .card { background: var(--card); border-radius: 18px; padding: 22px; }
-  .stack > * + * { margin-top: 20px; }
-  .hero {
-    background: linear-gradient(120deg, #1b2b36, #20384a);
-    border-radius: 18px; padding: 28px;
-  }
-  .hero .big { font-size: 40px; font-weight: 800; margin: 6px 0 16px; }
+  .card { background: var(--card); border-radius: 24px; padding: 28px; }
+  .card h2 { font-size: 24px; font-weight: 800; margin: 0 0 16px; }
+  .label { color: var(--muted); font-size: 17px; margin: 0 0 6px; }
+  .huge { font-size: 56px; font-weight: 900; line-height: 1.1; margin: 0 0 20px; }
+  .tag { font-size: 13px; color: var(--blue); font-weight: 700; }
 
   .btn {
     background: var(--blue); color: #fff; border: 0; border-radius: 999px;
-    padding: 10px 22px; font: inherit; font-weight: 700; font-size: 15px; cursor: pointer;
+    padding: 16px 32px; font: inherit; font-weight: 800; font-size: 20px; cursor: pointer;
   }
-  .btn.small { padding: 7px 16px; font-size: 13px; }
-  .done { color: var(--green); font-weight: 700; font-size: 14px; }
+  .done { color: var(--green); font-weight: 800; font-size: 20px; }
 
-  .row { display: flex; align-items: center; gap: 14px; }
   .score {
-    width: 52px; height: 52px; border-radius: 14px; flex: none;
-    display: grid; place-items: center; font-weight: 800; font-size: 20px;
-    background: var(--blue-dark);
+    width: 84px; height: 84px; border-radius: 22px; flex: none;
+    display: grid; place-items: center; font-weight: 900; font-size: 34px;
+    background: var(--accent); color: #fff;
   }
-  .score.high { background: var(--blue); }
-  .grow { flex: 1; min-width: 0; }
-  .grow b { display: block; }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip { background: var(--card-2); border-radius: 999px; padding: 4px 12px; font-size: 13px; color: var(--muted); }
+  .score.low { background: var(--card-2); }
+  .row { display: flex; align-items: center; gap: 20px; }
+  .name { font-size: 26px; font-weight: 800; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 22px; }
+  .chip { background: var(--card-2); border-radius: 999px; padding: 8px 16px; font-size: 17px; }
 
-  table { width: 100%; border-collapse: collapse; font-size: 14px; }
-  th, td { text-align: left; padding: 12px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
-  th { color: var(--muted); font-weight: 600; font-size: 13px; }
-  tr:last-child td { border-bottom: 0; }
-  .num th:not(:first-child), .num td:not(:first-child) { text-align: right; }
-
-  label.field { display: block; font-size: 14px; color: var(--muted); margin: 14px 0 6px; }
-  label.field:first-child { margin-top: 0; }
-  select, input:not([type=checkbox]) {
-    width: 100%; background: var(--card-2); color: var(--text);
-    border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; font: inherit;
+  .choices { display: flex; gap: 10px; flex-wrap: wrap; }
+  .choices button {
+    font: inherit; font-size: 18px; font-weight: 700; padding: 14px 22px; border-radius: 999px;
+    background: var(--card-2); color: var(--text); border: 2px solid transparent; cursor: pointer;
   }
-  .check { display: flex; gap: 12px; align-items: center; font-size: 15px; }
-  .check input { accent-color: var(--blue); width: 20px; height: 20px; margin: 0; flex: none; }
-  .lock { color: var(--yellow); font-weight: 700; font-size: 14px; }
+  .choices button.on { border-color: var(--blue); color: var(--blue); }
 
-  .steps { list-style: none; padding: 0; margin: 0; }
-  .steps li { display: flex; gap: 14px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--line); }
-  .steps li:last-child { border-bottom: 0; }
-  .dot {
-    width: 30px; height: 30px; border-radius: 50%; flex: none;
-    display: grid; place-items: center; font-size: 14px; font-weight: 800;
-    border: 2px solid var(--line); color: var(--muted);
+  .lock { color: var(--yellow); font-weight: 800; }
+
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .fact { background: var(--card-2); border-radius: 18px; padding: 20px; }
+  .fact b { display: block; font-size: 26px; font-weight: 900; }
+
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; text-align: center; }
+  .step .dot {
+    width: 72px; height: 72px; margin: 0 auto 12px; border-radius: 50%;
+    display: grid; place-items: center; font-size: 30px; font-weight: 900;
+    border: 3px solid var(--line); color: var(--muted);
   }
-  .steps .ok .dot { background: var(--green); border-color: var(--green); color: #fff; }
-  .steps .now .dot { border-color: var(--blue); color: var(--blue); }
-  .bar { height: 6px; background: var(--card-2); border-radius: 3px; margin-top: 8px; }
-  .bar span { display: block; height: 100%; background: var(--blue); border-radius: 3px; }
-  .stat { font-size: 36px; font-weight: 800; }
+  .step.ok .dot { background: var(--green); border-color: var(--green); color: #fff; }
+  .step.now .dot { border-color: var(--green); color: var(--green); }
+  .step b { font-size: 19px; }
 </style>
 </head>
 <body>
@@ -149,170 +133,132 @@
 
 <!-- 1. Relationship Manager Cockpit (steps 1-2) -->
 <section id="rm">
-  <div class="appbar">
-    <div class="logo">KBC</div>
-    <div class="title"><b>Succession Radar</b><span>KBC internal · Relationship Manager</span></div>
-    <div class="round bell"><svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4zM10 21h4"/></svg></div>
-    <div class="user"><div class="round"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></div>Els Janssens</div>
+<main>
+  <div class="role">
+    <div class="tile"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
+    <div><div class="who">For the KBC relationship manager</div><h1>Succession Radar</h1></div>
+    <div class="kbc">KBC</div>
   </div>
-  <main>
-    <h1 class="page-title">Owners to talk to</h1>
-    <p class="lead">Flagged by the Readiness Radar <span class="tag">[Person A]</span>, highest score first.</p>
-    <div class="grid g-3-1">
-      <div class="card">
-        <table>
-          <tr><th>Score</th><th>Company</th><th>Why flagged</th><th></th></tr>
-          <tr>
-            <td><div class="score high">78</div></td>
-            <td><b>Bakkerij Peeters NV</b><span class="muted">Jan Peeters, 63</span></td>
-            <td><div class="chips"><span class="chip">Owner is 63</span><span class="chip">No family shareholders</span><span class="chip">Investment −40% in 3 yrs</span></div></td>
-            <td><button class="btn small" onclick="this.outerHTML='<span class=done>✓ Consent requested</span>'">Request consent</button></td>
-          </tr>
-          <tr>
-            <td><div class="score">64</div></td>
-            <td><b>Metaalwerken Claes BV</b><span class="muted">Marc Claes, 59</span></td>
-            <td><div class="chips"><span class="chip">Owner is 59</span><span class="chip">Cash piling up</span></div></td>
-            <td><button class="btn small" onclick="this.outerHTML='<span class=done>✓ Consent requested</span>'">Request consent</button></td>
-          </tr>
-        </table>
-      </div>
-      <div class="card">
-        <h2>Talking points</h2>
-        <p>"Have you thought about who runs the bakery in 5 years?"</p>
-        <p class="muted">"We can show you what the company is worth, without obligation."</p>
-      </div>
+  <div class="path"><span class="on">1 · Signal</span><span class="on">2 · Conversation</span><span>3 · Explore</span><span>4 · Search</span><span>5 · Ready-to-Own</span><span>6 · Match &amp; deal</span></div>
+
+  <div class="grid g-2">
+    <div class="card">
+      <div class="row"><div class="score">78</div><div><div class="name">Bakkerij Peeters</div><div class="label">Jan Peeters, 63</div></div></div>
+      <div class="chips"><span class="chip">Owner 63</span><span class="chip">No family heir</span><span class="chip">Investment −40%</span></div>
+      <button class="btn" onclick="this.outerHTML='<span class=done>✓ Consent requested</span>'">Start the conversation</button>
     </div>
-  </main>
+    <div class="card">
+      <div class="row"><div class="score low">64</div><div><div class="name">Metaalwerken Claes</div><div class="label">Marc Claes, 59</div></div></div>
+      <div class="chips"><span class="chip">Owner 59</span><span class="chip">Cash piling up</span></div>
+      <button class="btn" onclick="this.outerHTML='<span class=done>✓ Consent requested</span>'">Start the conversation</button>
+    </div>
+  </div>
+  <p class="tag" style="margin-top:16px">Scores from the Readiness Radar [Person A]</p>
+</main>
 </section>
 
 <!-- 2. Owner Space (step 3, star screen) -->
 <section id="owner" hidden>
-  <div class="appbar">
-    <div class="logo">KBC</div>
-    <div class="title"><b>Next Owner</b><span>KBC Business · Bakkerij Peeters NV</span></div>
-    <div class="round bell"><svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4zM10 21h4"/></svg></div>
-    <div class="user"><div class="round"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></div>Jan Peeters</div>
+<main>
+  <div class="role">
+    <div class="tile"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/><path d="M9 20v-6h6v6"/></svg></div>
+    <div><div class="who">For the business owner</div><h1>Next Owner</h1></div>
+    <div class="kbc">KBC Business</div>
   </div>
-  <main>
-    <h1 class="page-title">Welcome, Jan</h1>
-    <p class="lead">Your succession, at your own pace.</p>
-    <div class="grid g-3-1">
-      <div class="stack">
-        <div class="hero">
-          <p class="muted">What is my company worth? <span class="tag">[Person A]</span></p>
-          <div class="big">€2.4M – €3.6M</div>
-          <button class="btn">See how we calculated this</button>
-        </div>
-        <div class="card">
-          <h2>Projections <span class="tag">[Person A]</span></h2>
-          <table class="num">
-            <tr><th></th><th>2026</th><th>2027</th><th>2028</th></tr>
-            <tr><td>Revenue</td><td>4.1M</td><td>4.2M</td><td>4.3M</td></tr>
-            <tr><td>EBITDA</td><td>600k</td><td>610k</td><td>620k</td></tr>
-          </table>
-        </div>
+  <div class="path"><span>1 · Signal</span><span>2 · Conversation</span><span class="on">3 · Explore</span><span>4 · Search</span><span>5 · Ready-to-Own</span><span>6 · Match &amp; deal</span></div>
+
+  <div class="grid g-2">
+    <div class="card">
+      <p class="label">Bakkerij Peeters is worth about <span class="tag">[Person A]</span></p>
+      <div class="huge">€2.4M – €3.6M</div>
+      <p class="label">Profit expected to grow to <b style="color:#fff">€620k</b> by 2028</p>
+    </div>
+    <div class="card">
+      <h2>When do you want to sell?</h2>
+      <div class="choices" onclick="pick(event)">
+        <button>Within 1 year</button><button class="on">1–3 years</button><button>3–5 years</button>
       </div>
-      <div class="card">
-        <h2>My wishes</h2>
-        <label class="field">When do you want to sell?</label>
-        <select><option>Within 1 year</option><option selected>1–3 years</option><option>3–5 years</option></select>
-        <label class="field">Your role after the sale?</label>
-        <select><option>Leave completely</option><option selected>Adviser</option><option>Minority shareholder</option></select>
+      <h2 style="margin-top:24px">Your role after?</h2>
+      <div class="choices" onclick="pick(event)">
+        <button>Leave</button><button class="on">Adviser</button><button>Minority share</button>
       </div>
     </div>
+  </div>
 
-    <h2 style="margin-top:32px">Possible successors</h2>
-    <p class="muted" style="margin-bottom:14px">Fit score from the Match Engine <span class="tag">[Person A]</span> · <span class="lock">🔒 Names after NDA</span></p>
+  <div class="card" style="margin-top:24px">
+    <h2>Possible successors <span class="lock">🔒 names after NDA</span></h2>
     <div class="grid g-3">
-      <div class="card row"><div class="score high">86</div><div class="grow"><b>Candidate #1</b><span class="muted">Ex-operations manager, food sector</span></div></div>
-      <div class="card row"><div class="score">79</div><div class="grow"><b>Candidate #2</b><span class="muted">Current staff member (MBO)</span></div></div>
-      <div class="card row"><div class="score">71</div><div class="grow"><b>Candidate #3</b><span class="muted">Search fund, MBA</span></div></div>
+      <div class="row"><div class="score">86</div><div><b>Candidate 1</b><div class="label">Ops manager, food</div></div></div>
+      <div class="row"><div class="score low">79</div><div><b>Candidate 2</b><div class="label">Own staff (MBO)</div></div></div>
+      <div class="row"><div class="score low">71</div><div><b>Candidate 3</b><div class="label">Search fund</div></div></div>
     </div>
-
-    <div class="card" style="margin-top:20px">
-      <label class="check"><input type="checkbox"> I agree that KBC shares an anonymous brief with a headhunter</label>
-    </div>
-  </main>
+    <p style="margin:28px 0 0"><button class="btn" onclick="this.outerHTML='<span class=done>✓ Search started, anonymous brief sent</span>'">Start the search</button></p>
+  </div>
+</main>
 </section>
 
 <!-- 3. Headhunter Portal (step 4) -->
 <section id="headhunter" hidden>
-  <div class="appbar">
-    <div class="logo">KBC</div>
-    <div class="title"><b>Partner Portal</b><span>Next Owner · Headhunter</span></div>
-    <div class="round bell"><svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4zM10 21h4"/></svg></div>
-    <div class="user"><div class="round"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></div>Search Partners BV</div>
+<main>
+  <div class="role">
+    <div class="tile"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></div>
+    <div><div class="who">For the headhunting partner</div><h1>Partner Portal</h1></div>
+    <div class="kbc">KBC</div>
   </div>
-  <main>
-    <h1 class="page-title">Open briefs</h1>
-    <p class="lead">Anonymous search assignments from KBC.</p>
-    <div class="grid g-2">
-      <div class="stack">
-        <div class="hero">
-          <p class="muted">Anonymous brief #2026-014</p>
-          <div class="big" style="font-size:30px">Food production · Antwerp</div>
-          <p class="lock">🔒 Company name locked until NDA</p>
-        </div>
-        <div class="card">
-          <table>
-            <tr><td class="muted">Revenue</td><td>€2–5M</td></tr>
-            <tr><td class="muted">Region</td><td>Antwerp</td></tr>
-            <tr><td class="muted">Profile</td><td>Operations manager</td></tr>
-            <tr><td class="muted">Own funds</td><td>Required</td></tr>
-          </table>
-        </div>
-      </div>
-      <div class="stack">
-        <div class="card">
-          <h2>Submit a candidate</h2>
-          <label class="field">Name</label>
-          <input placeholder="Full name">
-          <label class="field">CV</label>
-          <input type="file">
-          <p style="margin-top:18px"><button class="btn" onclick="this.outerHTML='<span class=done>✓ Submitted</span>'">Submit</button></p>
-        </div>
-        <div class="card">
-          <h2>My fees</h2>
-          <div class="stat">3</div>
-          <p class="muted">qualified candidates submitted · fee per candidate + success fee on deal</p>
-        </div>
-      </div>
+  <div class="path"><span>1 · Signal</span><span>2 · Conversation</span><span>3 · Explore</span><span class="on">4 · Search</span><span>5 · Ready-to-Own</span><span>6 · Match &amp; deal</span></div>
+
+  <div class="card">
+    <h2>New anonymous brief <span class="lock">🔒 company name after NDA</span></h2>
+    <div class="facts">
+      <div class="fact"><span class="label">Sector</span><b>Food</b></div>
+      <div class="fact"><span class="label">Size</span><b>€2–5M</b></div>
+      <div class="fact"><span class="label">Region</span><b>Antwerp</b></div>
     </div>
-  </main>
+    <p class="label" style="margin-top:20px">Looking for: an operations manager ready to invest own funds</p>
+  </div>
+
+  <div class="grid g-2" style="margin-top:24px">
+    <div class="card">
+      <h2>Have a candidate?</h2>
+      <button class="btn" onclick="this.outerHTML='<span class=done>✓ Candidate submitted</span>'">Submit candidate</button>
+    </div>
+    <div class="card">
+      <p class="label">Qualified candidates sent</p>
+      <div class="huge" style="margin:0">3</div>
+    </div>
+  </div>
+</main>
 </section>
 
 <!-- 4. Ready-to-Own Candidate Portal (step 5) -->
 <section id="candidate" hidden>
-  <div class="appbar">
-    <div class="logo">KBC</div>
-    <div class="title"><b>Ready-to-Own</b><span>Next Owner · Candidate</span></div>
-    <div class="round bell"><svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4zM10 21h4"/></svg></div>
-    <div class="user"><div class="round"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></div>Sarah Maes</div>
+<main>
+  <div class="role">
+    <div class="tile"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM6 10v5c2 2 10 2 12 0v-5"/></svg></div>
+    <div><div class="who">For the future owner (candidate)</div><h1>Ready-to-Own</h1></div>
+    <div class="kbc">KBC</div>
   </div>
-  <main>
-    <h1 class="page-title">Welcome, Sarah</h1>
-    <p class="lead">Your path to owning a company.</p>
-    <div class="grid g-2">
-      <div class="card">
-        <h2>My progress</h2>
-        <ol class="steps">
-          <li class="ok"><span class="dot">✓</span><div class="grow">Upload CV</div></li>
-          <li class="ok"><span class="dot">✓</span><div class="grow">Values and skills test</div></li>
-          <li class="ok"><span class="dot">✓</span><div class="grow">Funding check<br><span class="muted">Own funds: €250k</span></div></li>
-          <li class="now"><span class="dot">4</span><div class="grow">Short course<br><span class="muted">2 of 4 modules</span><div class="bar"><span style="width:50%"></span></div></div></li>
-          <li><span class="dot">5</span><div class="grow">Loan pre-approval<br><span class="muted">Waiting</span></div></li>
-        </ol>
-      </div>
-      <div class="card">
-        <h2>Companies that match me</h2>
-        <div class="row">
-          <div class="score high">86</div>
-          <div class="grow"><b>Food production</b><span class="muted">Antwerp · €2–5M</span></div>
-          <button class="btn small" onclick="this.outerHTML='<span class=done>✓ Interest sent</span>'">I'm interested</button>
-        </div>
-      </div>
+  <div class="path"><span>1 · Signal</span><span>2 · Conversation</span><span>3 · Explore</span><span>4 · Search</span><span class="on">5 · Ready-to-Own</span><span>6 · Match &amp; deal</span></div>
+
+  <div class="card">
+    <h2>Sarah, your path to owning a company</h2>
+    <div class="steps">
+      <div class="step ok"><div class="dot">✓</div><b>Skills test</b></div>
+      <div class="step ok"><div class="dot">✓</div><b>Funding check</b></div>
+      <div class="step now"><div class="dot">3</div><b>Short course</b></div>
+      <div class="step"><div class="dot">4</div><b>Loan approved</b></div>
     </div>
-  </main>
+  </div>
+
+  <div class="card" style="margin-top:24px">
+    <h2>A company matches you</h2>
+    <div class="row">
+      <div class="score">86</div>
+      <div style="flex:1"><div class="name">Food production · Antwerp</div><div class="label">€2–5M revenue · owner wants to stay as adviser</div></div>
+      <button class="btn" onclick="this.outerHTML='<span class=done>✓ Interest sent</span>'">I'm interested</button>
+    </div>
+  </div>
+</main>
 </section>
 
 <script>
@@ -320,6 +266,10 @@
     document.querySelectorAll('section').forEach(s => s.hidden = s.id !== id);
     document.querySelectorAll('.demo-bar button').forEach(b => b.classList.toggle('active', b.dataset.role === id));
     window.scrollTo(0, 0);
+  }
+  function pick(e) {
+    if (e.target.tagName !== 'BUTTON') return;
+    e.currentTarget.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === e.target));
   }
 </script>
 </body>
