@@ -19,7 +19,7 @@ Many healthy Flemish SMEs close because nobody takes over. Advice exists; what i
 
 **Demo:** open `demo/index.html` in a browser. Use the grey bar at the top to switch between roles.
 
-**Engine** (Python 3.10+ with numpy: `pip install numpy`):
+**Engine** (Python 3.10+; install with `pip install -r requirements.txt`):
 
 ```bash
 cd engine
@@ -29,6 +29,15 @@ python run_demo.py
 This generates fake data, runs all steps and writes `engine/out/*.json`. `engine/out/demo_case.json` holds every number shown in the demo for the hero case, Bakkerij Peeters.
 
 **Slides** (optional, needs Playwright with Chromium): `python slides/make_data_flow.py` rebuilds the data chart from the engine output; `python slides/render_all.py` renders all slide HTML files to PNG.
+
+**Tests** (standard library only, 12 tests):
+
+```bash
+cd engine
+python -m unittest -v
+```
+
+They check the core rules: fit is always the lower of the two views, blocked candidates never show up, the price split always adds up and stays within the limits, owner wishes are respected, and the hero case gives exactly the numbers in the demo.
 
 ## How the engine decides
 
