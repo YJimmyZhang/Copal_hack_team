@@ -7,7 +7,7 @@
 import math
 
 from config import SECTORS
-from valuation import financing_check
+from valuation import financing_check, phased_plan
 
 
 def distance_km(a, b):
@@ -49,8 +49,11 @@ def score_pair(company, cand):
     staff_ok = (not w["keep_staff"]) or cand["intends_keep_staff"]
     transition_ok = abs(w["transition_months"] - cand["wanted_transition_months"]) <= 6
 
+    trial = bool(w.get("allow_trial")) and bool(cand.get("open_to_interim"))
     owner_view = (0.30 * sf + 0.15 * cand["management_experience"] + 0.20 * cand["values_score"]
                   + 0.15 * cand["skills_score"] + 0.10 * staff_ok + 0.10 * transition_ok)
+    if trial:  # both open to "try before you buy": lower risk for the owner
+        owner_view = min(1.0, owner_view + 0.05)
     lo, hi = cand["preferred_employees"]
     size_ok = lo <= company["employees"] <= hi
     cand_view = (0.35 * sf + 0.25 * (1 - dist / cand["max_distance_km"]) + 0.20 * size_ok
@@ -70,10 +73,14 @@ def score_pair(company, cand):
         reasons.append(f"Agrees with a ~{w['transition_months']}-month handover")
     if cand["state"] == "ready":
         reasons.append("Completed the Ready-to-Own track")
+    if trial:
+        reasons.append("Both open to a 6-12 month interim trial before buying")
     confidence = "high" if fit >= 0.7 else "medium" if fit >= 0.55 else "low (send to relationship manager)"
     return {"candidate_id": cand["candidate_id"], "alias": cand["alias"], "type": cand["type"],
             "fit": round(fit * 100), "owner_view": round(owner_view * 100), "candidate_view": round(cand_view * 100),
-            "confidence": confidence, "reasons": reasons, "financing": fin}
+            "confidence": confidence, "reasons": reasons, "financing": fin,
+            "trial_possible": trial,
+            "phased_plan": phased_plan(company, cand["own_funds"]) if trial else None}
 
 
 def top_matches(company, candidates, n=3):

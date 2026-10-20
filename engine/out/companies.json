@@ -1406,14 +1406,16 @@
     "opted_in": true,
     "wishes": {
       "keep_staff": true,
-      "transition_months": 18,
+      "transition_months": 24,
       "allowed_types": [
-        "start_it_founder",
-        "strategic_buyer",
+        "search_funder",
         "staff_mbo",
-        "experienced_manager"
+        "start_it_founder",
+        "experienced_manager",
+        "strategic_buyer"
       ],
-      "timing_years": 2
+      "timing_years": 2,
+      "allow_trial": true
     },
     "readiness": {
       "score": 64,
@@ -2147,14 +2149,16 @@
     "owner_pension_saving_up": true,
     "opted_in": true,
     "wishes": {
-      "keep_staff": true,
-      "transition_months": 24,
+      "keep_staff": false,
+      "transition_months": 18,
       "allowed_types": [
-        "search_funder",
+        "strategic_buyer",
+        "staff_mbo",
         "start_it_founder",
         "experienced_manager"
       ],
-      "timing_years": 1
+      "timing_years": 2,
+      "allow_trial": false
     },
     "readiness": {
       "score": 64,
@@ -4883,14 +4887,14 @@
     "opted_in": true,
     "wishes": {
       "keep_staff": true,
-      "transition_months": 18,
+      "transition_months": 12,
       "allowed_types": [
+        "experienced_manager",
         "staff_mbo",
-        "strategic_buyer",
-        "start_it_founder",
         "search_funder"
       ],
-      "timing_years": 1
+      "timing_years": 2,
+      "allow_trial": false
     },
     "readiness": {
       "score": 59,
@@ -5610,15 +5614,16 @@
     "opted_in": true,
     "wishes": {
       "keep_staff": true,
-      "transition_months": 24,
+      "transition_months": 18,
       "allowed_types": [
         "start_it_founder",
-        "strategic_buyer",
-        "experienced_manager",
         "search_funder",
-        "staff_mbo"
+        "staff_mbo",
+        "experienced_manager",
+        "strategic_buyer"
       ],
-      "timing_years": 2
+      "timing_years": 2,
+      "allow_trial": true
     },
     "readiness": {
       "score": 75,
@@ -7147,14 +7152,15 @@
     "opted_in": true,
     "wishes": {
       "keep_staff": false,
-      "transition_months": 18,
+      "transition_months": 6,
       "allowed_types": [
-        "strategic_buyer",
         "start_it_founder",
         "search_funder",
-        "staff_mbo"
+        "experienced_manager",
+        "strategic_buyer"
       ],
-      "timing_years": 2
+      "timing_years": 2,
+      "allow_trial": false
     },
     "readiness": {
       "score": 80,
@@ -8136,7 +8142,8 @@
         "experienced_manager",
         "strategic_buyer"
       ],
-      "timing_years": 1
+      "timing_years": 1,
+      "allow_trial": false
     },
     "readiness": {
       "score": 53,
@@ -8614,14 +8621,16 @@
     "opted_in": true,
     "wishes": {
       "keep_staff": true,
-      "transition_months": 6,
+      "transition_months": 24,
       "allowed_types": [
         "start_it_founder",
+        "strategic_buyer",
+        "experienced_manager",
         "search_funder",
-        "staff_mbo",
-        "experienced_manager"
+        "staff_mbo"
       ],
-      "timing_years": 2
+      "timing_years": 3,
+      "allow_trial": true
     },
     "readiness": {
       "score": 64,
@@ -9269,15 +9278,14 @@
     "opted_in": true,
     "wishes": {
       "keep_staff": true,
-      "transition_months": 24,
+      "transition_months": 12,
       "allowed_types": [
-        "search_funder",
-        "start_it_founder",
-        "strategic_buyer",
         "experienced_manager",
+        "start_it_founder",
         "staff_mbo"
       ],
-      "timing_years": 3
+      "timing_years": 3,
+      "allow_trial": false
     },
     "readiness": {
       "score": 68,
@@ -16236,12 +16244,13 @@
       "transition_months": 6,
       "allowed_types": [
         "search_funder",
-        "staff_mbo",
         "strategic_buyer",
+        "experienced_manager",
         "start_it_founder",
-        "experienced_manager"
+        "staff_mbo"
       ],
-      "timing_years": 2
+      "timing_years": 3,
+      "allow_trial": true
     },
     "readiness": {
       "score": 56,
@@ -18086,15 +18095,15 @@
     "opted_in": true,
     "wishes": {
       "keep_staff": true,
-      "transition_months": 18,
+      "transition_months": 6,
       "allowed_types": [
-        "staff_mbo",
-        "strategic_buyer",
-        "start_it_founder",
+        "experienced_manager",
         "search_funder",
-        "experienced_manager"
+        "strategic_buyer",
+        "staff_mbo"
       ],
-      "timing_years": 3
+      "timing_years": 3,
+      "allow_trial": true
     },
     "readiness": {
       "score": 55,
@@ -19302,14 +19311,16 @@
     "opted_in": true,
     "wishes": {
       "keep_staff": true,
-      "transition_months": 6,
+      "transition_months": 18,
       "allowed_types": [
-        "experienced_manager",
+        "strategic_buyer",
+        "staff_mbo",
         "start_it_founder",
-        "search_funder",
-        "strategic_buyer"
+        "experienced_manager",
+        "search_funder"
       ],
-      "timing_years": 1
+      "timing_years": 2,
+      "allow_trial": false
     },
     "readiness": {
       "score": 71,
@@ -21328,14 +21339,17 @@
     "owner_pension_saving_up": true,
     "opted_in": true,
     "wishes": {
-      "keep_staff": false,
+      "keep_staff": true,
       "transition_months": 24,
       "allowed_types": [
-        "staff_mbo",
+        "start_it_founder",
         "strategic_buyer",
-        "search_funder"
+        "experienced_manager",
+        "search_funder",
+        "staff_mbo"
       ],
-      "timing_years": 1
+      "timing_years": 2,
+      "allow_trial": true
     },
     "readiness": {
       "score": 77,

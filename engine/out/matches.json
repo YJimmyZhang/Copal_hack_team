@@ -1,545 +1,171 @@
 [
   {
-    "company_id": "C224",
+    "company_id": "C027",
     "pool_size": 128,
-    "passed_filters": 53,
+    "passed_filters": 55,
     "filtered_out": {
-      "Candidate not yet qualified": 35,
-      "Too far": 35,
-      "Financing gap too large": 5
+      "Candidate not yet qualified": 21,
+      "Too far": 23,
+      "Financing gap too large": 10,
+      "Owner excluded this type of successor": 19
     },
     "matches": [
       {
-        "candidate_id": "H2242",
-        "alias": "Candidate H2242",
+        "candidate_id": "H0272",
+        "alias": "Candidate H0272",
         "type": "experienced_manager",
-        "fit": 94,
-        "owner_view": 94,
-        "candidate_view": 95,
-        "confidence": "high",
-        "reasons": [
-          "Experience in it services",
-          "15 km away",
-          "Financing OK: €180,000 own funds needed, has €580,000",
-          "Plans to keep all staff",
-          "Agrees with a ~18-month handover"
-        ],
-        "financing": {
-          "price": 474000.0,
-          "bank_loan": 223000.0,
-          "vendor_loan": 71000.0,
-          "equity_needed": 180000.0,
-          "own_funds": 580000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "H0183",
-        "alias": "Candidate H0183",
-        "type": "strategic_buyer",
-        "fit": 92,
-        "owner_view": 94,
-        "candidate_view": 92,
-        "confidence": "high",
-        "reasons": [
-          "Experience in it services",
-          "27 km away",
-          "Financing OK: €180,000 own funds needed, has €344,000",
-          "Plans to keep all staff",
-          "Agrees with a ~18-month handover",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 474000.0,
-          "bank_loan": 223000.0,
-          "vendor_loan": 71000.0,
-          "equity_needed": 180000.0,
-          "own_funds": 344000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "H0892",
-        "alias": "Candidate H0892",
-        "type": "strategic_buyer",
-        "fit": 90,
-        "owner_view": 96,
-        "candidate_view": 90,
-        "confidence": "high",
-        "reasons": [
-          "Experience in it services",
-          "32 km away",
-          "Financing OK: €180,000 own funds needed, has €669,000",
-          "Plans to keep all staff",
-          "Agrees with a ~18-month handover"
-        ],
-        "financing": {
-          "price": 474000.0,
-          "bank_loan": 223000.0,
-          "vendor_loan": 71000.0,
-          "equity_needed": 180000.0,
-          "own_funds": 669000.0,
-          "ok": true
-        }
-      }
-    ]
-  },
-  {
-    "company_id": "C061",
-    "pool_size": 128,
-    "passed_filters": 51,
-    "filtered_out": {
-      "Owner excluded this type of successor": 41,
-      "Candidate not yet qualified": 20,
-      "Too far": 15,
-      "Financing gap too large": 1
-    },
-    "matches": [
-      {
-        "candidate_id": "H0702",
-        "alias": "Candidate H0702",
-        "type": "search_funder",
-        "fit": 92,
-        "owner_view": 95,
-        "candidate_view": 92,
-        "confidence": "high",
-        "reasons": [
-          "Experience in business services",
-          "36 km away",
-          "Financing OK: €52,000 own funds needed, has €566,000",
-          "Plans to keep all staff",
-          "Agrees with a ~18-month handover",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 186000.0,
-          "bank_loan": 106000.0,
-          "vendor_loan": 28000.0,
-          "equity_needed": 52000.0,
-          "own_funds": 566000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "H0700",
-        "alias": "Candidate H0700",
-        "type": "strategic_buyer",
-        "fit": 91,
-        "owner_view": 91,
-        "candidate_view": 98,
-        "confidence": "high",
-        "reasons": [
-          "Experience in business services",
-          "10 km away",
-          "Financing OK: €52,000 own funds needed, has €820,000",
-          "Plans to keep all staff",
-          "Agrees with a ~18-month handover",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 186000.0,
-          "bank_loan": 106000.0,
-          "vendor_loan": 28000.0,
-          "equity_needed": 52000.0,
-          "own_funds": 820000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "H0613",
-        "alias": "Candidate H0613",
-        "type": "strategic_buyer",
-        "fit": 87,
-        "owner_view": 87,
-        "candidate_view": 91,
-        "confidence": "high",
-        "reasons": [
-          "Experience in business services",
-          "30 km away",
-          "Financing OK: €52,000 own funds needed, has €354,000",
-          "Plans to keep all staff",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 186000.0,
-          "bank_loan": 106000.0,
-          "vendor_loan": 28000.0,
-          "equity_needed": 52000.0,
-          "own_funds": 354000.0,
-          "ok": true
-        }
-      }
-    ]
-  },
-  {
-    "company_id": "C101",
-    "pool_size": 128,
-    "passed_filters": 62,
-    "filtered_out": {
-      "Candidate not yet qualified": 31,
-      "Owner excluded this type of successor": 11,
-      "Too far": 17,
-      "Financing gap too large": 7
-    },
-    "matches": [
-      {
-        "candidate_id": "H1013",
-        "alias": "Candidate H1013",
-        "type": "search_funder",
-        "fit": 92,
-        "owner_view": 92,
-        "candidate_view": 94,
-        "confidence": "high",
-        "reasons": [
-          "Experience in wholesale",
-          "30 km away",
-          "Financing OK: €187,000 own funds needed, has €487,000",
-          "Plans to keep all staff",
-          "Agrees with a ~24-month handover",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 529000.0,
-          "bank_loan": 263000.0,
-          "vendor_loan": 79000.0,
-          "equity_needed": 187000.0,
-          "own_funds": 487000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "H2641",
-        "alias": "Candidate H2641",
-        "type": "search_funder",
-        "fit": 90,
-        "owner_view": 90,
-        "candidate_view": 92,
-        "confidence": "high",
-        "reasons": [
-          "Experience in wholesale",
-          "38 km away",
-          "Financing OK: €187,000 own funds needed, has €624,000",
-          "Plans to keep all staff",
-          "Agrees with a ~24-month handover",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 529000.0,
-          "bank_loan": 263000.0,
-          "vendor_loan": 79000.0,
-          "equity_needed": 187000.0,
-          "own_funds": 624000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "K067",
-        "alias": "Candidate 067",
-        "type": "strategic_buyer",
-        "fit": 82,
-        "owner_view": 82,
-        "candidate_view": 84,
-        "confidence": "high",
-        "reasons": [
-          "Experience in wholesale",
-          "50 km away",
-          "Financing OK: €187,000 own funds needed, has €2,934,000",
-          "Plans to keep all staff",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 529000.0,
-          "bank_loan": 263000.0,
-          "vendor_loan": 79000.0,
-          "equity_needed": 187000.0,
-          "own_funds": 2934000.0,
-          "ok": true
-        }
-      }
-    ]
-  },
-  {
-    "company_id": "C239",
-    "pool_size": 128,
-    "passed_filters": 29,
-    "filtered_out": {
-      "Candidate not yet qualified": 31,
-      "Owner excluded this type of successor": 11,
-      "Too far": 56,
-      "Financing gap too large": 1
-    },
-    "matches": [
-      {
-        "candidate_id": "H2391",
-        "alias": "Candidate H2391",
-        "type": "experienced_manager",
-        "fit": 92,
-        "owner_view": 93,
-        "candidate_view": 92,
-        "confidence": "high",
-        "reasons": [
-          "Experience in manufacturing",
-          "26 km away",
-          "Financing OK: €72,000 own funds needed, has €830,000",
-          "Plans to keep all staff",
-          "Agrees with a ~6-month handover",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 326000.0,
-          "bank_loan": 205000.0,
-          "vendor_loan": 49000.0,
-          "equity_needed": 72000.0,
-          "own_funds": 830000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "H2392",
-        "alias": "Candidate H2392",
-        "type": "strategic_buyer",
-        "fit": 91,
-        "owner_view": 91,
-        "candidate_view": 98,
-        "confidence": "high",
-        "reasons": [
-          "Experience in manufacturing",
-          "8 km away",
-          "Financing OK: €72,000 own funds needed, has €869,000",
-          "Plans to keep all staff",
-          "Agrees with a ~6-month handover",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 326000.0,
-          "bank_loan": 205000.0,
-          "vendor_loan": 49000.0,
-          "equity_needed": 72000.0,
-          "own_funds": 869000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "K002",
-        "alias": "Candidate 002",
-        "type": "experienced_manager",
-        "fit": 83,
-        "owner_view": 83,
-        "candidate_view": 85,
-        "confidence": "high",
-        "reasons": [
-          "Experience in manufacturing",
-          "47 km away",
-          "Financing OK: €72,000 own funds needed, has €265,000",
-          "Plans to keep all staff",
-          "Agrees with a ~6-month handover"
-        ],
-        "financing": {
-          "price": 326000.0,
-          "bank_loan": 205000.0,
-          "vendor_loan": 49000.0,
-          "equity_needed": 72000.0,
-          "own_funds": 265000.0,
-          "ok": true
-        }
-      }
-    ]
-  },
-  {
-    "company_id": "C018",
-    "pool_size": 128,
-    "passed_filters": 38,
-    "filtered_out": {
-      "Candidate not yet qualified": 32,
-      "Financing gap too large": 15,
-      "Too far": 17,
-      "Owner excluded this type of successor": 26
-    },
-    "matches": [
-      {
-        "candidate_id": "H0700",
-        "alias": "Candidate H0700",
-        "type": "strategic_buyer",
-        "fit": 91,
-        "owner_view": 91,
-        "candidate_view": 94,
-        "confidence": "high",
-        "reasons": [
-          "Experience in business services",
-          "29 km away",
-          "Financing OK: €280,000 own funds needed, has €820,000",
-          "Plans to keep all staff",
-          "Agrees with a ~18-month handover",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 686000.0,
-          "bank_loan": 303000.0,
-          "vendor_loan": 103000.0,
-          "equity_needed": 280000.0,
-          "own_funds": 820000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "H0613",
-        "alias": "Candidate H0613",
-        "type": "strategic_buyer",
-        "fit": 86,
-        "owner_view": 87,
-        "candidate_view": 86,
-        "confidence": "high",
-        "reasons": [
-          "Experience in business services",
-          "35 km away",
-          "Financing OK: €280,000 own funds needed, has €354,000",
-          "Plans to keep all staff",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 686000.0,
-          "bank_loan": 303000.0,
-          "vendor_loan": 103000.0,
-          "equity_needed": 280000.0,
-          "own_funds": 354000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "H0182",
-        "alias": "Candidate H0182",
-        "type": "strategic_buyer",
-        "fit": 79,
-        "owner_view": 83,
-        "candidate_view": 79,
-        "confidence": "high",
-        "reasons": [
-          "Experience in a related sector",
-          "15 km away",
-          "Financing OK: €280,000 own funds needed, has €733,000",
-          "Plans to keep all staff",
-          "Agrees with a ~18-month handover",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 686000.0,
-          "bank_loan": 303000.0,
-          "vendor_loan": 103000.0,
-          "equity_needed": 280000.0,
-          "own_funds": 733000.0,
-          "ok": true
-        }
-      }
-    ]
-  },
-  {
-    "company_id": "C089",
-    "pool_size": 128,
-    "passed_filters": 24,
-    "filtered_out": {
-      "Owner excluded this type of successor": 41,
-      "Candidate not yet qualified": 20,
-      "Too far": 27,
-      "Financing gap too large": 16
-    },
-    "matches": [
-      {
-        "candidate_id": "H0892",
-        "alias": "Candidate H0892",
-        "type": "strategic_buyer",
-        "fit": 91,
-        "owner_view": 96,
-        "candidate_view": 91,
-        "confidence": "high",
-        "reasons": [
-          "Experience in it services",
-          "21 km away",
-          "Financing OK: €494,000 own funds needed, has €669,000",
-          "Agrees with a ~18-month handover"
-        ],
-        "financing": {
-          "price": 1630000.0,
-          "bank_loan": 892000.0,
-          "vendor_loan": 244000.0,
-          "equity_needed": 494000.0,
-          "own_funds": 669000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "H0182",
-        "alias": "Candidate H0182",
-        "type": "strategic_buyer",
-        "fit": 89,
+        "fit": 98,
         "owner_view": 98,
-        "candidate_view": 89,
+        "candidate_view": 98,
         "confidence": "high",
         "reasons": [
-          "Experience in it services",
-          "53 km away",
-          "Financing OK: €494,000 own funds needed, has €733,000",
-          "Agrees with a ~18-month handover",
-          "Completed the Ready-to-Own track"
+          "Experience in retail",
+          "8 km away",
+          "Financing OK: €120,000 own funds needed, has €569,000",
+          "Agrees with a ~18-month handover"
         ],
         "financing": {
-          "price": 1630000.0,
-          "bank_loan": 892000.0,
-          "vendor_loan": 244000.0,
-          "equity_needed": 494000.0,
-          "own_funds": 733000.0,
+          "price": 596000.0,
+          "bank_loan": 387000.0,
+          "vendor_loan": 89000.0,
+          "equity_needed": 120000.0,
+          "own_funds": 569000.0,
           "ok": true
-        }
+        },
+        "trial_possible": false,
+        "phased_plan": null
       },
       {
-        "candidate_id": "K062",
-        "alias": "Candidate 062",
-        "type": "strategic_buyer",
+        "candidate_id": "K078",
+        "alias": "Candidate 078",
+        "type": "experienced_manager",
         "fit": 88,
         "owner_view": 88,
-        "candidate_view": 97,
+        "candidate_view": 91,
         "confidence": "high",
         "reasons": [
-          "Experience in it services",
-          "15 km away",
-          "Financing OK: €494,000 own funds needed, has €1,228,000",
-          "Agrees with a ~18-month handover",
+          "Experience in retail",
+          "28 km away",
+          "Financing OK: €120,000 own funds needed, has €383,000",
           "Completed the Ready-to-Own track"
         ],
         "financing": {
-          "price": 1630000.0,
-          "bank_loan": 892000.0,
-          "vendor_loan": 244000.0,
-          "equity_needed": 494000.0,
-          "own_funds": 1228000.0,
+          "price": 596000.0,
+          "bank_loan": 387000.0,
+          "vendor_loan": 89000.0,
+          "equity_needed": 120000.0,
+          "own_funds": 383000.0,
           "ok": true
-        }
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      },
+      {
+        "candidate_id": "K052",
+        "alias": "Candidate 052",
+        "type": "experienced_manager",
+        "fit": 87,
+        "owner_view": 87,
+        "candidate_view": 87,
+        "confidence": "high",
+        "reasons": [
+          "Experience in retail",
+          "21 km away",
+          "Financing OK: €120,000 own funds needed, has €157,000"
+        ],
+        "financing": {
+          "price": 596000.0,
+          "bank_loan": 387000.0,
+          "vendor_loan": 89000.0,
+          "equity_needed": 120000.0,
+          "own_funds": 157000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
       }
     ]
   },
   {
     "company_id": "C070",
     "pool_size": 128,
-    "passed_filters": 62,
+    "passed_filters": 61,
     "filtered_out": {
-      "Candidate not yet qualified": 35,
-      "Too far": 22,
-      "Financing gap too large": 9
+      "Candidate not yet qualified": 24,
+      "Financing gap too large": 18,
+      "Too far": 25
     },
     "matches": [
       {
-        "candidate_id": "H0701",
-        "alias": "Candidate H0701",
+        "candidate_id": "H0182",
+        "alias": "Candidate H0182",
         "type": "strategic_buyer",
-        "fit": 90,
-        "owner_view": 94,
-        "candidate_view": 90,
+        "fit": 95,
+        "owner_view": 95,
+        "candidate_view": 96,
         "confidence": "high",
         "reasons": [
           "Experience in it services",
-          "30 km away",
+          "14 km away",
+          "Financing OK: €170,000 own funds needed, has €617,000",
+          "Plans to keep all staff",
+          "Agrees with a ~18-month handover",
+          "Both open to a 6-12 month interim trial before buying"
+        ],
+        "financing": {
+          "price": 581000.0,
+          "bank_loan": 324000.0,
+          "vendor_loan": 87000.0,
+          "equity_needed": 170000.0,
+          "own_funds": 617000.0,
+          "ok": true
+        },
+        "trial_possible": true,
+        "phased_plan": {
+          "locked_price": 581000.0,
+          "steps": [
+            {
+              "step": "Interim trial",
+              "months": 9,
+              "share": 0.0,
+              "what": "Candidate runs the company as interim managing director, with a purchase option at the locked price formula. Either side can stop at the end."
+            },
+            {
+              "step": "Minority stake",
+              "share": 0.3,
+              "price": 174000.0,
+              "bank_loan": 97000.0,
+              "vendor_loan": 26000.0,
+              "equity_needed": 51000.0,
+              "ok": true
+            },
+            {
+              "step": "Full takeover",
+              "share": 0.7,
+              "price": 407000.0,
+              "bank_loan": 227000.0,
+              "vendor_loan": 61000.0,
+              "equity_needed": 119000.0,
+              "ok": true
+            }
+          ],
+          "ok": true
+        }
+      },
+      {
+        "candidate_id": "H0701",
+        "alias": "Candidate H0701",
+        "type": "search_funder",
+        "fit": 94,
+        "owner_view": 94,
+        "candidate_view": 95,
+        "confidence": "high",
+        "reasons": [
+          "Experience in it services",
+          "24 km away",
           "Financing OK: €170,000 own funds needed, has €852,000",
           "Plans to keep all staff",
-          "Agrees with a ~24-month handover",
+          "Agrees with a ~18-month handover",
           "Completed the Ready-to-Own track"
         ],
         "financing": {
@@ -549,231 +175,890 @@
           "equity_needed": 170000.0,
           "own_funds": 852000.0,
           "ok": true
-        }
+        },
+        "trial_possible": false,
+        "phased_plan": null
       },
       {
-        "candidate_id": "H0182",
-        "alias": "Candidate H0182",
+        "candidate_id": "H0702",
+        "alias": "Candidate H0702",
         "type": "strategic_buyer",
-        "fit": 88,
-        "owner_view": 88,
+        "fit": 93,
+        "owner_view": 100,
+        "candidate_view": 93,
+        "confidence": "high",
+        "reasons": [
+          "Experience in it services",
+          "35 km away",
+          "Financing OK: €170,000 own funds needed, has €566,000",
+          "Plans to keep all staff",
+          "Agrees with a ~18-month handover",
+          "Completed the Ready-to-Own track",
+          "Both open to a 6-12 month interim trial before buying"
+        ],
+        "financing": {
+          "price": 581000.0,
+          "bank_loan": 324000.0,
+          "vendor_loan": 87000.0,
+          "equity_needed": 170000.0,
+          "own_funds": 566000.0,
+          "ok": true
+        },
+        "trial_possible": true,
+        "phased_plan": {
+          "locked_price": 581000.0,
+          "steps": [
+            {
+              "step": "Interim trial",
+              "months": 9,
+              "share": 0.0,
+              "what": "Candidate runs the company as interim managing director, with a purchase option at the locked price formula. Either side can stop at the end."
+            },
+            {
+              "step": "Minority stake",
+              "share": 0.3,
+              "price": 174000.0,
+              "bank_loan": 97000.0,
+              "vendor_loan": 26000.0,
+              "equity_needed": 51000.0,
+              "ok": true
+            },
+            {
+              "step": "Full takeover",
+              "share": 0.7,
+              "price": 407000.0,
+              "bank_loan": 227000.0,
+              "vendor_loan": 61000.0,
+              "equity_needed": 119000.0,
+              "ok": true
+            }
+          ],
+          "ok": true
+        }
+      }
+    ]
+  },
+  {
+    "company_id": "C089",
+    "pool_size": 128,
+    "passed_filters": 25,
+    "filtered_out": {
+      "Candidate not yet qualified": 20,
+      "Financing gap too large": 34,
+      "Too far": 39,
+      "Owner excluded this type of successor": 10
+    },
+    "matches": [
+      {
+        "candidate_id": "H0891",
+        "alias": "Candidate H0891",
+        "type": "strategic_buyer",
+        "fit": 95,
+        "owner_view": 95,
         "candidate_view": 95,
         "confidence": "high",
         "reasons": [
           "Experience in it services",
-          "26 km away",
-          "Financing OK: €170,000 own funds needed, has €733,000",
-          "Plans to keep all staff",
+          "15 km away",
+          "Financing OK: €494,000 own funds needed, has €881,000",
+          "Agrees with a ~6-month handover"
+        ],
+        "financing": {
+          "price": 1630000.0,
+          "bank_loan": 892000.0,
+          "vendor_loan": 244000.0,
+          "equity_needed": 494000.0,
+          "own_funds": 881000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      },
+      {
+        "candidate_id": "K067",
+        "alias": "Candidate 067",
+        "type": "strategic_buyer",
+        "fit": 93,
+        "owner_view": 94,
+        "candidate_view": 93,
+        "confidence": "high",
+        "reasons": [
+          "Experience in it services",
+          "15 km away",
+          "Financing OK: €494,000 own funds needed, has €1,291,000",
+          "Agrees with a ~6-month handover",
           "Completed the Ready-to-Own track"
         ],
         "financing": {
-          "price": 581000.0,
-          "bank_loan": 324000.0,
-          "vendor_loan": 87000.0,
-          "equity_needed": 170000.0,
-          "own_funds": 733000.0,
+          "price": 1630000.0,
+          "bank_loan": 892000.0,
+          "vendor_loan": 244000.0,
+          "equity_needed": 494000.0,
+          "own_funds": 1291000.0,
           "ok": true
-        }
+        },
+        "trial_possible": false,
+        "phased_plan": null
       },
       {
-        "candidate_id": "H0892",
-        "alias": "Candidate H0892",
-        "type": "strategic_buyer",
-        "fit": 86,
-        "owner_view": 86,
+        "candidate_id": "H0701",
+        "alias": "Candidate H0701",
+        "type": "search_funder",
+        "fit": 84,
+        "owner_view": 84,
         "candidate_view": 88,
         "confidence": "high",
         "reasons": [
           "Experience in it services",
-          "37 km away",
-          "Financing OK: €170,000 own funds needed, has €669,000",
-          "Plans to keep all staff"
+          "58 km away",
+          "Financing OK: €494,000 own funds needed, has €852,000",
+          "Completed the Ready-to-Own track"
         ],
         "financing": {
-          "price": 581000.0,
-          "bank_loan": 324000.0,
-          "vendor_loan": 87000.0,
-          "equity_needed": 170000.0,
-          "own_funds": 669000.0,
+          "price": 1630000.0,
+          "bank_loan": 892000.0,
+          "vendor_loan": 244000.0,
+          "equity_needed": 494000.0,
+          "own_funds": 852000.0,
           "ok": true
-        }
+        },
+        "trial_possible": false,
+        "phased_plan": null
       }
     ]
   },
   {
-    "company_id": "C027",
+    "company_id": "C018",
     "pool_size": 128,
-    "passed_filters": 44,
+    "passed_filters": 50,
     "filtered_out": {
-      "Candidate not yet qualified": 26,
-      "Owner excluded this type of successor": 47,
-      "Too far": 11
+      "Candidate not yet qualified": 24,
+      "Financing gap too large": 31,
+      "Too far": 23
     },
     "matches": [
       {
-        "candidate_id": "H0271",
-        "alias": "Candidate H0271",
-        "type": "search_funder",
-        "fit": 89,
-        "owner_view": 90,
-        "candidate_view": 89,
+        "candidate_id": "H0612",
+        "alias": "Candidate H0612",
+        "type": "experienced_manager",
+        "fit": 94,
+        "owner_view": 97,
+        "candidate_view": 94,
         "confidence": "high",
         "reasons": [
-          "Experience in retail",
-          "22 km away",
-          "Financing OK: €0 own funds needed, has €719,000",
-          "Plans to keep all staff"
-        ],
-        "financing": {
-          "price": 596000.0,
-          "bank_loan": 596000.0,
-          "vendor_loan": 89000.0,
-          "equity_needed": 0,
-          "own_funds": 719000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "H0272",
-        "alias": "Candidate H0272",
-        "type": "search_funder",
-        "fit": 85,
-        "owner_view": 94,
-        "candidate_view": 85,
-        "confidence": "high",
-        "reasons": [
-          "Experience in retail",
-          "31 km away",
-          "Financing OK: €0 own funds needed, has €482,000",
+          "Experience in business services",
+          "20 km away",
+          "Financing OK: €280,000 own funds needed, has €867,000",
           "Plans to keep all staff",
-          "Agrees with a ~24-month handover"
+          "Agrees with a ~24-month handover",
+          "Both open to a 6-12 month interim trial before buying"
         ],
         "financing": {
-          "price": 596000.0,
-          "bank_loan": 596000.0,
-          "vendor_loan": 89000.0,
-          "equity_needed": 0,
-          "own_funds": 482000.0,
+          "price": 686000.0,
+          "bank_loan": 303000.0,
+          "vendor_loan": 103000.0,
+          "equity_needed": 280000.0,
+          "own_funds": 867000.0,
+          "ok": true
+        },
+        "trial_possible": true,
+        "phased_plan": {
+          "locked_price": 686000.0,
+          "steps": [
+            {
+              "step": "Interim trial",
+              "months": 9,
+              "share": 0.0,
+              "what": "Candidate runs the company as interim managing director, with a purchase option at the locked price formula. Either side can stop at the end."
+            },
+            {
+              "step": "Minority stake",
+              "share": 0.3,
+              "price": 206000.0,
+              "bank_loan": 91000.0,
+              "vendor_loan": 31000.0,
+              "equity_needed": 84000.0,
+              "ok": true
+            },
+            {
+              "step": "Full takeover",
+              "share": 0.7,
+              "price": 480000.0,
+              "bank_loan": 212000.0,
+              "vendor_loan": 72000.0,
+              "equity_needed": 196000.0,
+              "ok": true
+            }
+          ],
           "ok": true
         }
       },
       {
-        "candidate_id": "K077",
-        "alias": "Candidate 077",
-        "type": "search_funder",
-        "fit": 84,
-        "owner_view": 84,
-        "candidate_view": 97,
-        "confidence": "high",
-        "reasons": [
-          "Experience in retail",
-          "15 km away",
-          "Financing OK: €0 own funds needed, has €654,000",
-          "Plans to keep all staff"
-        ],
-        "financing": {
-          "price": 596000.0,
-          "bank_loan": 596000.0,
-          "vendor_loan": 89000.0,
-          "equity_needed": 0,
-          "own_funds": 654000.0,
-          "ok": true
-        }
-      }
-    ]
-  },
-  {
-    "company_id": "C115",
-    "pool_size": 128,
-    "passed_filters": 62,
-    "filtered_out": {
-      "Candidate not yet qualified": 35,
-      "Too far": 21,
-      "Financing gap too large": 10
-    },
-    "matches": [
-      {
-        "candidate_id": "H1153",
-        "alias": "Candidate H1153",
+        "candidate_id": "H0700",
+        "alias": "Candidate H0700",
         "type": "strategic_buyer",
-        "fit": 89,
-        "owner_view": 89,
-        "candidate_view": 96,
+        "fit": 94,
+        "owner_view": 96,
+        "candidate_view": 94,
         "confidence": "high",
         "reasons": [
-          "Experience in joinery & carpentry",
-          "21 km away",
-          "Financing OK: €192,000 own funds needed, has €704,000",
+          "Experience in business services",
+          "29 km away",
+          "Financing OK: €280,000 own funds needed, has €820,000",
           "Plans to keep all staff",
-          "Agrees with a ~24-month handover"
+          "Agrees with a ~24-month handover",
+          "Completed the Ready-to-Own track",
+          "Both open to a 6-12 month interim trial before buying"
         ],
         "financing": {
-          "price": 837000.0,
-          "bank_loan": 519000.0,
-          "vendor_loan": 126000.0,
-          "equity_needed": 192000.0,
-          "own_funds": 704000.0,
+          "price": 686000.0,
+          "bank_loan": 303000.0,
+          "vendor_loan": 103000.0,
+          "equity_needed": 280000.0,
+          "own_funds": 820000.0,
+          "ok": true
+        },
+        "trial_possible": true,
+        "phased_plan": {
+          "locked_price": 686000.0,
+          "steps": [
+            {
+              "step": "Interim trial",
+              "months": 9,
+              "share": 0.0,
+              "what": "Candidate runs the company as interim managing director, with a purchase option at the locked price formula. Either side can stop at the end."
+            },
+            {
+              "step": "Minority stake",
+              "share": 0.3,
+              "price": 206000.0,
+              "bank_loan": 91000.0,
+              "vendor_loan": 31000.0,
+              "equity_needed": 84000.0,
+              "ok": true
+            },
+            {
+              "step": "Full takeover",
+              "share": 0.7,
+              "price": 480000.0,
+              "bank_loan": 212000.0,
+              "vendor_loan": 72000.0,
+              "equity_needed": 196000.0,
+              "ok": true
+            }
+          ],
           "ok": true
         }
       },
       {
-        "candidate_id": "K068",
-        "alias": "Candidate 068",
-        "type": "strategic_buyer",
+        "candidate_id": "H0183",
+        "alias": "Candidate H0183",
+        "type": "search_funder",
         "fit": 88,
         "owner_view": 88,
+        "candidate_view": 93,
+        "confidence": "high",
+        "reasons": [
+          "Experience in business services",
+          "3 km away",
+          "Financing OK: €280,000 own funds needed, has €305,000",
+          "Plans to keep all staff",
+          "Completed the Ready-to-Own track",
+          "Both open to a 6-12 month interim trial before buying"
+        ],
+        "financing": {
+          "price": 686000.0,
+          "bank_loan": 303000.0,
+          "vendor_loan": 103000.0,
+          "equity_needed": 280000.0,
+          "own_funds": 305000.0,
+          "ok": true
+        },
+        "trial_possible": true,
+        "phased_plan": {
+          "locked_price": 686000.0,
+          "steps": [
+            {
+              "step": "Interim trial",
+              "months": 9,
+              "share": 0.0,
+              "what": "Candidate runs the company as interim managing director, with a purchase option at the locked price formula. Either side can stop at the end."
+            },
+            {
+              "step": "Minority stake",
+              "share": 0.3,
+              "price": 206000.0,
+              "bank_loan": 91000.0,
+              "vendor_loan": 31000.0,
+              "equity_needed": 84000.0,
+              "ok": true
+            },
+            {
+              "step": "Full takeover",
+              "share": 0.7,
+              "price": 480000.0,
+              "bank_loan": 212000.0,
+              "vendor_loan": 72000.0,
+              "equity_needed": 196000.0,
+              "ok": true
+            }
+          ],
+          "ok": true
+        }
+      }
+    ]
+  },
+  {
+    "company_id": "C224",
+    "pool_size": 128,
+    "passed_filters": 53,
+    "filtered_out": {
+      "Candidate not yet qualified": 22,
+      "Too far": 37,
+      "Owner excluded this type of successor": 10,
+      "Financing gap too large": 6
+    },
+    "matches": [
+      {
+        "candidate_id": "H0891",
+        "alias": "Candidate H0891",
+        "type": "strategic_buyer",
+        "fit": 94,
+        "owner_view": 100,
+        "candidate_view": 94,
+        "confidence": "high",
+        "reasons": [
+          "Experience in it services",
+          "19 km away",
+          "Financing OK: €180,000 own funds needed, has €881,000",
+          "Plans to keep all staff",
+          "Agrees with a ~6-month handover",
+          "Both open to a 6-12 month interim trial before buying"
+        ],
+        "financing": {
+          "price": 474000.0,
+          "bank_loan": 223000.0,
+          "vendor_loan": 71000.0,
+          "equity_needed": 180000.0,
+          "own_funds": 881000.0,
+          "ok": true
+        },
+        "trial_possible": true,
+        "phased_plan": {
+          "locked_price": 474000.0,
+          "steps": [
+            {
+              "step": "Interim trial",
+              "months": 9,
+              "share": 0.0,
+              "what": "Candidate runs the company as interim managing director, with a purchase option at the locked price formula. Either side can stop at the end."
+            },
+            {
+              "step": "Minority stake",
+              "share": 0.3,
+              "price": 142000.0,
+              "bank_loan": 67000.0,
+              "vendor_loan": 21000.0,
+              "equity_needed": 54000.0,
+              "ok": true
+            },
+            {
+              "step": "Full takeover",
+              "share": 0.7,
+              "price": 332000.0,
+              "bank_loan": 156000.0,
+              "vendor_loan": 50000.0,
+              "equity_needed": 126000.0,
+              "ok": true
+            }
+          ],
+          "ok": true
+        }
+      },
+      {
+        "candidate_id": "H2240",
+        "alias": "Candidate H2240",
+        "type": "search_funder",
+        "fit": 93,
+        "owner_view": 95,
+        "candidate_view": 93,
+        "confidence": "high",
+        "reasons": [
+          "Experience in it services",
+          "8 km away",
+          "Financing OK: €180,000 own funds needed, has €197,000",
+          "Plans to keep all staff",
+          "Agrees with a ~6-month handover"
+        ],
+        "financing": {
+          "price": 474000.0,
+          "bank_loan": 223000.0,
+          "vendor_loan": 71000.0,
+          "equity_needed": 180000.0,
+          "own_funds": 197000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      },
+      {
+        "candidate_id": "H0181",
+        "alias": "Candidate H0181",
+        "type": "strategic_buyer",
+        "fit": 86,
+        "owner_view": 93,
+        "candidate_view": 86,
+        "confidence": "high",
+        "reasons": [
+          "Experience in it services",
+          "43 km away",
+          "Financing OK: €180,000 own funds needed, has €401,000",
+          "Plans to keep all staff",
+          "Agrees with a ~6-month handover",
+          "Both open to a 6-12 month interim trial before buying"
+        ],
+        "financing": {
+          "price": 474000.0,
+          "bank_loan": 223000.0,
+          "vendor_loan": 71000.0,
+          "equity_needed": 180000.0,
+          "own_funds": 401000.0,
+          "ok": true
+        },
+        "trial_possible": true,
+        "phased_plan": {
+          "locked_price": 474000.0,
+          "steps": [
+            {
+              "step": "Interim trial",
+              "months": 9,
+              "share": 0.0,
+              "what": "Candidate runs the company as interim managing director, with a purchase option at the locked price formula. Either side can stop at the end."
+            },
+            {
+              "step": "Minority stake",
+              "share": 0.3,
+              "price": 142000.0,
+              "bank_loan": 67000.0,
+              "vendor_loan": 21000.0,
+              "equity_needed": 54000.0,
+              "ok": true
+            },
+            {
+              "step": "Full takeover",
+              "share": 0.7,
+              "price": 332000.0,
+              "bank_loan": 156000.0,
+              "vendor_loan": 50000.0,
+              "equity_needed": 126000.0,
+              "ok": true
+            }
+          ],
+          "ok": true
+        }
+      }
+    ]
+  },
+  {
+    "company_id": "C061",
+    "pool_size": 128,
+    "passed_filters": 47,
+    "filtered_out": {
+      "Candidate not yet qualified": 18,
+      "Owner excluded this type of successor": 46,
+      "Too far": 16,
+      "Financing gap too large": 1
+    },
+    "matches": [
+      {
+        "candidate_id": "H0610",
+        "alias": "Candidate H0610",
+        "type": "experienced_manager",
+        "fit": 93,
+        "owner_view": 94,
+        "candidate_view": 93,
+        "confidence": "high",
+        "reasons": [
+          "Experience in business services",
+          "36 km away",
+          "Financing OK: €52,000 own funds needed, has €270,000",
+          "Plans to keep all staff",
+          "Agrees with a ~12-month handover",
+          "Completed the Ready-to-Own track"
+        ],
+        "financing": {
+          "price": 186000.0,
+          "bank_loan": 106000.0,
+          "vendor_loan": 28000.0,
+          "equity_needed": 52000.0,
+          "own_funds": 270000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      },
+      {
+        "candidate_id": "H0611",
+        "alias": "Candidate H0611",
+        "type": "experienced_manager",
+        "fit": 90,
+        "owner_view": 92,
+        "candidate_view": 90,
+        "confidence": "high",
+        "reasons": [
+          "Experience in business services",
+          "21 km away",
+          "Financing OK: €52,000 own funds needed, has €698,000",
+          "Plans to keep all staff",
+          "Agrees with a ~12-month handover"
+        ],
+        "financing": {
+          "price": 186000.0,
+          "bank_loan": 106000.0,
+          "vendor_loan": 28000.0,
+          "equity_needed": 52000.0,
+          "own_funds": 698000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      },
+      {
+        "candidate_id": "H0612",
+        "alias": "Candidate H0612",
+        "type": "experienced_manager",
+        "fit": 88,
+        "owner_view": 92,
         "candidate_view": 88,
         "confidence": "high",
         "reasons": [
-          "Experience in joinery & carpentry",
-          "59 km away",
-          "Financing OK: €192,000 own funds needed, has €2,370,000",
+          "Experience in business services",
+          "37 km away",
+          "Financing OK: €52,000 own funds needed, has €867,000",
+          "Plans to keep all staff",
+          "Agrees with a ~12-month handover"
+        ],
+        "financing": {
+          "price": 186000.0,
+          "bank_loan": 106000.0,
+          "vendor_loan": 28000.0,
+          "equity_needed": 52000.0,
+          "own_funds": 867000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      }
+    ]
+  },
+  {
+    "company_id": "C101",
+    "pool_size": 128,
+    "passed_filters": 61,
+    "filtered_out": {
+      "Candidate not yet qualified": 20,
+      "Financing gap too large": 14,
+      "Owner excluded this type of successor": 10,
+      "Too far": 23
+    },
+    "matches": [
+      {
+        "candidate_id": "H1013",
+        "alias": "Candidate H1013",
+        "type": "experienced_manager",
+        "fit": 91,
+        "owner_view": 95,
+        "candidate_view": 91,
+        "confidence": "high",
+        "reasons": [
+          "Experience in wholesale",
+          "27 km away",
+          "Financing OK: €187,000 own funds needed, has €610,000",
           "Plans to keep all staff",
           "Agrees with a ~24-month handover"
         ],
         "financing": {
-          "price": 837000.0,
-          "bank_loan": 519000.0,
-          "vendor_loan": 126000.0,
-          "equity_needed": 192000.0,
-          "own_funds": 2370000.0,
+          "price": 529000.0,
+          "bank_loan": 263000.0,
+          "vendor_loan": 79000.0,
+          "equity_needed": 187000.0,
+          "own_funds": 610000.0,
           "ok": true
-        }
+        },
+        "trial_possible": false,
+        "phased_plan": null
       },
       {
-        "candidate_id": "K009",
-        "alias": "Candidate 009",
-        "type": "experienced_manager",
-        "fit": 83,
-        "owner_view": 83,
-        "candidate_view": 96,
+        "candidate_id": "H0273",
+        "alias": "Candidate H0273",
+        "type": "strategic_buyer",
+        "fit": 87,
+        "owner_view": 87,
+        "candidate_view": 87,
         "confidence": "high",
         "reasons": [
-          "Experience in joinery & carpentry",
-          "13 km away",
-          "Financing OK: €192,000 own funds needed, has €302,000",
+          "Experience in wholesale",
+          "41 km away",
+          "Financing OK: €187,000 own funds needed, has €408,000",
+          "Plans to keep all staff",
+          "Agrees with a ~24-month handover"
+        ],
+        "financing": {
+          "price": 529000.0,
+          "bank_loan": 263000.0,
+          "vendor_loan": 79000.0,
+          "equity_needed": 187000.0,
+          "own_funds": 408000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      },
+      {
+        "candidate_id": "H1011",
+        "alias": "Candidate H1011",
+        "type": "strategic_buyer",
+        "fit": 84,
+        "owner_view": 84,
+        "candidate_view": 92,
+        "confidence": "high",
+        "reasons": [
+          "Experience in wholesale",
+          "24 km away",
+          "Financing OK: €187,000 own funds needed, has €421,000",
           "Plans to keep all staff",
           "Completed the Ready-to-Own track"
         ],
         "financing": {
-          "price": 837000.0,
-          "bank_loan": 519000.0,
-          "vendor_loan": 126000.0,
-          "equity_needed": 192000.0,
-          "own_funds": 302000.0,
+          "price": 529000.0,
+          "bank_loan": 263000.0,
+          "vendor_loan": 79000.0,
+          "equity_needed": 187000.0,
+          "own_funds": 421000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      }
+    ]
+  },
+  {
+    "company_id": "C264",
+    "pool_size": 128,
+    "passed_filters": 56,
+    "filtered_out": {
+      "Candidate not yet qualified": 24,
+      "Financing gap too large": 22,
+      "Too far": 26
+    },
+    "matches": [
+      {
+        "candidate_id": "H2010",
+        "alias": "Candidate H2010",
+        "type": "experienced_manager",
+        "fit": 91,
+        "owner_view": 92,
+        "candidate_view": 91,
+        "confidence": "high",
+        "reasons": [
+          "Experience in manufacturing",
+          "43 km away",
+          "Financing OK: €226,000 own funds needed, has €541,000",
+          "Plans to keep all staff",
+          "Agrees with a ~24-month handover"
+        ],
+        "financing": {
+          "price": 462000.0,
+          "bank_loan": 167000.0,
+          "vendor_loan": 69000.0,
+          "equity_needed": 226000.0,
+          "own_funds": 541000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      },
+      {
+        "candidate_id": "H2640",
+        "alias": "Candidate H2640",
+        "type": "search_funder",
+        "fit": 84,
+        "owner_view": 84,
+        "candidate_view": 92,
+        "confidence": "high",
+        "reasons": [
+          "Experience in manufacturing",
+          "16 km away",
+          "Financing OK: €226,000 own funds needed, has €540,000",
+          "Plans to keep all staff"
+        ],
+        "financing": {
+          "price": 462000.0,
+          "bank_loan": 167000.0,
+          "vendor_loan": 69000.0,
+          "equity_needed": 226000.0,
+          "own_funds": 540000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      },
+      {
+        "candidate_id": "K014",
+        "alias": "Candidate 014",
+        "type": "experienced_manager",
+        "fit": 80,
+        "owner_view": 83,
+        "candidate_view": 80,
+        "confidence": "high",
+        "reasons": [
+          "Experience in manufacturing",
+          "50 km away",
+          "Financing OK: €226,000 own funds needed, has €263,000",
+          "Plans to keep all staff",
+          "Both open to a 6-12 month interim trial before buying"
+        ],
+        "financing": {
+          "price": 462000.0,
+          "bank_loan": 167000.0,
+          "vendor_loan": 69000.0,
+          "equity_needed": 226000.0,
+          "own_funds": 263000.0,
+          "ok": true
+        },
+        "trial_possible": true,
+        "phased_plan": {
+          "locked_price": 462000.0,
+          "steps": [
+            {
+              "step": "Interim trial",
+              "months": 9,
+              "share": 0.0,
+              "what": "Candidate runs the company as interim managing director, with a purchase option at the locked price formula. Either side can stop at the end."
+            },
+            {
+              "step": "Minority stake",
+              "share": 0.3,
+              "price": 139000.0,
+              "bank_loan": 50000.0,
+              "vendor_loan": 21000.0,
+              "equity_needed": 68000.0,
+              "ok": true
+            },
+            {
+              "step": "Full takeover",
+              "share": 0.7,
+              "price": 323000.0,
+              "bank_loan": 117000.0,
+              "vendor_loan": 48000.0,
+              "equity_needed": 158000.0,
+              "ok": true
+            }
+          ],
           "ok": true
         }
+      }
+    ]
+  },
+  {
+    "company_id": "C239",
+    "pool_size": 128,
+    "passed_filters": 35,
+    "filtered_out": {
+      "Candidate not yet qualified": 24,
+      "Too far": 66,
+      "Financing gap too large": 3
+    },
+    "matches": [
+      {
+        "candidate_id": "H2393",
+        "alias": "Candidate H2393",
+        "type": "experienced_manager",
+        "fit": 90,
+        "owner_view": 93,
+        "candidate_view": 90,
+        "confidence": "high",
+        "reasons": [
+          "Experience in manufacturing",
+          "21 km away",
+          "Financing OK: €72,000 own funds needed, has €236,000",
+          "Plans to keep all staff",
+          "Agrees with a ~18-month handover"
+        ],
+        "financing": {
+          "price": 326000.0,
+          "bank_loan": 205000.0,
+          "vendor_loan": 49000.0,
+          "equity_needed": 72000.0,
+          "own_funds": 236000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      },
+      {
+        "candidate_id": "H2392",
+        "alias": "Candidate H2392",
+        "type": "experienced_manager",
+        "fit": 88,
+        "owner_view": 98,
+        "candidate_view": 88,
+        "confidence": "high",
+        "reasons": [
+          "Experience in manufacturing",
+          "23 km away",
+          "Financing OK: €72,000 own funds needed, has €798,000",
+          "Plans to keep all staff",
+          "Agrees with a ~18-month handover",
+          "Completed the Ready-to-Own track"
+        ],
+        "financing": {
+          "price": 326000.0,
+          "bank_loan": 205000.0,
+          "vendor_loan": 49000.0,
+          "equity_needed": 72000.0,
+          "own_funds": 798000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      },
+      {
+        "candidate_id": "H2390",
+        "alias": "Candidate H2390",
+        "type": "strategic_buyer",
+        "fit": 77,
+        "owner_view": 77,
+        "candidate_view": 78,
+        "confidence": "high",
+        "reasons": [
+          "Experience in a related sector",
+          "13 km away",
+          "Financing OK: €72,000 own funds needed, has €255,000",
+          "Plans to keep all staff",
+          "Agrees with a ~18-month handover"
+        ],
+        "financing": {
+          "price": 326000.0,
+          "bank_loan": 205000.0,
+          "vendor_loan": 49000.0,
+          "equity_needed": 72000.0,
+          "own_funds": 255000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
       }
     ]
   },
   {
     "company_id": "C201",
     "pool_size": 128,
-    "passed_filters": 59,
+    "passed_filters": 58,
     "filtered_out": {
-      "Candidate not yet qualified": 35,
-      "Too far": 32,
-      "Financing gap too large": 2
+      "Candidate not yet qualified": 24,
+      "Too far": 40,
+      "Financing gap too large": 6
     },
     "matches": [
       {
@@ -787,16 +1072,75 @@
         "reasons": [
           "Experience in manufacturing",
           "21 km away",
-          "Financing OK: €82,000 own funds needed, has €540,000",
+          "Financing OK: €123,000 own funds needed, has €540,000",
           "Plans to keep all staff",
           "Agrees with a ~6-month handover"
         ],
         "financing": {
           "price": 615000.0,
-          "bank_loan": 441000.0,
+          "bank_loan": 400000.0,
           "vendor_loan": 92000.0,
-          "equity_needed": 82000.0,
+          "equity_needed": 123000.0,
           "own_funds": 540000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      },
+      {
+        "candidate_id": "H2641",
+        "alias": "Candidate H2641",
+        "type": "strategic_buyer",
+        "fit": 89,
+        "owner_view": 100,
+        "candidate_view": 89,
+        "confidence": "high",
+        "reasons": [
+          "Experience in manufacturing",
+          "34 km away",
+          "Financing OK: €123,000 own funds needed, has €200,000",
+          "Plans to keep all staff",
+          "Agrees with a ~6-month handover",
+          "Completed the Ready-to-Own track",
+          "Both open to a 6-12 month interim trial before buying"
+        ],
+        "financing": {
+          "price": 615000.0,
+          "bank_loan": 400000.0,
+          "vendor_loan": 92000.0,
+          "equity_needed": 123000.0,
+          "own_funds": 200000.0,
+          "ok": true
+        },
+        "trial_possible": true,
+        "phased_plan": {
+          "locked_price": 615000.0,
+          "steps": [
+            {
+              "step": "Interim trial",
+              "months": 9,
+              "share": 0.0,
+              "what": "Candidate runs the company as interim managing director, with a purchase option at the locked price formula. Either side can stop at the end."
+            },
+            {
+              "step": "Minority stake",
+              "share": 0.3,
+              "price": 184000.0,
+              "bank_loan": 120000.0,
+              "vendor_loan": 28000.0,
+              "equity_needed": 36000.0,
+              "ok": true
+            },
+            {
+              "step": "Full takeover",
+              "share": 0.7,
+              "price": 430000.0,
+              "bank_loan": 279000.0,
+              "vendor_loan": 64000.0,
+              "equity_needed": 87000.0,
+              "ok": true
+            }
+          ],
           "ok": true
         }
       },
@@ -811,149 +1155,135 @@
         "reasons": [
           "Experience in manufacturing",
           "19 km away",
-          "Financing OK: €82,000 own funds needed, has €541,000",
+          "Financing OK: €123,000 own funds needed, has €541,000",
           "Plans to keep all staff"
         ],
         "financing": {
           "price": 615000.0,
-          "bank_loan": 441000.0,
+          "bank_loan": 400000.0,
           "vendor_loan": 92000.0,
-          "equity_needed": 82000.0,
+          "equity_needed": 123000.0,
           "own_funds": 541000.0,
           "ok": true
-        }
-      },
-      {
-        "candidate_id": "K011",
-        "alias": "Candidate 011",
-        "type": "strategic_buyer",
-        "fit": 80,
-        "owner_view": 80,
-        "candidate_view": 97,
-        "confidence": "high",
-        "reasons": [
-          "Experience in manufacturing",
-          "14 km away",
-          "Financing OK: €82,000 own funds needed, has €1,996,000",
-          "Plans to keep all staff",
-          "Agrees with a ~6-month handover",
-          "Completed the Ready-to-Own track"
-        ],
-        "financing": {
-          "price": 615000.0,
-          "bank_loan": 441000.0,
-          "vendor_loan": 92000.0,
-          "equity_needed": 82000.0,
-          "own_funds": 1996000.0,
-          "ok": true
-        }
+        },
+        "trial_possible": false,
+        "phased_plan": null
       }
     ]
   },
   {
-    "company_id": "C264",
+    "company_id": "C115",
     "pool_size": 128,
-    "passed_filters": 41,
+    "passed_filters": 26,
     "filtered_out": {
+      "Candidate not yet qualified": 17,
       "Owner excluded this type of successor": 55,
-      "Too far": 16,
-      "Candidate not yet qualified": 12,
-      "Financing gap too large": 4
+      "Financing gap too large": 17,
+      "Too far": 13
     },
     "matches": [
       {
-        "candidate_id": "H2011",
-        "alias": "Candidate H2011",
-        "type": "search_funder",
-        "fit": 89,
-        "owner_view": 90,
-        "candidate_view": 89,
-        "confidence": "high",
-        "reasons": [
-          "Experience in manufacturing",
-          "26 km away",
-          "Financing OK: €226,000 own funds needed, has €286,000",
-          "Agrees with a ~24-month handover"
-        ],
-        "financing": {
-          "price": 462000.0,
-          "bank_loan": 167000.0,
-          "vendor_loan": 69000.0,
-          "equity_needed": 226000.0,
-          "own_funds": 286000.0,
-          "ok": true
-        }
-      },
-      {
-        "candidate_id": "H2640",
-        "alias": "Candidate H2640",
-        "type": "search_funder",
+        "candidate_id": "K015",
+        "alias": "Candidate 015",
+        "type": "experienced_manager",
         "fit": 84,
         "owner_view": 84,
-        "candidate_view": 92,
+        "candidate_view": 93,
         "confidence": "high",
         "reasons": [
-          "Experience in manufacturing",
-          "16 km away",
-          "Financing OK: €226,000 own funds needed, has €540,000"
+          "Experience in joinery & carpentry",
+          "24 km away",
+          "Financing OK: €192,000 own funds needed, has €298,000",
+          "Plans to keep all staff",
+          "Agrees with a ~12-month handover"
         ],
         "financing": {
-          "price": 462000.0,
-          "bank_loan": 167000.0,
-          "vendor_loan": 69000.0,
-          "equity_needed": 226000.0,
-          "own_funds": 540000.0,
+          "price": 837000.0,
+          "bank_loan": 519000.0,
+          "vendor_loan": 126000.0,
+          "equity_needed": 192000.0,
+          "own_funds": 298000.0,
           "ok": true
-        }
+        },
+        "trial_possible": false,
+        "phased_plan": null
       },
       {
-        "candidate_id": "H2012",
-        "alias": "Candidate H2012",
-        "type": "strategic_buyer",
-        "fit": 76,
-        "owner_view": 76,
-        "candidate_view": 77,
+        "candidate_id": "K005",
+        "alias": "Candidate 005",
+        "type": "experienced_manager",
+        "fit": 78,
+        "owner_view": 78,
+        "candidate_view": 88,
         "confidence": "high",
         "reasons": [
-          "Experience in a related sector",
-          "16 km away",
-          "Financing OK: €226,000 own funds needed, has €335,000",
-          "Agrees with a ~24-month handover"
+          "Experience in joinery & carpentry",
+          "24 km away",
+          "Financing OK: €192,000 own funds needed, has €397,000",
+          "Agrees with a ~12-month handover",
+          "Completed the Ready-to-Own track"
         ],
         "financing": {
-          "price": 462000.0,
-          "bank_loan": 167000.0,
-          "vendor_loan": 69000.0,
-          "equity_needed": 226000.0,
-          "own_funds": 335000.0,
+          "price": 837000.0,
+          "bank_loan": 519000.0,
+          "vendor_loan": 126000.0,
+          "equity_needed": 192000.0,
+          "own_funds": 397000.0,
           "ok": true
-        }
+        },
+        "trial_possible": false,
+        "phased_plan": null
+      },
+      {
+        "candidate_id": "H1071",
+        "alias": "Candidate H1071",
+        "type": "experienced_manager",
+        "fit": 70,
+        "owner_view": 82,
+        "candidate_view": 70,
+        "confidence": "medium",
+        "reasons": [
+          "Experience in a related sector",
+          "60 km away",
+          "Financing OK: €192,000 own funds needed, has €651,000",
+          "Plans to keep all staff",
+          "Agrees with a ~12-month handover"
+        ],
+        "financing": {
+          "price": 837000.0,
+          "bank_loan": 519000.0,
+          "vendor_loan": 126000.0,
+          "equity_needed": 192000.0,
+          "own_funds": 651000.0,
+          "ok": true
+        },
+        "trial_possible": false,
+        "phased_plan": null
       }
     ]
   },
   {
     "company_id": "C107",
     "pool_size": 128,
-    "passed_filters": 31,
+    "passed_filters": 55,
     "filtered_out": {
-      "Candidate not yet qualified": 30,
-      "Too far": 25,
-      "Owner excluded this type of successor": 36,
-      "Financing gap too large": 6
+      "Candidate not yet qualified": 24,
+      "Too far": 35,
+      "Financing gap too large": 14
     },
     "matches": [
       {
-        "candidate_id": "H2642",
-        "alias": "Candidate H2642",
-        "type": "experienced_manager",
-        "fit": 78,
+        "candidate_id": "H1072",
+        "alias": "Candidate H1072",
+        "type": "strategic_buyer",
+        "fit": 82,
         "owner_view": 82,
-        "candidate_view": 78,
+        "candidate_view": 87,
         "confidence": "high",
         "reasons": [
           "Experience in hvac & installation",
-          "70 km away",
-          "Financing OK: €186,000 own funds needed, has €778,000",
+          "26 km away",
+          "Financing OK: €186,000 own funds needed, has €550,000",
           "Plans to keep all staff"
         ],
         "financing": {
@@ -961,46 +1291,83 @@
           "bank_loan": 342000.0,
           "vendor_loan": 93000.0,
           "equity_needed": 186000.0,
-          "own_funds": 778000.0,
+          "own_funds": 550000.0,
           "ok": true
-        }
+        },
+        "trial_possible": false,
+        "phased_plan": null
       },
       {
-        "candidate_id": "K019",
-        "alias": "Candidate 019",
-        "type": "search_funder",
-        "fit": 74,
-        "owner_view": 74,
-        "candidate_view": 88,
+        "candidate_id": "H1073",
+        "alias": "Candidate H1073",
+        "type": "strategic_buyer",
+        "fit": 80,
+        "owner_view": 86,
+        "candidate_view": 80,
         "confidence": "high",
         "reasons": [
-          "Experience in hvac & installation",
-          "59 km away",
-          "Financing OK: €186,000 own funds needed, has €391,000",
+          "Experience in a related sector",
+          "9 km away",
+          "Financing OK: €186,000 own funds needed, has €718,000",
           "Plans to keep all staff",
-          "Agrees with a ~6-month handover"
+          "Agrees with a ~24-month handover",
+          "Completed the Ready-to-Own track",
+          "Both open to a 6-12 month interim trial before buying"
         ],
         "financing": {
           "price": 621000.0,
           "bank_loan": 342000.0,
           "vendor_loan": 93000.0,
           "equity_needed": 186000.0,
-          "own_funds": 391000.0,
+          "own_funds": 718000.0,
+          "ok": true
+        },
+        "trial_possible": true,
+        "phased_plan": {
+          "locked_price": 621000.0,
+          "steps": [
+            {
+              "step": "Interim trial",
+              "months": 9,
+              "share": 0.0,
+              "what": "Candidate runs the company as interim managing director, with a purchase option at the locked price formula. Either side can stop at the end."
+            },
+            {
+              "step": "Minority stake",
+              "share": 0.3,
+              "price": 186000.0,
+              "bank_loan": 103000.0,
+              "vendor_loan": 28000.0,
+              "equity_needed": 55000.0,
+              "ok": true
+            },
+            {
+              "step": "Full takeover",
+              "share": 0.7,
+              "price": 435000.0,
+              "bank_loan": 239000.0,
+              "vendor_loan": 65000.0,
+              "equity_needed": 131000.0,
+              "ok": true
+            }
+          ],
           "ok": true
         }
       },
       {
-        "candidate_id": "H1072",
-        "alias": "Candidate H1072",
-        "type": "search_funder",
-        "fit": 69,
-        "owner_view": 69,
-        "candidate_view": 86,
-        "confidence": "medium",
+        "candidate_id": "H2013",
+        "alias": "Candidate H2013",
+        "type": "experienced_manager",
+        "fit": 78,
+        "owner_view": 92,
+        "candidate_view": 78,
+        "confidence": "high",
         "reasons": [
           "Experience in hvac & installation",
-          "29 km away",
-          "Financing OK: €186,000 own funds needed, has €373,000",
+          "106 km away",
+          "Financing OK: €186,000 own funds needed, has €490,000",
+          "Plans to keep all staff",
+          "Agrees with a ~24-month handover",
           "Completed the Ready-to-Own track"
         ],
         "financing": {
@@ -1008,9 +1375,11 @@
           "bank_loan": 342000.0,
           "vendor_loan": 93000.0,
           "equity_needed": 186000.0,
-          "own_funds": 373000.0,
+          "own_funds": 490000.0,
           "ok": true
-        }
+        },
+        "trial_possible": false,
+        "phased_plan": null
       }
     ]
   }

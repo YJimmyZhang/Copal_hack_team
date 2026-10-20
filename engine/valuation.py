@@ -52,11 +52,37 @@ def max_acquisition_loan(c):
 def financing_check(c, own_funds, price=None):
     """Can a buyer with `own_funds` finance this company at `price` (default: mid value)?"""
     price = price or value_range(c)["equity_mid"]
-    loan = min(max_acquisition_loan(c), price)
     vendor = round(FINANCING["vendor_loan_share"] * price, -3)
+    bank_room = price * (1 - FINANCING["vendor_loan_share"] - FINANCING["min_buyer_equity_share"])
+    loan = round(min(max_acquisition_loan(c), bank_room), -3)
     gap = max(0, price - loan - vendor)
     return {"price": price, "bank_loan": loan, "vendor_loan": vendor, "equity_needed": gap,
             "own_funds": own_funds, "ok": own_funds >= gap}
+
+
+def phased_plan(c, own_funds, minority_share=0.3, trial_months=9):
+    """'Try before you buy': interim trial -> minority stake -> full takeover.
+
+    The price formula is locked at the start (today's mid value), so the interim
+    manager has no incentive to push results down before buying.
+    """
+    locked_price = value_range(c)["equity_mid"]
+    loan_cap = max_acquisition_loan(c)
+    steps = [{"step": "Interim trial", "months": trial_months, "share": 0.0,
+              "what": "Candidate runs the company as interim managing director, with a purchase "
+                      "option at the locked price formula. Either side can stop at the end."}]
+    remaining_own = own_funds
+    for name, share in (("Minority stake", minority_share), ("Full takeover", 1 - minority_share)):
+        price = round(locked_price * share, -3)
+        vendor = round(FINANCING["vendor_loan_share"] * price, -3)
+        bank_room = price * (1 - FINANCING["vendor_loan_share"] - FINANCING["min_buyer_equity_share"])
+        loan = round(min(loan_cap * share, bank_room), -3)
+        equity = max(0, price - loan - vendor)
+        steps.append({"step": name, "share": share, "price": price, "bank_loan": loan,
+                      "vendor_loan": vendor, "equity_needed": equity, "ok": remaining_own >= equity})
+        remaining_own -= equity
+    return {"locked_price": locked_price, "steps": steps,
+            "ok": all(s.get("ok", True) for s in steps)}
 
 
 def company_view(c):

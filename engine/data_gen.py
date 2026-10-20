@@ -73,6 +73,7 @@ def make_companies(n=300, seed=SEED):
             "transition_months": rng.choice([6, 12, 18, 24]),
             "allowed_types": rng.sample(CANDIDATE_TYPES, k=rng.randint(3, 5)),
             "timing_years": rng.choice([1, 2, 3]),
+            "allow_trial": rng.random() < 0.6,   # open to a 6-12 month interim trial first
         }
     return companies
 
@@ -101,6 +102,7 @@ def headhunter_sourced(company, k=4, seed=SEED + 2):
             "values_score": round(rng.uniform(0.6, 1.0), 2),
             "skills_score": round(rng.uniform(0.6, 1.0), 2),
             "state": rng.choice(["qualified", "ready"]),
+            "open_to_interim": rng.random() < 0.6,
         })
     return out
 
@@ -136,5 +138,7 @@ def make_candidates(n=80, seed=SEED + 1):
             "values_score": round(rng.uniform(0.4, 1.0), 2),
             "skills_score": round(rng.uniform(0.4, 1.0), 2),
             "state": rng.choices(["curious", "qualified", "ready"], weights=[30, 45, 25])[0],
+            # Willing to start as interim managing director (trial) before buying
+            "open_to_interim": rng.random() < (0.7 if ctype in ("experienced_manager", "search_funder") else 0.3),
         })
     return candidates

@@ -39,6 +39,7 @@ FINANCING = {
     "interest_rate": 0.05,
     "min_dscr": 1.3,              # EBITDA must cover yearly debt service 1.3x
     "vendor_loan_share": 0.15,    # seller leaves 15% of the price as a vendor loan
+    "min_buyer_equity_share": 0.20,  # buyer always brings at least 20% of the price
 }
 
 CURRENT_YEAR = 2026

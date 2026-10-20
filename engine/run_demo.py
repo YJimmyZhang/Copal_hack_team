@@ -54,6 +54,15 @@ def main():
     print(f"  Pool {m['pool_size']} -> {m['passed_filters']} passed filters; filtered out: {m['filtered_out']}")
     for x in m["matches"]:
         print(f"  {x['fit']:>3}% {x['alias']} ({x['type']}, {x['confidence']}): {'; '.join(x['reasons'])}")
+    t = next((x for mm in matches for x in mm["matches"] if x["trial_possible"]), None)
+    if t:
+        print(f"\nTry-before-you-buy plan for {t['alias']} (locked price €{t['phased_plan']['locked_price']:,.0f}):")
+        for s in t["phased_plan"]["steps"]:
+            if s["share"] == 0:
+                print(f"  {s['step']} ({s['months']} months): {s['what']}")
+            else:
+                print(f"  {s['step']} {s['share']:.0%}: price €{s['price']:,.0f} = loan €{s['bank_loan']:,.0f}"
+                      f" + vendor €{s['vendor_loan']:,.0f} + own €{s['equity_needed']:,.0f}  {'OK' if s['ok'] else 'GAP'}")
 
 
 if __name__ == "__main__":
