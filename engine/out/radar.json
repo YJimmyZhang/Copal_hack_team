@@ -1,0 +1,452 @@
+[
+  {
+    "company_id": "C076",
+    "name": "Claes Installaties",
+    "sector": "installation",
+    "region": "West Flanders",
+    "employees": 14,
+    "score": 89,
+    "level": "high",
+    "reasons": [
+      "Owner is 64",
+      "No next generation among shareholders",
+      "No investment loan for 8 years",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 39 years old"
+    ]
+  },
+  {
+    "company_id": "C189",
+    "name": "Desmet Schrijnwerkerij",
+    "sector": "joinery",
+    "region": "Limburg",
+    "employees": 3,
+    "score": 89,
+    "level": "high",
+    "reasons": [
+      "Owner is 72",
+      "No next generation among shareholders",
+      "No investment loan for 10 years",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 41 years old"
+    ]
+  },
+  {
+    "company_id": "C072",
+    "name": "Jacobs IT",
+    "sector": "it_services",
+    "region": "West Flanders",
+    "employees": 4,
+    "score": 85,
+    "level": "high",
+    "reasons": [
+      "Owner is 71",
+      "No next generation among shareholders",
+      "No investment loan for 7 years",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension"
+    ]
+  },
+  {
+    "company_id": "C183",
+    "name": "Martens Groothandel",
+    "sector": "wholesale",
+    "region": "Flemish Brabant",
+    "employees": 6,
+    "score": 85,
+    "level": "high",
+    "reasons": [
+      "Owner is 75",
+      "No next generation among shareholders",
+      "No investment loan for 5 years",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension"
+    ]
+  },
+  {
+    "company_id": "C248",
+    "name": "Pauwels Installaties",
+    "sector": "installation",
+    "region": "Antwerp",
+    "employees": 32,
+    "score": 85,
+    "level": "high",
+    "reasons": [
+      "Owner is 65",
+      "No next generation among shareholders",
+      "No investment loan for 7 years",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension"
+    ]
+  },
+  {
+    "company_id": "C280",
+    "name": "Janssens Groothandel",
+    "sector": "wholesale",
+    "region": "Antwerp",
+    "employees": 10,
+    "score": 85,
+    "level": "high",
+    "reasons": [
+      "Owner is 65",
+      "No next generation among shareholders",
+      "No investment loan for 10 years",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension"
+    ]
+  },
+  {
+    "company_id": "C284",
+    "name": "Willems IT",
+    "sector": "it_services",
+    "region": "Brussels",
+    "employees": 12,
+    "score": 85,
+    "level": "high",
+    "reasons": [
+      "Owner is 60",
+      "No next generation among shareholders",
+      "No investment loan for 12 years",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension"
+    ]
+  },
+  {
+    "company_id": "C081",
+    "name": "Peeters Consult",
+    "sector": "business_services",
+    "region": "Brussels",
+    "employees": 12,
+    "score": 82,
+    "level": "high",
+    "reasons": [
+      "Owner is 73",
+      "No next generation among shareholders",
+      "No investment loan for 12 years",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is saving more for pension",
+      "Company is 36 years old"
+    ]
+  },
+  {
+    "company_id": "C130",
+    "name": "De Smet Schrijnwerkerij",
+    "sector": "joinery",
+    "region": "West Flanders",
+    "employees": 4,
+    "score": 82,
+    "level": "high",
+    "reasons": [
+      "Owner is 63",
+      "No next generation among shareholders",
+      "No investment loan for 5 years",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is saving more for pension",
+      "Company is 31 years old"
+    ]
+  },
+  {
+    "company_id": "C013",
+    "name": "Goossens Brasserie",
+    "sector": "horeca",
+    "region": "Brussels",
+    "employees": 9,
+    "score": 80,
+    "level": "high",
+    "reasons": [
+      "Owner is 69",
+      "No next generation among shareholders",
+      "No investment loan for 7 years",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 35 years old"
+    ]
+  },
+  {
+    "company_id": "C023",
+    "name": "De Clercq Winkel",
+    "sector": "retail",
+    "region": "Flemish Brabant",
+    "employees": 21,
+    "score": 80,
+    "level": "high",
+    "reasons": [
+      "Owner is 67",
+      "No next generation among shareholders",
+      "No investment loan for 11 years",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 36 years old"
+    ]
+  },
+  {
+    "company_id": "C089",
+    "name": "Dubois IT",
+    "sector": "it_services",
+    "region": "Limburg",
+    "employees": 12,
+    "score": 80,
+    "level": "high",
+    "reasons": [
+      "Owner is 75",
+      "No next generation among shareholders",
+      "No investment loan for 8 years",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 30 years old"
+    ]
+  },
+  {
+    "company_id": "C127",
+    "name": "Vermeulen Brasserie",
+    "sector": "horeca",
+    "region": "Flemish Brabant",
+    "employees": 25,
+    "score": 80,
+    "level": "high",
+    "reasons": [
+      "Owner is 61",
+      "No next generation among shareholders",
+      "No investment loan for 12 years",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 32 years old"
+    ]
+  },
+  {
+    "company_id": "C171",
+    "name": "De Smet Schrijnwerkerij",
+    "sector": "joinery",
+    "region": "Antwerp",
+    "employees": 5,
+    "score": 80,
+    "level": "high",
+    "reasons": [
+      "Owner is 68",
+      "No next generation among shareholders",
+      "No investment loan for 12 years",
+      "Investment spending is falling",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 40 years old"
+    ]
+  },
+  {
+    "company_id": "C186",
+    "name": "Vermeulen Brasserie",
+    "sector": "horeca",
+    "region": "Brussels",
+    "employees": 26,
+    "score": 80,
+    "level": "high",
+    "reasons": [
+      "Owner is 60",
+      "No next generation among shareholders",
+      "No investment loan for 6 years",
+      "Investment spending is falling",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 33 years old"
+    ]
+  },
+  {
+    "company_id": "C234",
+    "name": "Jacobs IT",
+    "sector": "it_services",
+    "region": "East Flanders",
+    "employees": 20,
+    "score": 80,
+    "level": "high",
+    "reasons": [
+      "Owner is 60",
+      "No next generation among shareholders",
+      "No investment loan for 9 years",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 42 years old"
+    ]
+  },
+  {
+    "company_id": "C046",
+    "name": "Vermeulen Schrijnwerkerij",
+    "sector": "joinery",
+    "region": "Flemish Brabant",
+    "employees": 10,
+    "score": 77,
+    "level": "high",
+    "reasons": [
+      "No next generation among shareholders",
+      "No investment loan for 9 years",
+      "Owner is 58",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 42 years old"
+    ]
+  },
+  {
+    "company_id": "C140",
+    "name": "Goossens Groothandel",
+    "sector": "wholesale",
+    "region": "Brussels",
+    "employees": 69,
+    "score": 77,
+    "level": "high",
+    "reasons": [
+      "Owner is 67",
+      "No next generation among shareholders",
+      "No investment loan for 12 years",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Company is 33 years old"
+    ]
+  },
+  {
+    "company_id": "C149",
+    "name": "Lambert Brasserie",
+    "sector": "horeca",
+    "region": "Brussels",
+    "employees": 19,
+    "score": 77,
+    "level": "high",
+    "reasons": [
+      "No next generation among shareholders",
+      "No investment loan for 8 years",
+      "Owner is 58",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 35 years old"
+    ]
+  },
+  {
+    "company_id": "C192",
+    "name": "Dubois Metaal",
+    "sector": "manufacturing",
+    "region": "Flemish Brabant",
+    "employees": 7,
+    "score": 77,
+    "level": "high",
+    "reasons": [
+      "Owner is 71",
+      "No next generation among shareholders",
+      "No investment loan for 11 years",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is saving more for pension"
+    ]
+  },
+  {
+    "company_id": "C264",
+    "name": "Martens Metaal",
+    "sector": "manufacturing",
+    "region": "Flemish Brabant",
+    "employees": 6,
+    "score": 77,
+    "level": "high",
+    "reasons": [
+      "Owner is 74",
+      "No next generation among shareholders",
+      "No investment loan for 5 years",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is saving more for pension"
+    ]
+  },
+  {
+    "company_id": "C294",
+    "name": "Hermans Brasserie",
+    "sector": "horeca",
+    "region": "Antwerp",
+    "employees": 2,
+    "score": 77,
+    "level": "high",
+    "reasons": [
+      "No next generation among shareholders",
+      "No investment loan for 11 years",
+      "Owner is 58",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 25 years old"
+    ]
+  },
+  {
+    "company_id": "C063",
+    "name": "Dubois Transport",
+    "sector": "transport",
+    "region": "Limburg",
+    "employees": 10,
+    "score": 75,
+    "level": "high",
+    "reasons": [
+      "Owner is 61",
+      "No next generation among shareholders",
+      "No investment loan for 6 years",
+      "Investment spending is falling",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension"
+    ]
+  },
+  {
+    "company_id": "C070",
+    "name": "Willems IT",
+    "sector": "it_services",
+    "region": "Brussels",
+    "employees": 7,
+    "score": 75,
+    "level": "high",
+    "reasons": [
+      "Owner is 64",
+      "No next generation among shareholders",
+      "Investment spending is falling",
+      "Cash is piling up in the company",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension",
+      "Company is 36 years old"
+    ]
+  },
+  {
+    "company_id": "C093",
+    "name": "Vermeulen Installaties",
+    "sector": "installation",
+    "region": "Limburg",
+    "employees": 6,
+    "score": 75,
+    "level": "high",
+    "reasons": [
+      "Owner is 64",
+      "No next generation among shareholders",
+      "No investment loan for 11 years",
+      "Investment spending is falling",
+      "Owner is taking out more dividends",
+      "Owner is saving more for pension"
+    ]
+  }
+]

@@ -1,0 +1,3240 @@
+[
+  {
+    "candidate_id": "K001",
+    "alias": "Candidate 001",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Brussels",
+    "lat": 50.9288,
+    "lon": 4.5338,
+    "max_distance_km": 30,
+    "sectors": [
+      "transport",
+      "wholesale"
+    ],
+    "years_experience": 22,
+    "management_experience": true,
+    "own_funds": 218000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      5,
+      20
+    ],
+    "values_score": 0.43,
+    "skills_score": 0.46,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K002",
+    "alias": "Candidate 002",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "East Flanders",
+    "lat": 51.0537,
+    "lon": 3.7184,
+    "max_distance_km": 80,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 15,
+    "management_experience": true,
+    "own_funds": 265000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      3,
+      40
+    ],
+    "values_score": 0.57,
+    "skills_score": 0.45,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K003",
+    "alias": "Candidate 003",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "Limburg",
+    "lat": 50.9762,
+    "lon": 5.3899,
+    "max_distance_km": 30,
+    "sectors": [
+      "joinery"
+    ],
+    "years_experience": 17,
+    "management_experience": false,
+    "own_funds": 137000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      3,
+      20
+    ],
+    "values_score": 0.91,
+    "skills_score": 0.87,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K004",
+    "alias": "Candidate 004",
+    "type": "staff_mbo",
+    "source": "owner_invite",
+    "region": "West Flanders",
+    "lat": 51.1185,
+    "lon": 3.1688,
+    "max_distance_km": 30,
+    "sectors": [
+      "construction",
+      "installation"
+    ],
+    "years_experience": 25,
+    "management_experience": true,
+    "own_funds": 87000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      5,
+      20
+    ],
+    "values_score": 0.79,
+    "skills_score": 0.92,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K005",
+    "alias": "Candidate 005",
+    "type": "staff_mbo",
+    "source": "owner_invite",
+    "region": "West Flanders",
+    "lat": 50.9327,
+    "lon": 3.1141,
+    "max_distance_km": 30,
+    "sectors": [
+      "it_services",
+      "business_services"
+    ],
+    "years_experience": 28,
+    "management_experience": false,
+    "own_funds": 45000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      3,
+      80
+    ],
+    "values_score": 0.72,
+    "skills_score": 0.56,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K006",
+    "alias": "Candidate 006",
+    "type": "staff_mbo",
+    "source": "owner_invite",
+    "region": "West Flanders",
+    "lat": 51.1572,
+    "lon": 3.0542,
+    "max_distance_km": 30,
+    "sectors": [
+      "joinery"
+    ],
+    "years_experience": 30,
+    "management_experience": false,
+    "own_funds": 79000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      5,
+      80
+    ],
+    "values_score": 0.75,
+    "skills_score": 0.95,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K007",
+    "alias": "Candidate 007",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "East Flanders",
+    "lat": 51.0613,
+    "lon": 3.8333,
+    "max_distance_km": 30,
+    "sectors": [
+      "wholesale"
+    ],
+    "years_experience": 12,
+    "management_experience": true,
+    "own_funds": 140000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      5,
+      20
+    ],
+    "values_score": 0.44,
+    "skills_score": 0.7,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K008",
+    "alias": "Candidate 008",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Limburg",
+    "lat": 51.0341,
+    "lon": 5.4852,
+    "max_distance_km": 30,
+    "sectors": [
+      "business_services"
+    ],
+    "years_experience": 11,
+    "management_experience": true,
+    "own_funds": 224000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      3,
+      20
+    ],
+    "values_score": 0.82,
+    "skills_score": 0.47,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K009",
+    "alias": "Candidate 009",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Flemish Brabant",
+    "lat": 50.7617,
+    "lon": 4.5747,
+    "max_distance_km": 80,
+    "sectors": [
+      "construction",
+      "joinery"
+    ],
+    "years_experience": 20,
+    "management_experience": true,
+    "own_funds": 302000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      3,
+      40
+    ],
+    "values_score": 0.69,
+    "skills_score": 0.96,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K010",
+    "alias": "Candidate 010",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Flemish Brabant",
+    "lat": 50.941,
+    "lon": 4.5569,
+    "max_distance_km": 30,
+    "sectors": [
+      "wholesale"
+    ],
+    "years_experience": 18,
+    "management_experience": false,
+    "own_funds": 791000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      5,
+      80
+    ],
+    "values_score": 0.69,
+    "skills_score": 0.67,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K011",
+    "alias": "Candidate 011",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Limburg",
+    "lat": 50.926,
+    "lon": 5.3497,
+    "max_distance_km": 120,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 21,
+    "management_experience": true,
+    "own_funds": 1996000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      10,
+      80
+    ],
+    "values_score": 0.41,
+    "skills_score": 0.46,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K012",
+    "alias": "Candidate 012",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Brussels",
+    "lat": 50.7694,
+    "lon": 4.5441,
+    "max_distance_km": 30,
+    "sectors": [
+      "horeca",
+      "retail"
+    ],
+    "years_experience": 17,
+    "management_experience": true,
+    "own_funds": 567000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      5,
+      20
+    ],
+    "values_score": 0.47,
+    "skills_score": 0.59,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K013",
+    "alias": "Candidate 013",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Flemish Brabant",
+    "lat": 50.9395,
+    "lon": 4.679,
+    "max_distance_km": 50,
+    "sectors": [
+      "retail",
+      "wholesale"
+    ],
+    "years_experience": 8,
+    "management_experience": true,
+    "own_funds": 398000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      10,
+      80
+    ],
+    "values_score": 0.43,
+    "skills_score": 0.51,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K014",
+    "alias": "Candidate 014",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "East Flanders",
+    "lat": 50.942,
+    "lon": 3.795,
+    "max_distance_km": 50,
+    "sectors": [
+      "horeca",
+      "retail"
+    ],
+    "years_experience": 15,
+    "management_experience": false,
+    "own_funds": 884000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      10,
+      80
+    ],
+    "values_score": 0.62,
+    "skills_score": 0.46,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K015",
+    "alias": "Candidate 015",
+    "type": "staff_mbo",
+    "source": "owner_invite",
+    "region": "West Flanders",
+    "lat": 50.9287,
+    "lon": 3.1283,
+    "max_distance_km": 120,
+    "sectors": [
+      "business_services",
+      "it_services"
+    ],
+    "years_experience": 23,
+    "management_experience": true,
+    "own_funds": 86000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      3,
+      80
+    ],
+    "values_score": 0.83,
+    "skills_score": 0.69,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K016",
+    "alias": "Candidate 016",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Brussels",
+    "lat": 50.7617,
+    "lon": 4.4296,
+    "max_distance_km": 120,
+    "sectors": [
+      "business_services",
+      "it_services"
+    ],
+    "years_experience": 14,
+    "management_experience": true,
+    "own_funds": 165000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      10,
+      40
+    ],
+    "values_score": 0.51,
+    "skills_score": 0.78,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K017",
+    "alias": "Candidate 017",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "Flemish Brabant",
+    "lat": 50.8695,
+    "lon": 4.5046,
+    "max_distance_km": 50,
+    "sectors": [
+      "construction"
+    ],
+    "years_experience": 9,
+    "management_experience": false,
+    "own_funds": 52000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      3,
+      20
+    ],
+    "values_score": 0.58,
+    "skills_score": 0.44,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K018",
+    "alias": "Candidate 018",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Brussels",
+    "lat": 50.9031,
+    "lon": 4.2536,
+    "max_distance_km": 50,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 23,
+    "management_experience": true,
+    "own_funds": 1677000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      10,
+      40
+    ],
+    "values_score": 0.68,
+    "skills_score": 0.75,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K019",
+    "alias": "Candidate 019",
+    "type": "search_funder",
+    "source": "headhunter",
+    "region": "Flemish Brabant",
+    "lat": 50.9774,
+    "lon": 4.709,
+    "max_distance_km": 120,
+    "sectors": [
+      "installation",
+      "construction"
+    ],
+    "years_experience": 27,
+    "management_experience": false,
+    "own_funds": 391000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      3,
+      20
+    ],
+    "values_score": 0.78,
+    "skills_score": 0.55,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K020",
+    "alias": "Candidate 020",
+    "type": "staff_mbo",
+    "source": "owner_invite",
+    "region": "Limburg",
+    "lat": 50.8984,
+    "lon": 5.3285,
+    "max_distance_km": 50,
+    "sectors": [
+      "joinery",
+      "construction"
+    ],
+    "years_experience": 15,
+    "management_experience": true,
+    "own_funds": 31000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      10,
+      20
+    ],
+    "values_score": 0.92,
+    "skills_score": 0.42,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K021",
+    "alias": "Candidate 021",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Antwerp",
+    "lat": 51.2374,
+    "lon": 4.5698,
+    "max_distance_km": 30,
+    "sectors": [
+      "business_services",
+      "it_services"
+    ],
+    "years_experience": 14,
+    "management_experience": true,
+    "own_funds": 1506000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      3,
+      80
+    ],
+    "values_score": 0.41,
+    "skills_score": 0.41,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K022",
+    "alias": "Candidate 022",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Limburg",
+    "lat": 50.8695,
+    "lon": 5.2726,
+    "max_distance_km": 30,
+    "sectors": [
+      "retail",
+      "wholesale"
+    ],
+    "years_experience": 12,
+    "management_experience": true,
+    "own_funds": 2362000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      10,
+      20
+    ],
+    "values_score": 0.73,
+    "skills_score": 0.65,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K023",
+    "alias": "Candidate 023",
+    "type": "search_funder",
+    "source": "headhunter",
+    "region": "Antwerp",
+    "lat": 51.2187,
+    "lon": 4.4013,
+    "max_distance_km": 30,
+    "sectors": [
+      "installation",
+      "construction"
+    ],
+    "years_experience": 18,
+    "management_experience": true,
+    "own_funds": 1105000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      5,
+      80
+    ],
+    "values_score": 0.64,
+    "skills_score": 0.98,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K024",
+    "alias": "Candidate 024",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Limburg",
+    "lat": 50.9326,
+    "lon": 5.4125,
+    "max_distance_km": 120,
+    "sectors": [
+      "business_services"
+    ],
+    "years_experience": 27,
+    "management_experience": true,
+    "own_funds": 335000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      3,
+      20
+    ],
+    "values_score": 0.78,
+    "skills_score": 0.41,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K025",
+    "alias": "Candidate 025",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Limburg",
+    "lat": 50.9752,
+    "lon": 5.192,
+    "max_distance_km": 120,
+    "sectors": [
+      "horeca"
+    ],
+    "years_experience": 21,
+    "management_experience": true,
+    "own_funds": 2756000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      5,
+      80
+    ],
+    "values_score": 0.83,
+    "skills_score": 0.41,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K026",
+    "alias": "Candidate 026",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "Antwerp",
+    "lat": 51.162,
+    "lon": 4.5485,
+    "max_distance_km": 120,
+    "sectors": [
+      "construction"
+    ],
+    "years_experience": 13,
+    "management_experience": true,
+    "own_funds": 105000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      5,
+      40
+    ],
+    "values_score": 0.5,
+    "skills_score": 0.66,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K027",
+    "alias": "Candidate 027",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "East Flanders",
+    "lat": 50.9277,
+    "lon": 3.6397,
+    "max_distance_km": 50,
+    "sectors": [
+      "horeca"
+    ],
+    "years_experience": 23,
+    "management_experience": true,
+    "own_funds": 397000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      10,
+      40
+    ],
+    "values_score": 0.89,
+    "skills_score": 0.8,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K028",
+    "alias": "Candidate 028",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Antwerp",
+    "lat": 51.1162,
+    "lon": 4.3943,
+    "max_distance_km": 80,
+    "sectors": [
+      "retail",
+      "wholesale"
+    ],
+    "years_experience": 7,
+    "management_experience": true,
+    "own_funds": 226000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      5,
+      80
+    ],
+    "values_score": 0.75,
+    "skills_score": 0.49,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K029",
+    "alias": "Candidate 029",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Brussels",
+    "lat": 50.8011,
+    "lon": 4.4404,
+    "max_distance_km": 30,
+    "sectors": [
+      "it_services",
+      "business_services"
+    ],
+    "years_experience": 19,
+    "management_experience": true,
+    "own_funds": 144000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      5,
+      20
+    ],
+    "values_score": 0.78,
+    "skills_score": 0.59,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K030",
+    "alias": "Candidate 030",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "West Flanders",
+    "lat": 51.1807,
+    "lon": 3.2508,
+    "max_distance_km": 30,
+    "sectors": [
+      "transport",
+      "wholesale"
+    ],
+    "years_experience": 12,
+    "management_experience": false,
+    "own_funds": 148000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      10,
+      80
+    ],
+    "values_score": 0.59,
+    "skills_score": 0.91,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K031",
+    "alias": "Candidate 031",
+    "type": "search_funder",
+    "source": "headhunter",
+    "region": "Antwerp",
+    "lat": 51.1414,
+    "lon": 4.2527,
+    "max_distance_km": 120,
+    "sectors": [
+      "joinery"
+    ],
+    "years_experience": 5,
+    "management_experience": false,
+    "own_funds": 598000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      5,
+      20
+    ],
+    "values_score": 0.87,
+    "skills_score": 0.6,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K032",
+    "alias": "Candidate 032",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Limburg",
+    "lat": 50.9064,
+    "lon": 5.3513,
+    "max_distance_km": 80,
+    "sectors": [
+      "transport"
+    ],
+    "years_experience": 5,
+    "management_experience": true,
+    "own_funds": 1211000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      10,
+      40
+    ],
+    "values_score": 0.68,
+    "skills_score": 0.93,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K033",
+    "alias": "Candidate 033",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Antwerp",
+    "lat": 51.1323,
+    "lon": 4.3535,
+    "max_distance_km": 120,
+    "sectors": [
+      "wholesale",
+      "transport"
+    ],
+    "years_experience": 26,
+    "management_experience": true,
+    "own_funds": 1947000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      10,
+      20
+    ],
+    "values_score": 0.42,
+    "skills_score": 0.54,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K034",
+    "alias": "Candidate 034",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "West Flanders",
+    "lat": 50.9512,
+    "lon": 3.0665,
+    "max_distance_km": 30,
+    "sectors": [
+      "it_services",
+      "business_services"
+    ],
+    "years_experience": 16,
+    "management_experience": true,
+    "own_funds": 307000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      5,
+      20
+    ],
+    "values_score": 0.88,
+    "skills_score": 0.6,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K035",
+    "alias": "Candidate 035",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "Brussels",
+    "lat": 50.8651,
+    "lon": 4.3968,
+    "max_distance_km": 120,
+    "sectors": [
+      "transport",
+      "wholesale"
+    ],
+    "years_experience": 14,
+    "management_experience": false,
+    "own_funds": 68000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      10,
+      80
+    ],
+    "values_score": 0.9,
+    "skills_score": 1.0,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K036",
+    "alias": "Candidate 036",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Flemish Brabant",
+    "lat": 50.7305,
+    "lon": 4.7273,
+    "max_distance_km": 50,
+    "sectors": [
+      "construction"
+    ],
+    "years_experience": 15,
+    "management_experience": false,
+    "own_funds": 207000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      3,
+      80
+    ],
+    "values_score": 0.66,
+    "skills_score": 0.53,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K037",
+    "alias": "Candidate 037",
+    "type": "staff_mbo",
+    "source": "owner_invite",
+    "region": "Antwerp",
+    "lat": 51.3552,
+    "lon": 4.2704,
+    "max_distance_km": 80,
+    "sectors": [
+      "retail"
+    ],
+    "years_experience": 18,
+    "management_experience": true,
+    "own_funds": 32000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      3,
+      20
+    ],
+    "values_score": 0.4,
+    "skills_score": 0.58,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K038",
+    "alias": "Candidate 038",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "Limburg",
+    "lat": 50.8478,
+    "lon": 5.363,
+    "max_distance_km": 120,
+    "sectors": [
+      "retail"
+    ],
+    "years_experience": 9,
+    "management_experience": false,
+    "own_funds": 36000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      3,
+      80
+    ],
+    "values_score": 0.56,
+    "skills_score": 0.6,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K039",
+    "alias": "Candidate 039",
+    "type": "staff_mbo",
+    "source": "owner_invite",
+    "region": "Antwerp",
+    "lat": 51.1446,
+    "lon": 4.3335,
+    "max_distance_km": 50,
+    "sectors": [
+      "horeca",
+      "retail"
+    ],
+    "years_experience": 26,
+    "management_experience": true,
+    "own_funds": 80000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      5,
+      40
+    ],
+    "values_score": 0.47,
+    "skills_score": 0.76,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K040",
+    "alias": "Candidate 040",
+    "type": "search_funder",
+    "source": "headhunter",
+    "region": "East Flanders",
+    "lat": 51.1795,
+    "lon": 3.5983,
+    "max_distance_km": 30,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 26,
+    "management_experience": true,
+    "own_funds": 1102000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      5,
+      20
+    ],
+    "values_score": 0.51,
+    "skills_score": 0.54,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K041",
+    "alias": "Candidate 041",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Brussels",
+    "lat": 50.7143,
+    "lon": 4.1561,
+    "max_distance_km": 50,
+    "sectors": [
+      "transport"
+    ],
+    "years_experience": 10,
+    "management_experience": true,
+    "own_funds": 201000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      5,
+      20
+    ],
+    "values_score": 0.83,
+    "skills_score": 0.83,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K042",
+    "alias": "Candidate 042",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Brussels",
+    "lat": 50.9915,
+    "lon": 4.461,
+    "max_distance_km": 30,
+    "sectors": [
+      "joinery",
+      "construction"
+    ],
+    "years_experience": 3,
+    "management_experience": true,
+    "own_funds": 1918000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      5,
+      80
+    ],
+    "values_score": 0.75,
+    "skills_score": 0.7,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K043",
+    "alias": "Candidate 043",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Limburg",
+    "lat": 50.8127,
+    "lon": 5.282,
+    "max_distance_km": 80,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 5,
+    "management_experience": false,
+    "own_funds": 175000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      5,
+      40
+    ],
+    "values_score": 0.69,
+    "skills_score": 0.66,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K044",
+    "alias": "Candidate 044",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Antwerp",
+    "lat": 51.2737,
+    "lon": 4.3967,
+    "max_distance_km": 80,
+    "sectors": [
+      "retail"
+    ],
+    "years_experience": 15,
+    "management_experience": true,
+    "own_funds": 1469000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      10,
+      80
+    ],
+    "values_score": 0.83,
+    "skills_score": 0.75,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K045",
+    "alias": "Candidate 045",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Limburg",
+    "lat": 50.7969,
+    "lon": 5.1303,
+    "max_distance_km": 120,
+    "sectors": [
+      "retail"
+    ],
+    "years_experience": 14,
+    "management_experience": true,
+    "own_funds": 973000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      5,
+      20
+    ],
+    "values_score": 0.81,
+    "skills_score": 0.89,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K046",
+    "alias": "Candidate 046",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "Flemish Brabant",
+    "lat": 50.8341,
+    "lon": 4.5656,
+    "max_distance_km": 50,
+    "sectors": [
+      "business_services"
+    ],
+    "years_experience": 24,
+    "management_experience": false,
+    "own_funds": 129000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      3,
+      80
+    ],
+    "values_score": 0.62,
+    "skills_score": 0.72,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K047",
+    "alias": "Candidate 047",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "West Flanders",
+    "lat": 51.0805,
+    "lon": 3.186,
+    "max_distance_km": 30,
+    "sectors": [
+      "installation"
+    ],
+    "years_experience": 30,
+    "management_experience": false,
+    "own_funds": 75000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      3,
+      40
+    ],
+    "values_score": 0.81,
+    "skills_score": 0.56,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K048",
+    "alias": "Candidate 048",
+    "type": "search_funder",
+    "source": "headhunter",
+    "region": "East Flanders",
+    "lat": 50.9021,
+    "lon": 3.7512,
+    "max_distance_km": 120,
+    "sectors": [
+      "construction",
+      "joinery"
+    ],
+    "years_experience": 19,
+    "management_experience": true,
+    "own_funds": 1333000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      3,
+      20
+    ],
+    "values_score": 0.73,
+    "skills_score": 0.5,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K049",
+    "alias": "Candidate 049",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Limburg",
+    "lat": 50.9441,
+    "lon": 5.2156,
+    "max_distance_km": 50,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 20,
+    "management_experience": true,
+    "own_funds": 347000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      5,
+      40
+    ],
+    "values_score": 0.46,
+    "skills_score": 0.9,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K050",
+    "alias": "Candidate 050",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "East Flanders",
+    "lat": 51.0196,
+    "lon": 3.886,
+    "max_distance_km": 120,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 12,
+    "management_experience": true,
+    "own_funds": 37000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      3,
+      40
+    ],
+    "values_score": 0.58,
+    "skills_score": 0.61,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K051",
+    "alias": "Candidate 051",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "Antwerp",
+    "lat": 51.2383,
+    "lon": 4.3798,
+    "max_distance_km": 80,
+    "sectors": [
+      "joinery"
+    ],
+    "years_experience": 13,
+    "management_experience": true,
+    "own_funds": 75000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      5,
+      40
+    ],
+    "values_score": 0.81,
+    "skills_score": 0.98,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K052",
+    "alias": "Candidate 052",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "East Flanders",
+    "lat": 50.9066,
+    "lon": 3.8854,
+    "max_distance_km": 80,
+    "sectors": [
+      "manufacturing",
+      "installation"
+    ],
+    "years_experience": 15,
+    "management_experience": true,
+    "own_funds": 149000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      3,
+      80
+    ],
+    "values_score": 0.73,
+    "skills_score": 0.5,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K053",
+    "alias": "Candidate 053",
+    "type": "search_funder",
+    "source": "headhunter",
+    "region": "East Flanders",
+    "lat": 50.9068,
+    "lon": 3.7564,
+    "max_distance_km": 80,
+    "sectors": [
+      "construction",
+      "joinery"
+    ],
+    "years_experience": 24,
+    "management_experience": true,
+    "own_funds": 828000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      10,
+      20
+    ],
+    "values_score": 0.58,
+    "skills_score": 0.66,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K054",
+    "alias": "Candidate 054",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Flemish Brabant",
+    "lat": 50.9597,
+    "lon": 4.7744,
+    "max_distance_km": 80,
+    "sectors": [
+      "it_services",
+      "business_services"
+    ],
+    "years_experience": 30,
+    "management_experience": true,
+    "own_funds": 262000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      5,
+      20
+    ],
+    "values_score": 0.66,
+    "skills_score": 0.54,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K055",
+    "alias": "Candidate 055",
+    "type": "staff_mbo",
+    "source": "owner_invite",
+    "region": "East Flanders",
+    "lat": 51.1653,
+    "lon": 3.8565,
+    "max_distance_km": 80,
+    "sectors": [
+      "business_services",
+      "it_services"
+    ],
+    "years_experience": 4,
+    "management_experience": true,
+    "own_funds": 66000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      3,
+      40
+    ],
+    "values_score": 0.47,
+    "skills_score": 0.84,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K056",
+    "alias": "Candidate 056",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "West Flanders",
+    "lat": 51.0981,
+    "lon": 3.0481,
+    "max_distance_km": 50,
+    "sectors": [
+      "manufacturing",
+      "installation"
+    ],
+    "years_experience": 24,
+    "management_experience": true,
+    "own_funds": 332000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      5,
+      80
+    ],
+    "values_score": 0.56,
+    "skills_score": 0.6,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K057",
+    "alias": "Candidate 057",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Flemish Brabant",
+    "lat": 50.7352,
+    "lon": 4.501,
+    "max_distance_km": 80,
+    "sectors": [
+      "retail"
+    ],
+    "years_experience": 10,
+    "management_experience": true,
+    "own_funds": 1550000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      5,
+      80
+    ],
+    "values_score": 0.47,
+    "skills_score": 0.55,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K058",
+    "alias": "Candidate 058",
+    "type": "staff_mbo",
+    "source": "owner_invite",
+    "region": "Flemish Brabant",
+    "lat": 50.8244,
+    "lon": 4.6833,
+    "max_distance_km": 30,
+    "sectors": [
+      "it_services",
+      "business_services"
+    ],
+    "years_experience": 12,
+    "management_experience": false,
+    "own_funds": 144000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      3,
+      20
+    ],
+    "values_score": 1.0,
+    "skills_score": 0.72,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K059",
+    "alias": "Candidate 059",
+    "type": "staff_mbo",
+    "source": "owner_invite",
+    "region": "Brussels",
+    "lat": 50.9635,
+    "lon": 4.3062,
+    "max_distance_km": 30,
+    "sectors": [
+      "horeca",
+      "retail"
+    ],
+    "years_experience": 7,
+    "management_experience": true,
+    "own_funds": 47000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      3,
+      40
+    ],
+    "values_score": 0.6,
+    "skills_score": 0.63,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K060",
+    "alias": "Candidate 060",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "East Flanders",
+    "lat": 50.9443,
+    "lon": 3.7447,
+    "max_distance_km": 80,
+    "sectors": [
+      "installation"
+    ],
+    "years_experience": 13,
+    "management_experience": false,
+    "own_funds": 24000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      5,
+      40
+    ],
+    "values_score": 0.88,
+    "skills_score": 0.52,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K061",
+    "alias": "Candidate 061",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Flemish Brabant",
+    "lat": 50.9399,
+    "lon": 4.6931,
+    "max_distance_km": 80,
+    "sectors": [
+      "retail"
+    ],
+    "years_experience": 28,
+    "management_experience": true,
+    "own_funds": 1853000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      5,
+      40
+    ],
+    "values_score": 0.69,
+    "skills_score": 0.85,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K062",
+    "alias": "Candidate 062",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Limburg",
+    "lat": 50.7918,
+    "lon": 5.4633,
+    "max_distance_km": 120,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 16,
+    "management_experience": true,
+    "own_funds": 1228000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      5,
+      20
+    ],
+    "values_score": 0.83,
+    "skills_score": 0.46,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K063",
+    "alias": "Candidate 063",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "Antwerp",
+    "lat": 51.2803,
+    "lon": 4.3514,
+    "max_distance_km": 80,
+    "sectors": [
+      "joinery",
+      "construction"
+    ],
+    "years_experience": 16,
+    "management_experience": false,
+    "own_funds": 67000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      3,
+      20
+    ],
+    "values_score": 0.57,
+    "skills_score": 0.74,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K064",
+    "alias": "Candidate 064",
+    "type": "search_funder",
+    "source": "headhunter",
+    "region": "Brussels",
+    "lat": 50.924,
+    "lon": 4.4509,
+    "max_distance_km": 120,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 4,
+    "management_experience": true,
+    "own_funds": 447000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      3,
+      20
+    ],
+    "values_score": 0.52,
+    "skills_score": 1.0,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K065",
+    "alias": "Candidate 065",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "West Flanders",
+    "lat": 50.9988,
+    "lon": 3.0088,
+    "max_distance_km": 50,
+    "sectors": [
+      "installation"
+    ],
+    "years_experience": 27,
+    "management_experience": false,
+    "own_funds": 238000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      5,
+      80
+    ],
+    "values_score": 0.76,
+    "skills_score": 0.68,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K066",
+    "alias": "Candidate 066",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "Brussels",
+    "lat": 50.9912,
+    "lon": 4.4425,
+    "max_distance_km": 80,
+    "sectors": [
+      "business_services",
+      "it_services"
+    ],
+    "years_experience": 14,
+    "management_experience": true,
+    "own_funds": 107000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      10,
+      40
+    ],
+    "values_score": 0.72,
+    "skills_score": 0.47,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K067",
+    "alias": "Candidate 067",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Limburg",
+    "lat": 50.844,
+    "lon": 5.3047,
+    "max_distance_km": 80,
+    "sectors": [
+      "wholesale"
+    ],
+    "years_experience": 21,
+    "management_experience": true,
+    "own_funds": 2934000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      5,
+      80
+    ],
+    "values_score": 0.68,
+    "skills_score": 0.86,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K068",
+    "alias": "Candidate 068",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "East Flanders",
+    "lat": 51.0147,
+    "lon": 3.8616,
+    "max_distance_km": 120,
+    "sectors": [
+      "joinery"
+    ],
+    "years_experience": 9,
+    "management_experience": true,
+    "own_funds": 2370000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      3,
+      80
+    ],
+    "values_score": 0.48,
+    "skills_score": 0.89,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K069",
+    "alias": "Candidate 069",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Antwerp",
+    "lat": 51.1948,
+    "lon": 4.2381,
+    "max_distance_km": 120,
+    "sectors": [
+      "retail"
+    ],
+    "years_experience": 3,
+    "management_experience": true,
+    "own_funds": 2506000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      10,
+      40
+    ],
+    "values_score": 0.61,
+    "skills_score": 0.87,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K070",
+    "alias": "Candidate 070",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Antwerp",
+    "lat": 51.257,
+    "lon": 4.5974,
+    "max_distance_km": 30,
+    "sectors": [
+      "wholesale",
+      "retail"
+    ],
+    "years_experience": 13,
+    "management_experience": true,
+    "own_funds": 291000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      10,
+      80
+    ],
+    "values_score": 0.83,
+    "skills_score": 0.97,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K071",
+    "alias": "Candidate 071",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "Antwerp",
+    "lat": 51.2385,
+    "lon": 4.353,
+    "max_distance_km": 50,
+    "sectors": [
+      "installation"
+    ],
+    "years_experience": 25,
+    "management_experience": true,
+    "own_funds": 520000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      3,
+      20
+    ],
+    "values_score": 0.51,
+    "skills_score": 0.53,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K072",
+    "alias": "Candidate 072",
+    "type": "search_funder",
+    "source": "headhunter",
+    "region": "West Flanders",
+    "lat": 51.0489,
+    "lon": 3.1507,
+    "max_distance_km": 50,
+    "sectors": [
+      "construction",
+      "installation"
+    ],
+    "years_experience": 7,
+    "management_experience": true,
+    "own_funds": 559000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      10,
+      40
+    ],
+    "values_score": 0.75,
+    "skills_score": 0.5,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K073",
+    "alias": "Candidate 073",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "West Flanders",
+    "lat": 51.0327,
+    "lon": 2.9032,
+    "max_distance_km": 30,
+    "sectors": [
+      "horeca"
+    ],
+    "years_experience": 8,
+    "management_experience": false,
+    "own_funds": 74000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      5,
+      80
+    ],
+    "values_score": 0.69,
+    "skills_score": 0.76,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K074",
+    "alias": "Candidate 074",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "Brussels",
+    "lat": 50.9301,
+    "lon": 4.5375,
+    "max_distance_km": 80,
+    "sectors": [
+      "it_services",
+      "business_services"
+    ],
+    "years_experience": 18,
+    "management_experience": true,
+    "own_funds": 289000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      10,
+      80
+    ],
+    "values_score": 0.96,
+    "skills_score": 0.98,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K075",
+    "alias": "Candidate 075",
+    "type": "strategic_buyer",
+    "source": "relationship_manager",
+    "region": "West Flanders",
+    "lat": 51.0403,
+    "lon": 3.0193,
+    "max_distance_km": 120,
+    "sectors": [
+      "retail",
+      "wholesale"
+    ],
+    "years_experience": 12,
+    "management_experience": true,
+    "own_funds": 1980000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      10,
+      80
+    ],
+    "values_score": 0.52,
+    "skills_score": 0.68,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K076",
+    "alias": "Candidate 076",
+    "type": "experienced_manager",
+    "source": "headhunter",
+    "region": "West Flanders",
+    "lat": 51.1448,
+    "lon": 3.2075,
+    "max_distance_km": 80,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 30,
+    "management_experience": true,
+    "own_funds": 91000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      5,
+      80
+    ],
+    "values_score": 0.63,
+    "skills_score": 0.65,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K077",
+    "alias": "Candidate 077",
+    "type": "search_funder",
+    "source": "headhunter",
+    "region": "Antwerp",
+    "lat": 51.1448,
+    "lon": 4.2633,
+    "max_distance_km": 120,
+    "sectors": [
+      "retail"
+    ],
+    "years_experience": 9,
+    "management_experience": true,
+    "own_funds": 654000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      3,
+      40
+    ],
+    "values_score": 0.89,
+    "skills_score": 0.76,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "K078",
+    "alias": "Candidate 078",
+    "type": "search_funder",
+    "source": "headhunter",
+    "region": "Brussels",
+    "lat": 50.8754,
+    "lon": 4.3696,
+    "max_distance_km": 50,
+    "sectors": [
+      "construction",
+      "installation"
+    ],
+    "years_experience": 30,
+    "management_experience": true,
+    "own_funds": 927000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      10,
+      40
+    ],
+    "values_score": 0.88,
+    "skills_score": 0.92,
+    "state": "curious"
+  },
+  {
+    "candidate_id": "K079",
+    "alias": "Candidate 079",
+    "type": "start_it_founder",
+    "source": "start_it",
+    "region": "East Flanders",
+    "lat": 51.0408,
+    "lon": 3.7694,
+    "max_distance_km": 120,
+    "sectors": [
+      "business_services"
+    ],
+    "years_experience": 30,
+    "management_experience": false,
+    "own_funds": 69000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      3,
+      40
+    ],
+    "values_score": 0.57,
+    "skills_score": 0.52,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "K080",
+    "alias": "Candidate 080",
+    "type": "staff_mbo",
+    "source": "owner_invite",
+    "region": "Limburg",
+    "lat": 50.9186,
+    "lon": 5.175,
+    "max_distance_km": 30,
+    "sectors": [
+      "joinery",
+      "construction"
+    ],
+    "years_experience": 9,
+    "management_experience": true,
+    "own_funds": 87000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 3,
+    "preferred_employees": [
+      10,
+      40
+    ],
+    "values_score": 0.98,
+    "skills_score": 0.68,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H0180",
+    "alias": "Candidate H0180",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 51.0794,
+    "lon": 4.5536,
+    "max_distance_km": 80,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 14,
+    "management_experience": true,
+    "own_funds": 328000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.71,
+    "skills_score": 0.83,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H0181",
+    "alias": "Candidate H0181",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 51.1484,
+    "lon": 5.0448,
+    "max_distance_km": 120,
+    "sectors": [
+      "business_services"
+    ],
+    "years_experience": 22,
+    "management_experience": true,
+    "own_funds": 439000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.87,
+    "skills_score": 0.73,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H0182",
+    "alias": "Candidate H0182",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 50.9899,
+    "lon": 4.5892,
+    "max_distance_km": 120,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 9,
+    "management_experience": true,
+    "own_funds": 733000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.98,
+    "skills_score": 0.88,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H0183",
+    "alias": "Candidate H0183",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 51.0729,
+    "lon": 4.9594,
+    "max_distance_km": 80,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 17,
+    "management_experience": true,
+    "own_funds": 344000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.73,
+    "skills_score": 0.95,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H0270",
+    "alias": "Candidate H0270",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Antwerp",
+    "lat": 51.1268,
+    "lon": 4.2163,
+    "max_distance_km": 120,
+    "sectors": [
+      "wholesale"
+    ],
+    "years_experience": 17,
+    "management_experience": true,
+    "own_funds": 579000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.65,
+    "skills_score": 0.86,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H0271",
+    "alias": "Candidate H0271",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Antwerp",
+    "lat": 51.3323,
+    "lon": 4.5451,
+    "max_distance_km": 50,
+    "sectors": [
+      "retail"
+    ],
+    "years_experience": 25,
+    "management_experience": true,
+    "own_funds": 719000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 1.0,
+    "skills_score": 0.97,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H0272",
+    "alias": "Candidate H0272",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Antwerp",
+    "lat": 51.3892,
+    "lon": 4.287,
+    "max_distance_km": 50,
+    "sectors": [
+      "retail"
+    ],
+    "years_experience": 21,
+    "management_experience": true,
+    "own_funds": 482000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.75,
+    "skills_score": 0.95,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H0273",
+    "alias": "Candidate H0273",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Antwerp",
+    "lat": 50.9099,
+    "lon": 4.738,
+    "max_distance_km": 50,
+    "sectors": [
+      "retail"
+    ],
+    "years_experience": 13,
+    "management_experience": true,
+    "own_funds": 595000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.91,
+    "skills_score": 0.75,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H0610",
+    "alias": "Candidate H0610",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Brussels",
+    "lat": 51.1613,
+    "lon": 4.6904,
+    "max_distance_km": 120,
+    "sectors": [
+      "business_services"
+    ],
+    "years_experience": 22,
+    "management_experience": true,
+    "own_funds": 270000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.72,
+    "skills_score": 0.95,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H0611",
+    "alias": "Candidate H0611",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Brussels",
+    "lat": 50.8175,
+    "lon": 4.4508,
+    "max_distance_km": 50,
+    "sectors": [
+      "business_services"
+    ],
+    "years_experience": 9,
+    "management_experience": true,
+    "own_funds": 401000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.94,
+    "skills_score": 0.65,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H0612",
+    "alias": "Candidate H0612",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Brussels",
+    "lat": 50.8118,
+    "lon": 4.2665,
+    "max_distance_km": 80,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 13,
+    "management_experience": true,
+    "own_funds": 419000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.71,
+    "skills_score": 0.83,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H0613",
+    "alias": "Candidate H0613",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "Brussels",
+    "lat": 51.1348,
+    "lon": 4.3433,
+    "max_distance_km": 80,
+    "sectors": [
+      "business_services"
+    ],
+    "years_experience": 22,
+    "management_experience": true,
+    "own_funds": 354000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.98,
+    "skills_score": 0.83,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H0700",
+    "alias": "Candidate H0700",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "Brussels",
+    "lat": 50.796,
+    "lon": 4.5326,
+    "max_distance_km": 120,
+    "sectors": [
+      "business_services"
+    ],
+    "years_experience": 13,
+    "management_experience": true,
+    "own_funds": 820000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.63,
+    "skills_score": 0.88,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H0701",
+    "alias": "Candidate H0701",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "Brussels",
+    "lat": 50.5144,
+    "lon": 4.3452,
+    "max_distance_km": 80,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 16,
+    "management_experience": true,
+    "own_funds": 852000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.81,
+    "skills_score": 0.84,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H0702",
+    "alias": "Candidate H0702",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Brussels",
+    "lat": 50.5693,
+    "lon": 4.623,
+    "max_distance_km": 120,
+    "sectors": [
+      "business_services"
+    ],
+    "years_experience": 12,
+    "management_experience": true,
+    "own_funds": 566000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.92,
+    "skills_score": 0.79,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H0703",
+    "alias": "Candidate H0703",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Brussels",
+    "lat": 50.6301,
+    "lon": 4.5133,
+    "max_distance_km": 50,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 17,
+    "management_experience": true,
+    "own_funds": 750000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.77,
+    "skills_score": 0.84,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H0890",
+    "alias": "Candidate H0890",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "Limburg",
+    "lat": 50.6739,
+    "lon": 5.614,
+    "max_distance_km": 80,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 17,
+    "management_experience": true,
+    "own_funds": 241000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.64,
+    "skills_score": 0.95,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H0891",
+    "alias": "Candidate H0891",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Limburg",
+    "lat": 50.9286,
+    "lon": 5.3951,
+    "max_distance_km": 120,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 16,
+    "management_experience": true,
+    "own_funds": 880000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.68,
+    "skills_score": 0.85,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H0892",
+    "alias": "Candidate H0892",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "Limburg",
+    "lat": 50.861,
+    "lon": 5.0378,
+    "max_distance_km": 80,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 15,
+    "management_experience": true,
+    "own_funds": 669000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.92,
+    "skills_score": 0.82,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H0893",
+    "alias": "Candidate H0893",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Limburg",
+    "lat": 51.1566,
+    "lon": 5.1306,
+    "max_distance_km": 80,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 8,
+    "management_experience": true,
+    "own_funds": 839000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 1.0,
+    "skills_score": 0.74,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H1010",
+    "alias": "Candidate H1010",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 50.7562,
+    "lon": 4.8478,
+    "max_distance_km": 120,
+    "sectors": [
+      "retail"
+    ],
+    "years_experience": 20,
+    "management_experience": true,
+    "own_funds": 549000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.73,
+    "skills_score": 0.7,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H1011",
+    "alias": "Candidate H1011",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 50.937,
+    "lon": 4.8262,
+    "max_distance_km": 120,
+    "sectors": [
+      "transport"
+    ],
+    "years_experience": 23,
+    "management_experience": true,
+    "own_funds": 395000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.78,
+    "skills_score": 0.66,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H1012",
+    "alias": "Candidate H1012",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 50.6268,
+    "lon": 4.8881,
+    "max_distance_km": 120,
+    "sectors": [
+      "wholesale"
+    ],
+    "years_experience": 11,
+    "management_experience": true,
+    "own_funds": 488000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.63,
+    "skills_score": 0.76,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H1013",
+    "alias": "Candidate H1013",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 50.626,
+    "lon": 4.3604,
+    "max_distance_km": 120,
+    "sectors": [
+      "wholesale"
+    ],
+    "years_experience": 15,
+    "management_experience": true,
+    "own_funds": 487000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.72,
+    "skills_score": 0.83,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H1070",
+    "alias": "Candidate H1070",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "East Flanders",
+    "lat": 50.989,
+    "lon": 3.7817,
+    "max_distance_km": 80,
+    "sectors": [
+      "construction"
+    ],
+    "years_experience": 20,
+    "management_experience": true,
+    "own_funds": 663000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.7,
+    "skills_score": 0.64,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H1071",
+    "alias": "Candidate H1071",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "East Flanders",
+    "lat": 51.287,
+    "lon": 4.0144,
+    "max_distance_km": 120,
+    "sectors": [
+      "installation"
+    ],
+    "years_experience": 14,
+    "management_experience": true,
+    "own_funds": 518000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.87,
+    "skills_score": 0.89,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H1072",
+    "alias": "Candidate H1072",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "East Flanders",
+    "lat": 50.8092,
+    "lon": 4.156,
+    "max_distance_km": 50,
+    "sectors": [
+      "installation"
+    ],
+    "years_experience": 12,
+    "management_experience": true,
+    "own_funds": 373000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.69,
+    "skills_score": 0.69,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H1073",
+    "alias": "Candidate H1073",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "East Flanders",
+    "lat": 51.1054,
+    "lon": 3.9314,
+    "max_distance_km": 50,
+    "sectors": [
+      "installation"
+    ],
+    "years_experience": 9,
+    "management_experience": true,
+    "own_funds": 737000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.83,
+    "skills_score": 0.69,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H1150",
+    "alias": "Candidate H1150",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 50.5805,
+    "lon": 4.6808,
+    "max_distance_km": 80,
+    "sectors": [
+      "joinery"
+    ],
+    "years_experience": 21,
+    "management_experience": true,
+    "own_funds": 436000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.73,
+    "skills_score": 0.78,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H1151",
+    "alias": "Candidate H1151",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 50.7588,
+    "lon": 4.8252,
+    "max_distance_km": 80,
+    "sectors": [
+      "joinery"
+    ],
+    "years_experience": 18,
+    "management_experience": true,
+    "own_funds": 306000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.63,
+    "skills_score": 0.93,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H1152",
+    "alias": "Candidate H1152",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 51.0068,
+    "lon": 4.611,
+    "max_distance_km": 120,
+    "sectors": [
+      "joinery"
+    ],
+    "years_experience": 22,
+    "management_experience": true,
+    "own_funds": 749000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.62,
+    "skills_score": 0.97,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H1153",
+    "alias": "Candidate H1153",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 51.0186,
+    "lon": 4.5123,
+    "max_distance_km": 120,
+    "sectors": [
+      "joinery"
+    ],
+    "years_experience": 16,
+    "management_experience": true,
+    "own_funds": 704000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.65,
+    "skills_score": 0.71,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H2010",
+    "alias": "Candidate H2010",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Limburg",
+    "lat": 50.8763,
+    "lon": 5.461,
+    "max_distance_km": 120,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 11,
+    "management_experience": true,
+    "own_funds": 541000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.6,
+    "skills_score": 0.97,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H2011",
+    "alias": "Candidate H2011",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Limburg",
+    "lat": 50.7926,
+    "lon": 5.0661,
+    "max_distance_km": 80,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 15,
+    "management_experience": true,
+    "own_funds": 286000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.69,
+    "skills_score": 0.72,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H2012",
+    "alias": "Candidate H2012",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "Limburg",
+    "lat": 50.8549,
+    "lon": 4.908,
+    "max_distance_km": 80,
+    "sectors": [
+      "installation"
+    ],
+    "years_experience": 10,
+    "management_experience": true,
+    "own_funds": 335000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.76,
+    "skills_score": 0.75,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H2013",
+    "alias": "Candidate H2013",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "Limburg",
+    "lat": 50.7955,
+    "lon": 5.4242,
+    "max_distance_km": 50,
+    "sectors": [
+      "wholesale"
+    ],
+    "years_experience": 10,
+    "management_experience": true,
+    "own_funds": 651000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.98,
+    "skills_score": 0.84,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H2240",
+    "alias": "Candidate H2240",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Limburg",
+    "lat": 51.0985,
+    "lon": 5.2332,
+    "max_distance_km": 120,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 14,
+    "management_experience": true,
+    "own_funds": 197000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.85,
+    "skills_score": 0.89,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H2241",
+    "alias": "Candidate H2241",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Limburg",
+    "lat": 51.3382,
+    "lon": 5.3944,
+    "max_distance_km": 50,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 22,
+    "management_experience": true,
+    "own_funds": 744000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.89,
+    "skills_score": 0.95,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H2242",
+    "alias": "Candidate H2242",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Limburg",
+    "lat": 50.9512,
+    "lon": 5.2487,
+    "max_distance_km": 80,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 17,
+    "management_experience": true,
+    "own_funds": 580000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.73,
+    "skills_score": 0.97,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H2243",
+    "alias": "Candidate H2243",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Limburg",
+    "lat": 51.2756,
+    "lon": 5.1546,
+    "max_distance_km": 80,
+    "sectors": [
+      "it_services"
+    ],
+    "years_experience": 10,
+    "management_experience": true,
+    "own_funds": 199000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.88,
+    "skills_score": 0.7,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H2390",
+    "alias": "Candidate H2390",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "West Flanders",
+    "lat": 50.9449,
+    "lon": 2.9066,
+    "max_distance_km": 80,
+    "sectors": [
+      "wholesale"
+    ],
+    "years_experience": 18,
+    "management_experience": true,
+    "own_funds": 255000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.72,
+    "skills_score": 0.82,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H2391",
+    "alias": "Candidate H2391",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "West Flanders",
+    "lat": 51.1349,
+    "lon": 3.0434,
+    "max_distance_km": 80,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 19,
+    "management_experience": true,
+    "own_funds": 830000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.69,
+    "skills_score": 0.97,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H2392",
+    "alias": "Candidate H2392",
+    "type": "strategic_buyer",
+    "source": "headhunter_brief",
+    "region": "West Flanders",
+    "lat": 50.9503,
+    "lon": 3.1824,
+    "max_distance_km": 120,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 17,
+    "management_experience": true,
+    "own_funds": 869000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.71,
+    "skills_score": 0.8,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H2393",
+    "alias": "Candidate H2393",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "West Flanders",
+    "lat": 50.7512,
+    "lon": 3.0654,
+    "max_distance_km": 50,
+    "sectors": [
+      "wholesale"
+    ],
+    "years_experience": 22,
+    "management_experience": true,
+    "own_funds": 236000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.89,
+    "skills_score": 0.67,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H2640",
+    "alias": "Candidate H2640",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 50.8547,
+    "lon": 4.8954,
+    "max_distance_km": 50,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 17,
+    "management_experience": true,
+    "own_funds": 540000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.78,
+    "skills_score": 0.86,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H2641",
+    "alias": "Candidate H2641",
+    "type": "search_funder",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 51.0548,
+    "lon": 5.0269,
+    "max_distance_km": 120,
+    "sectors": [
+      "wholesale"
+    ],
+    "years_experience": 21,
+    "management_experience": true,
+    "own_funds": 624000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.63,
+    "skills_score": 0.84,
+    "state": "ready"
+  },
+  {
+    "candidate_id": "H2642",
+    "alias": "Candidate H2642",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 51.2464,
+    "lon": 4.7807,
+    "max_distance_km": 80,
+    "sectors": [
+      "installation"
+    ],
+    "years_experience": 11,
+    "management_experience": true,
+    "own_funds": 778000.0,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 18,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.67,
+    "skills_score": 0.91,
+    "state": "qualified"
+  },
+  {
+    "candidate_id": "H2643",
+    "alias": "Candidate H2643",
+    "type": "experienced_manager",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 50.915,
+    "lon": 4.6203,
+    "max_distance_km": 120,
+    "sectors": [
+      "manufacturing"
+    ],
+    "years_experience": 23,
+    "management_experience": true,
+    "own_funds": 263000.0,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      2,
+      60
+    ],
+    "values_score": 0.61,
+    "skills_score": 0.86,
+    "state": "qualified"
+  }
+]
