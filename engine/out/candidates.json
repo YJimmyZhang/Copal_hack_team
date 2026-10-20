@@ -1,5 +1,90 @@
 [
   {
+    "candidate_id": "K900",
+    "alias": "Candidate 1",
+    "name": "Sarah Maes",
+    "type": "experienced_manager",
+    "profile": "Ops manager, food",
+    "source": "headhunter_brief",
+    "region": "Antwerp",
+    "lat": 51.3,
+    "lon": 4.46,
+    "max_distance_km": 80,
+    "sectors": [
+      "food_production"
+    ],
+    "years_experience": 14,
+    "management_experience": true,
+    "own_funds": 250000,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      10,
+      60
+    ],
+    "values_score": 0.33,
+    "skills_score": 0.6,
+    "state": "ready",
+    "open_to_interim": true
+  },
+  {
+    "candidate_id": "K901",
+    "alias": "Candidate 2",
+    "name": "(own staff)",
+    "type": "staff_mbo",
+    "profile": "Own staff (MBO)",
+    "source": "owner_invite",
+    "region": "Antwerp",
+    "lat": 51.228,
+    "lon": 4.41,
+    "max_distance_km": 30,
+    "sectors": [
+      "food_production"
+    ],
+    "years_experience": 11,
+    "management_experience": false,
+    "own_funds": 300000,
+    "intends_keep_staff": true,
+    "wanted_transition_months": 6,
+    "preferred_employees": [
+      10,
+      60
+    ],
+    "values_score": 0.83,
+    "skills_score": 0.8,
+    "state": "qualified",
+    "open_to_interim": false
+  },
+  {
+    "candidate_id": "K902",
+    "alias": "Candidate 3",
+    "name": "(search fund)",
+    "type": "search_funder",
+    "profile": "Search fund",
+    "source": "headhunter_brief",
+    "region": "Flemish Brabant",
+    "lat": 50.99,
+    "lon": 4.52,
+    "max_distance_km": 120,
+    "sectors": [
+      "food_production",
+      "wholesale"
+    ],
+    "years_experience": 9,
+    "management_experience": true,
+    "own_funds": 1200000,
+    "intends_keep_staff": false,
+    "wanted_transition_months": 12,
+    "preferred_employees": [
+      10,
+      80
+    ],
+    "values_score": 0.15,
+    "skills_score": 0.55,
+    "state": "qualified",
+    "open_to_interim": true
+  },
+  {
     "candidate_id": "K001",
     "alias": "Candidate 001",
     "type": "experienced_manager",

@@ -6,7 +6,7 @@ import random
 
 import numpy as np
 
-from config import CANDIDATE_TYPES, CURRENT_YEAR, REGIONS, SECTORS, SEED
+from config import CANDIDATE_TYPES, CURRENT_YEAR, RANDOM_SECTORS, REGIONS, SECTORS, SEED
 
 FAMILY_NAMES = ["Peeters", "Janssens", "Maes", "Jacobs", "Mertens", "Willems", "Claes", "Goossens",
                 "Wouters", "De Smet", "Dubois", "Lambert", "Vermeulen", "Hermans", "Aerts", "Pauwels",
@@ -27,7 +27,7 @@ def make_companies(n=300, seed=SEED):
     np_rng = np.random.default_rng(seed)
     companies = []
     for i in range(1, n + 1):
-        sector = rng.choice(list(SECTORS))
+        sector = rng.choice(RANDOM_SECTORS)
         region = rng.choice(list(REGIONS))
         lat, lon = _point_in(region, rng)
         employees = int(np.clip(np_rng.lognormal(2.2, 0.7), 2, 120))
@@ -114,7 +114,7 @@ def make_candidates(n=80, seed=SEED + 1):
         ctype = rng.choices(CANDIDATE_TYPES, weights=[35, 10, 15, 25, 15])[0]
         region = rng.choice(list(REGIONS))
         lat, lon = _point_in(region, rng)
-        main_sector = rng.choice(list(SECTORS))
+        main_sector = rng.choice(RANDOM_SECTORS)
         own_funds = {"experienced_manager": (80_000, 400_000), "search_funder": (300_000, 1_500_000),
                      "staff_mbo": (30_000, 150_000), "strategic_buyer": (400_000, 3_000_000),
                      "start_it_founder": (20_000, 150_000)}[ctype]
