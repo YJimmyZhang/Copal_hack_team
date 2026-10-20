@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KBC Next Owner - concept demo</title>
+</head>
+<body>
+
+<h1>KBC Next Owner - concept demo (no styling)</h1>
+<p>
+  View as:
+  <button onclick="show('rm')">Relationship Manager</button>
+  <button onclick="show('owner')">Owner</button>
+  <button onclick="show('headhunter')">Headhunter</button>
+  <button onclick="show('candidate')">Candidate</button>
+</p>
+<hr>
+
+<!-- 1. Relationship Manager Cockpit (steps 1-2) -->
+<section id="rm">
+  <h2>Relationship Manager Cockpit</h2>
+  <p>Owners flagged by the Readiness Radar [Person A], highest score first.</p>
+  <table border="1" cellpadding="4">
+    <tr><th>Company</th><th>Owner</th><th>Score</th><th>Why flagged</th><th>Action</th></tr>
+    <tr>
+      <td>Bakkerij Peeters NV</td><td>Jan Peeters, 63</td><td>78</td>
+      <td>Owner 63 · no family shareholders · investment down 40% in 3 yrs</td>
+      <td><button onclick="this.outerHTML='Consent requested'">Request consent</button></td>
+    </tr>
+    <tr>
+      <td>Metaalwerken Claes BV</td><td>Marc Claes, 59</td><td>64</td>
+      <td>Owner 59 · cash piling up</td>
+      <td><button onclick="this.outerHTML='Consent requested'">Request consent</button></td>
+    </tr>
+  </table>
+  <h3>Talking points for the yearly review</h3>
+  <ul>
+    <li>"Have you thought about who runs the bakery in 5 years?"</li>
+    <li>"We can show you what the company is worth, without obligation."</li>
+  </ul>
+</section>
+
+<!-- 2. Owner Space (step 3, star screen) -->
+<section id="owner" hidden>
+  <h2>Owner Space - "Next Owner" in KBC Business app</h2>
+  <p>Welcome, Jan. Bakkerij Peeters NV.</p>
+
+  <h3>What is my company worth?</h3>
+  <p>Estimated range: <b>EUR 2.4M - 3.6M</b> [Valuation, Person A]</p>
+
+  <h3>Projections</h3>
+  <table border="1" cellpadding="4">
+    <tr><th>Year</th><th>2026</th><th>2027</th><th>2028</th></tr>
+    <tr><td>Revenue</td><td>4.1M</td><td>4.2M</td><td>4.3M</td></tr>
+    <tr><td>EBITDA</td><td>600k</td><td>610k</td><td>620k</td></tr>
+  </table>
+
+  <h3>My wishes</h3>
+  <p>When do you want to sell? <select><option>within 1 year</option><option>1-3 years</option><option>3-5 years</option></select></p>
+  <p>Your role after the sale? <select><option>leave completely</option><option>adviser</option><option>stay as minority shareholder</option></select></p>
+
+  <h3>Possible successors (anonymous)</h3>
+  <p>Fit score from the Match Engine [Person A]. Names shown only after NDA.</p>
+  <ul>
+    <li>Candidate #1 - fit 86 - ex-operations manager, food sector</li>
+    <li>Candidate #2 - fit 79 - current staff member (MBO)</li>
+    <li>Candidate #3 - fit 71 - search fund, MBA</li>
+  </ul>
+
+  <p><label><input type="checkbox"> I agree that KBC shares an anonymous brief with a headhunter</label></p>
+</section>
+
+<!-- 3. Headhunter Portal (step 4) -->
+<section id="headhunter" hidden>
+  <h2>Headhunter Portal</h2>
+  <h3>Anonymous brief #2026-014</h3>
+  <ul>
+    <li>Sector: food production</li>
+    <li>Revenue: EUR 2-5M</li>
+    <li>Region: Antwerp</li>
+    <li>Profile wanted: operations manager, ready to invest own funds</li>
+  </ul>
+  <p>Company name: locked until NDA</p>
+
+  <h3>Submit a candidate</h3>
+  <p>Name: <input></p>
+  <p>CV: <input type="file"></p>
+  <p><button onclick="this.outerHTML='Submitted'">Submit</button></p>
+
+  <h3>My fees</h3>
+  <p>3 qualified candidates submitted · fee per candidate + success fee on deal</p>
+</section>
+
+<!-- 4. Ready-to-Own Candidate Portal (step 5) -->
+<section id="candidate" hidden>
+  <h2>Ready-to-Own Candidate Portal</h2>
+  <p>Welcome, Sarah.</p>
+
+  <h3>My progress</h3>
+  <ol>
+    <li>Upload CV - done</li>
+    <li>Values and skills test - done</li>
+    <li>Funding check (own funds) - done: EUR 250k</li>
+    <li>Short course (valuation, due diligence) - in progress, 2 of 4 modules</li>
+    <li>Loan pre-approval - waiting</li>
+  </ol>
+
+  <h3>Companies that match me</h3>
+  <ul>
+    <li>Food production, Antwerp, EUR 2-5M - fit 86 - <button onclick="this.outerHTML='Interest sent'">I'm interested</button></li>
+  </ul>
+</section>
+
+<script>
+  function show(id) {
+    document.querySelectorAll('section').forEach(s => s.hidden = s.id !== id);
+  }
+</script>
+</body>
+</html>
