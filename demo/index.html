@@ -4,117 +4,305 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KBC Next Owner - concept demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Colours and shapes taken from the KBC mobile app (dark mode) */
+  :root {
+    --bg: #111314;
+    --card: #1e2123;
+    --card-2: #262a2d;
+    --line: #33383c;
+    --text: #ffffff;
+    --muted: #a7adb2;
+    --blue: #1ca0e6;
+    --blue-dark: #1b4f8c;
+    --green: #22b04b;
+    --yellow: #f2c200;
+    --red: #e5484d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #000;
+    color: var(--text);
+    font-family: "Nunito Sans", system-ui, sans-serif;
+  }
+  .phone {
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: var(--bg);
+    padding: 16px 16px 120px;
+  }
+
+  /* Header: round icon buttons + big title, like "Offer" */
+  header { display: flex; align-items: center; gap: 12px; margin: 8px 0 24px; }
+  .round {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: var(--card); border: 1px solid var(--line);
+    display: grid; place-items: center; flex: none;
+  }
+  .round svg { width: 22px; height: 22px; stroke: var(--text); fill: none; stroke-width: 1.8; }
+  header h1 { font-size: 28px; font-weight: 800; margin: 0; flex: 1; line-height: 1.1; }
+  header h1 small { display: block; font-size: 13px; font-weight: 600; color: var(--muted); }
+  .bell { position: relative; }
+  .bell::after {
+    content: ""; position: absolute; top: 10px; right: 10px;
+    width: 10px; height: 10px; border-radius: 50%; background: var(--red);
+  }
+
+  h2 { font-size: 22px; font-weight: 800; margin: 28px 0 12px; }
+  p { margin: 0 0 8px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  .tag { font-size: 11px; color: var(--blue); font-weight: 700; }
+
+  .card { background: var(--card); border-radius: 18px; padding: 16px; margin-bottom: 12px; }
+  .hero {
+    background: linear-gradient(120deg, #1b2b36, #20384a);
+    border-radius: 18px; padding: 20px;
+  }
+  .hero .big { font-size: 30px; font-weight: 800; margin: 4px 0 12px; }
+
+  .btn {
+    background: var(--blue); color: #fff; border: 0; border-radius: 999px;
+    padding: 10px 20px; font: inherit; font-weight: 700; font-size: 15px; cursor: pointer;
+  }
+  .btn.small { padding: 6px 14px; font-size: 13px; }
+  .done { color: var(--green); font-weight: 700; font-size: 14px; }
+
+  /* Score bubble */
+  .row { display: flex; align-items: center; gap: 12px; }
+  .score {
+    width: 52px; height: 52px; border-radius: 14px; flex: none;
+    display: grid; place-items: center; font-weight: 800; font-size: 20px;
+    background: var(--blue-dark);
+  }
+  .score.high { background: var(--blue); }
+  .grow { flex: 1; min-width: 0; }
+  .grow b { display: block; }
+  .reasons { margin: 10px 0 12px; padding: 0; list-style: none; }
+  .reasons li { font-size: 14px; color: var(--muted); padding: 2px 0; }
+  .reasons li::before { content: "• "; color: var(--blue); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: right; padding: 8px 4px; border-bottom: 1px solid var(--line); }
+  th:first-child, td:first-child { text-align: left; color: var(--muted); }
+  th { color: var(--muted); font-weight: 600; }
+
+  label.field { display: block; font-size: 14px; color: var(--muted); margin: 10px 0 4px; }
+  select, input:not([type=checkbox]) {
+    width: 100%; background: var(--card-2); color: var(--text);
+    border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; font: inherit;
+  }
+  .check { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; }
+  .check input { accent-color: var(--blue); width: 20px; height: 20px; margin: 0; flex: none; }
+
+  .lock { color: var(--yellow); font-weight: 700; font-size: 14px; }
+
+  /* Progress steps */
+  .steps { list-style: none; padding: 0; margin: 0; }
+  .steps li { display: flex; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .steps li:last-child { border-bottom: 0; }
+  .dot {
+    width: 28px; height: 28px; border-radius: 50%; flex: none;
+    display: grid; place-items: center; font-size: 14px; font-weight: 800;
+    border: 2px solid var(--line); color: var(--muted);
+  }
+  .steps .ok .dot { background: var(--green); border-color: var(--green); color: #fff; }
+  .steps .now .dot { border-color: var(--blue); color: var(--blue); }
+  .bar { height: 6px; background: var(--card-2); border-radius: 3px; margin-top: 6px; }
+  .bar span { display: block; height: 100%; background: var(--blue); border-radius: 3px; }
+
+  /* Bottom pill navigation = role switcher */
+  nav {
+    position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%);
+    width: calc(100% - 32px); max-width: 400px;
+    background: rgba(30, 33, 35, .92); border: 1px solid var(--line);
+    border-radius: 999px; padding: 6px; display: flex;
+    backdrop-filter: blur(8px);
+  }
+  nav button {
+    flex: 1; background: none; border: 0; color: var(--text); cursor: pointer;
+    font: inherit; font-size: 12px; font-weight: 700; border-radius: 999px;
+    padding: 8px 2px; display: flex; flex-direction: column; align-items: center; gap: 4px;
+  }
+  nav button svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+  nav button.active { background: #3a3f43; color: var(--blue); }
+</style>
 </head>
 <body>
-
-<h1>KBC Next Owner - concept demo (no styling)</h1>
-<p>
-  View as:
-  <button onclick="show('rm')">Relationship Manager</button>
-  <button onclick="show('owner')">Owner</button>
-  <button onclick="show('headhunter')">Headhunter</button>
-  <button onclick="show('candidate')">Candidate</button>
-</p>
-<hr>
+<div class="phone">
 
 <!-- 1. Relationship Manager Cockpit (steps 1-2) -->
 <section id="rm">
-  <h2>Relationship Manager Cockpit</h2>
-  <p>Owners flagged by the Readiness Radar [Person A], highest score first.</p>
-  <table border="1" cellpadding="4">
-    <tr><th>Company</th><th>Owner</th><th>Score</th><th>Why flagged</th><th>Action</th></tr>
-    <tr>
-      <td>Bakkerij Peeters NV</td><td>Jan Peeters, 63</td><td>78</td>
-      <td>Owner 63 · no family shareholders · investment down 40% in 3 yrs</td>
-      <td><button onclick="this.outerHTML='Consent requested'">Request consent</button></td>
-    </tr>
-    <tr>
-      <td>Metaalwerken Claes BV</td><td>Marc Claes, 59</td><td>64</td>
-      <td>Owner 59 · cash piling up</td>
-      <td><button onclick="this.outerHTML='Consent requested'">Request consent</button></td>
-    </tr>
-  </table>
-  <h3>Talking points for the yearly review</h3>
-  <ul>
-    <li>"Have you thought about who runs the bakery in 5 years?"</li>
-    <li>"We can show you what the company is worth, without obligation."</li>
-  </ul>
+  <header>
+    <div class="round"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></div>
+    <h1><small>Relationship Manager</small>Succession radar</h1>
+    <div class="round bell"><svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4zM10 21h4"/></svg></div>
+  </header>
+  <p class="muted">Owners flagged by the Readiness Radar <span class="tag">[Person A]</span>, highest score first.</p>
+
+  <div class="card">
+    <div class="row">
+      <div class="score high">78</div>
+      <div class="grow"><b>Bakkerij Peeters NV</b><span class="muted">Jan Peeters, 63</span></div>
+    </div>
+    <ul class="reasons">
+      <li>Owner is 63</li>
+      <li>No family shareholders</li>
+      <li>Investment down 40% in 3 years</li>
+    </ul>
+    <button class="btn small" onclick="this.outerHTML='<span class=done>✓ Consent requested</span>'">Request consent</button>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="score">64</div>
+      <div class="grow"><b>Metaalwerken Claes BV</b><span class="muted">Marc Claes, 59</span></div>
+    </div>
+    <ul class="reasons">
+      <li>Owner is 59</li>
+      <li>Cash piling up</li>
+    </ul>
+    <button class="btn small" onclick="this.outerHTML='<span class=done>✓ Consent requested</span>'">Request consent</button>
+  </div>
+
+  <h2>Talking points</h2>
+  <div class="card">
+    <p>"Have you thought about who runs the bakery in 5 years?"</p>
+    <p class="muted" style="margin:0">"We can show you what the company is worth, without obligation."</p>
+  </div>
 </section>
 
 <!-- 2. Owner Space (step 3, star screen) -->
 <section id="owner" hidden>
-  <h2>Owner Space - "Next Owner" in KBC Business app</h2>
-  <p>Welcome, Jan. Bakkerij Peeters NV.</p>
+  <header>
+    <div class="round"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg></div>
+    <h1><small>Bakkerij Peeters NV</small>Next Owner</h1>
+    <div class="round bell"><svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4zM10 21h4"/></svg></div>
+  </header>
 
-  <h3>What is my company worth?</h3>
-  <p>Estimated range: <b>EUR 2.4M - 3.6M</b> [Valuation, Person A]</p>
+  <div class="hero">
+    <p class="muted">What is my company worth? <span class="tag">[Person A]</span></p>
+    <div class="big">€2.4M – €3.6M</div>
+    <button class="btn">See how we calculated this</button>
+  </div>
 
-  <h3>Projections</h3>
-  <table border="1" cellpadding="4">
-    <tr><th>Year</th><th>2026</th><th>2027</th><th>2028</th></tr>
-    <tr><td>Revenue</td><td>4.1M</td><td>4.2M</td><td>4.3M</td></tr>
-    <tr><td>EBITDA</td><td>600k</td><td>610k</td><td>620k</td></tr>
-  </table>
+  <h2>Projections</h2>
+  <div class="card">
+    <table>
+      <tr><th></th><th>2026</th><th>2027</th><th>2028</th></tr>
+      <tr><td>Revenue</td><td>4.1M</td><td>4.2M</td><td>4.3M</td></tr>
+      <tr><td>EBITDA</td><td>600k</td><td>610k</td><td>620k</td></tr>
+    </table>
+  </div>
 
-  <h3>My wishes</h3>
-  <p>When do you want to sell? <select><option>within 1 year</option><option>1-3 years</option><option>3-5 years</option></select></p>
-  <p>Your role after the sale? <select><option>leave completely</option><option>adviser</option><option>stay as minority shareholder</option></select></p>
+  <h2>My wishes</h2>
+  <div class="card">
+    <label class="field">When do you want to sell?</label>
+    <select><option>Within 1 year</option><option selected>1–3 years</option><option>3–5 years</option></select>
+    <label class="field">Your role after the sale?</label>
+    <select><option>Leave completely</option><option selected>Adviser</option><option>Minority shareholder</option></select>
+  </div>
 
-  <h3>Possible successors (anonymous)</h3>
-  <p>Fit score from the Match Engine [Person A]. Names shown only after NDA.</p>
-  <ul>
-    <li>Candidate #1 - fit 86 - ex-operations manager, food sector</li>
-    <li>Candidate #2 - fit 79 - current staff member (MBO)</li>
-    <li>Candidate #3 - fit 71 - search fund, MBA</li>
-  </ul>
+  <h2>Possible successors</h2>
+  <p class="muted">Fit score from the Match Engine <span class="tag">[Person A]</span>. <span class="lock">🔒 Names after NDA</span></p>
+  <div class="card row"><div class="score high">86</div><div class="grow"><b>Candidate #1</b><span class="muted">Ex-operations manager, food sector</span></div></div>
+  <div class="card row"><div class="score">79</div><div class="grow"><b>Candidate #2</b><span class="muted">Current staff member (MBO)</span></div></div>
+  <div class="card row"><div class="score">71</div><div class="grow"><b>Candidate #3</b><span class="muted">Search fund, MBA</span></div></div>
 
-  <p><label><input type="checkbox"> I agree that KBC shares an anonymous brief with a headhunter</label></p>
+  <div class="card">
+    <label class="check"><input type="checkbox"> I agree that KBC shares an anonymous brief with a headhunter</label>
+  </div>
 </section>
 
 <!-- 3. Headhunter Portal (step 4) -->
 <section id="headhunter" hidden>
-  <h2>Headhunter Portal</h2>
-  <h3>Anonymous brief #2026-014</h3>
-  <ul>
-    <li>Sector: food production</li>
-    <li>Revenue: EUR 2-5M</li>
-    <li>Region: Antwerp</li>
-    <li>Profile wanted: operations manager, ready to invest own funds</li>
-  </ul>
-  <p>Company name: locked until NDA</p>
+  <header>
+    <div class="round"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></div>
+    <h1><small>Partner portal</small>Headhunter</h1>
+    <div class="round bell"><svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4zM10 21h4"/></svg></div>
+  </header>
 
-  <h3>Submit a candidate</h3>
-  <p>Name: <input></p>
-  <p>CV: <input type="file"></p>
-  <p><button onclick="this.outerHTML='Submitted'">Submit</button></p>
+  <div class="hero">
+    <p class="muted">Anonymous brief #2026-014</p>
+    <div class="big" style="font-size:24px">Food production · Antwerp</div>
+    <p class="lock">🔒 Company name locked until NDA</p>
+  </div>
 
-  <h3>My fees</h3>
-  <p>3 qualified candidates submitted · fee per candidate + success fee on deal</p>
+  <div class="card" style="margin-top:12px">
+    <table>
+      <tr><td>Revenue</td><td>€2–5M</td></tr>
+      <tr><td>Region</td><td>Antwerp</td></tr>
+      <tr><td>Profile</td><td>Operations manager</td></tr>
+      <tr><td>Own funds</td><td>Required</td></tr>
+    </table>
+  </div>
+
+  <h2>Submit a candidate</h2>
+  <div class="card">
+    <label class="field">Name</label>
+    <input placeholder="Full name">
+    <label class="field">CV</label>
+    <input type="file">
+    <p style="margin-top:14px"><button class="btn" onclick="this.outerHTML='<span class=done>✓ Submitted</span>'">Submit</button></p>
+  </div>
+
+  <h2>My fees</h2>
+  <div class="card">
+    <p><b>3</b> qualified candidates submitted</p>
+    <p class="muted" style="margin:0">Fee per qualified candidate + success fee on deal</p>
+  </div>
 </section>
 
 <!-- 4. Ready-to-Own Candidate Portal (step 5) -->
 <section id="candidate" hidden>
-  <h2>Ready-to-Own Candidate Portal</h2>
-  <p>Welcome, Sarah.</p>
+  <header>
+    <div class="round"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM6 10v5c2 2 10 2 12 0v-5"/></svg></div>
+    <h1><small>Welcome, Sarah</small>Ready-to-Own</h1>
+    <div class="round bell"><svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4zM10 21h4"/></svg></div>
+  </header>
 
-  <h3>My progress</h3>
-  <ol>
-    <li>Upload CV - done</li>
-    <li>Values and skills test - done</li>
-    <li>Funding check (own funds) - done: EUR 250k</li>
-    <li>Short course (valuation, due diligence) - in progress, 2 of 4 modules</li>
-    <li>Loan pre-approval - waiting</li>
-  </ol>
+  <h2 style="margin-top:0">My progress</h2>
+  <div class="card">
+    <ol class="steps">
+      <li class="ok"><span class="dot">✓</span><div class="grow">Upload CV</div></li>
+      <li class="ok"><span class="dot">✓</span><div class="grow">Values and skills test</div></li>
+      <li class="ok"><span class="dot">✓</span><div class="grow">Funding check<br><span class="muted">Own funds: €250k</span></div></li>
+      <li class="now"><span class="dot">4</span><div class="grow">Short course<br><span class="muted">2 of 4 modules</span><div class="bar"><span style="width:50%"></span></div></div></li>
+      <li><span class="dot">5</span><div class="grow">Loan pre-approval<br><span class="muted">Waiting</span></div></li>
+    </ol>
+  </div>
 
-  <h3>Companies that match me</h3>
-  <ul>
-    <li>Food production, Antwerp, EUR 2-5M - fit 86 - <button onclick="this.outerHTML='Interest sent'">I'm interested</button></li>
-  </ul>
+  <h2>Companies that match me</h2>
+  <div class="card">
+    <div class="row">
+      <div class="score high">86</div>
+      <div class="grow"><b>Food production</b><span class="muted">Antwerp · €2–5M</span></div>
+    </div>
+    <p style="margin-top:12px"><button class="btn small" onclick="this.outerHTML='<span class=done>✓ Interest sent</span>'">I'm interested</button></p>
+  </div>
 </section>
+
+</div>
+
+<!-- Role switcher, styled like the app's bottom bar -->
+<nav>
+  <button data-role="rm" class="active" onclick="show('rm')">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>RM</button>
+  <button data-role="owner" onclick="show('owner')">
+    <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/><path d="M9 20v-6h6v6"/></svg>Owner</button>
+  <button data-role="headhunter" onclick="show('headhunter')">
+    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>Headhunter</button>
+  <button data-role="candidate" onclick="show('candidate')">
+    <svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM6 10v5c2 2 10 2 12 0v-5"/></svg>Candidate</button>
+</nav>
 
 <script>
   function show(id) {
     document.querySelectorAll('section').forEach(s => s.hidden = s.id !== id);
+    document.querySelectorAll('nav button').forEach(b => b.classList.toggle('active', b.dataset.role === id));
+    window.scrollTo(0, 0);
   }
 </script>
 </body>
