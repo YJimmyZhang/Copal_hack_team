@@ -1,5 +1,6 @@
 # Product team memory
 ## Decisions (newest first)
+- 20 Oct: Made 5 animated MP4s (demo/videos/, 10-13 s each, 1920x1080) of the demo screens: cursor moves, scrolls, clicks, with captions. For animated PowerPoint slides. Re-record with: node demo/make_videos.js
 - 20 Oct: Pitch is 5 min total, ~2 min for product. Show ONE overview slide (demo/overview.png): 6 steps, per step the actor + a mini screen + "what they get", and the 3 engines (Radar, Valuation, Match) underneath. Full click-through demo only as backup / for questions.
 - 20 Oct: Style = KBC Touch web look (white, left icon rail, light blue #009fdf, navy #003768, soft cards). Added step 6 "Deal Room" screen for the RM (owner <-> successor, 86% fit, deal checklist, financing EUR 3.0M = 1.95M KBC loan + 0.8M vendor loan + 0.25M own funds).
 - 20 Oct: Demo = desktop web pages, one per actor, walking fake company Bakkerij Peeters (owner Jan Peeters, 63; successor Sarah Maes) through the 6 steps. Role switcher is a plain grey demo bar, not part of the design.
