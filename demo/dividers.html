@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KBC Next Owner - section slides</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  /* Section divider slides, 1920x1080. ?s=demo or ?s=data shows one; ?png = no scaling (for export). */
+  :root { --navy: #003768; --navy-2: #00284d; --blue: #009fdf; --blue-2: #4fc3f7; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: #dfe7ec; overflow: hidden; }
+  body { display: grid; place-items: center; font-family: "Nunito Sans", system-ui, sans-serif; }
+  .slide {
+    width: 1920px; height: 1080px; flex: none; position: relative; overflow: hidden;
+    background: radial-gradient(circle at 78% 50%, #0a4a85 0%, var(--navy) 45%, var(--navy-2) 100%);
+    color: #fff; transform-origin: center;
+  }
+
+  /* Logo, white version on navy */
+  .logo { position: absolute; left: 120px; top: 96px; display: flex; flex-direction: column; align-items: center; }
+  .logo .h { width: 22px; height: 22px; border-radius: 50%; background: var(--blue); }
+  .logo .a { width: 68px; height: 12px; background: #fff; border-radius: 12px 12px 0 0; margin-top: 3px; }
+  .logo b { font-size: 30px; font-weight: 900; letter-spacing: .04em; line-height: 1; margin-top: 2px; }
+
+  .text { position: absolute; left: 120px; top: 50%; transform: translateY(-50%); max-width: 980px; }
+  .kicker { font-size: 28px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--blue-2); }
+  h1 { font-size: 168px; font-weight: 900; line-height: 1; margin: 18px 0 0; letter-spacing: -.02em; }
+  .rule { width: 160px; height: 10px; border-radius: 5px; background: var(--blue); margin: 44px 0 40px; }
+  .sub { font-size: 44px; font-weight: 600; line-height: 1.3; color: #d6e6f3; }
+
+  .foot { position: absolute; left: 120px; right: 120px; bottom: 80px; display: flex; justify-content: space-between; font-size: 22px; color: #9fbbd4; font-weight: 600; }
+
+  /* Visual on the right */
+  .visual { position: absolute; right: 150px; top: 50%; transform: translateY(-50%); width: 560px; height: 560px; }
+  .ring { position: absolute; border-radius: 50%; border: 2px solid rgba(79, 195, 247, .25); }
+  .r1 { inset: 0; } .r2 { inset: 70px; border-color: rgba(79, 195, 247, .35); } .r3 { inset: 140px; background: var(--blue); border: 0; box-shadow: 0 30px 80px rgba(0, 0, 0, .35); }
+  .play { position: absolute; inset: 140px; display: grid; place-items: center; }
+  .play svg { width: 150px; height: 150px; margin-left: 24px; }
+
+  /* Data model: three linked nodes */
+  .flow { position: absolute; inset: 0; }
+  .node {
+    position: absolute; width: 230px; height: 230px; border-radius: 50%; display: grid; place-items: center; align-content: center;
+    text-align: center; font-size: 26px; font-weight: 800; line-height: 1.15; box-shadow: 0 24px 60px rgba(0, 0, 0, .35);
+  }
+  .node small { display: block; font-size: 18px; font-weight: 600; opacity: .85; margin-top: 6px; }
+  .n1 { left: 0; top: 0; background: #fff; color: var(--navy); }
+  .n2 { right: 0; top: 165px; background: var(--blue); }
+  .n3 { left: 40px; bottom: 0; background: #1f9d55; }
+  .flow svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+</style>
+</head>
+<body>
+
+<!-- Slide: Demo -->
+<div class="slide" id="demo">
+  <div class="logo"><span class="h"></span><span class="a"></span><b>KBC</b></div>
+  <div class="text">
+    <div class="kicker">KBC Next Owner</div>
+    <h1>Demo</h1>
+    <div class="rule"></div>
+    <div class="sub">One succession, five actors:<br>from first signal to a financed match</div>
+  </div>
+  <div class="visual">
+    <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+    <div class="play"><svg viewBox="0 0 24 24"><path d="M6 3.5v17L20 12z" fill="#fff"/></svg></div>
+  </div>
+  <div class="foot"><span>Tectonic finals · KBC case</span><span>Next Owner</span></div>
+</div>
+
+<!-- Slide: Data model -->
+<div class="slide" id="data">
+  <div class="logo"><span class="h"></span><span class="a"></span><b>KBC</b></div>
+  <div class="text">
+    <div class="kicker">KBC Next Owner</div>
+    <h1>Data model</h1>
+    <div class="rule"></div>
+    <div class="sub">What powers the screens:<br>from bank data to a fit score</div>
+  </div>
+  <div class="visual">
+    <div class="flow">
+      <svg viewBox="0 0 560 560" fill="none" stroke="#4fc3f7" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round">
+        <path d="M200 140 C 300 150, 360 200, 380 250"/>
+        <path d="M360 400 C 320 470, 260 470, 250 450"/>
+      </svg>
+      <div class="node n1">Readiness<br>Radar<small>bank data → score</small></div>
+      <div class="node n2">Valuation<small>accounts → value</small></div>
+      <div class="node n3">Match<br>Engine<small>people → fit</small></div>
+    </div>
+  </div>
+  <div class="foot"><span>Tectonic finals · KBC case</span><span>Next Owner</span></div>
+</div>
+
+<script>
+  // ?s=demo or ?s=data shows one slide; without it both are shown one after another
+  const q = new URLSearchParams(location.search);
+  const one = q.get('s');
+  document.querySelectorAll('.slide').forEach(s => s.hidden = one && s.id !== one);
+  const slides = [...document.querySelectorAll('.slide')].filter(s => !s.hidden);
+  if (!one) { document.body.style.overflow = 'auto'; document.body.style.display = 'block'; }
+  function fit() {
+    const png = q.has('png');
+    if (png) document.body.style.display = 'block';
+    const sc = png ? 1 : Math.min(innerWidth / 1920, one ? innerHeight / 1080 : 1);
+    slides.forEach(s => { s.style.transform = 'scale(' + sc + ')'; s.style.transformOrigin = one && !png ? 'center' : 'top left'; s.style.marginBottom = (one ? 0 : 1080 * (sc - 1) + 20) + 'px'; });
+  }
+  addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>
