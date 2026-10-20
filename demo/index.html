@@ -6,19 +6,20 @@
 <title>KBC Next Owner - concept demo</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  /* Colours and shapes taken from the KBC mobile app (dark mode) */
+  /* KBC palette: light blue #00AEEF + dark navy #003768 on white (as on kbc.be) */
   :root {
-    --bg: #111314;
-    --card: #1e2123;
-    --card-2: #2a2e31;
-    --line: #33383c;
-    --text: #ffffff;
-    --muted: #a7adb2;
-    --blue: #1ca0e6;
-    --navy: #1b4f8c;
-    --green: #22b04b;
-    --yellow: #f2c200;
-    --red: #e5484d;
+    --bg: #f2f6f9;
+    --card: #ffffff;
+    --soft: #e8f1f7;
+    --line: #d7e2ea;
+    --navy: #003768;
+    --text: #003768;
+    --muted: #5b7088;
+    --blue: #00aeef;
+    --blue-soft: #e0f5fd;
+    --green: #1f9d55;
+    --green-soft: #e3f4ea;
+    --yellow: #f5b800;
     --accent: var(--blue); /* changes per role */
   }
   * { box-sizing: border-box; }
@@ -27,8 +28,8 @@
     font-family: "Nunito Sans", system-ui, sans-serif; font-size: 18px;
   }
 
-  /* Each role gets its own colour, like the app's theme tiles */
-  #rm         { --accent: var(--navy); }
+  /* Role colours */
+  .rm         { --accent: var(--navy); }
   #owner      { --accent: var(--blue); }
   #headhunter { --accent: var(--yellow); }
   #candidate  { --accent: var(--green); }
@@ -42,38 +43,53 @@
   .demo-bar button { font: inherit; border: 1px solid #999; background: #fff; color: #333; padding: 2px 10px; cursor: pointer; }
   .demo-bar button.active { background: #333; color: #fff; border-color: #333; }
 
+  /* KBC header strip */
+  .kbcbar { background: var(--navy); color: #fff; }
+  .kbcbar div {
+    max-width: 1200px; margin: 0 auto; padding: 14px 40px;
+    display: flex; align-items: center; gap: 14px; font-weight: 700;
+  }
+  .wordmark {
+    background: #fff; color: var(--navy); font-weight: 900; font-size: 20px;
+    padding: 4px 12px; border-radius: 8px; letter-spacing: .02em;
+  }
+  .wordmark i { color: var(--blue); font-style: normal; }
+  .kbcbar .app { opacity: .85; }
+  .kbcbar .user { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+  .avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--blue); display: grid; place-items: center; font-size: 14px; font-weight: 900; }
+
   main { max-width: 1200px; margin: 0 auto; padding: 36px 40px 64px; }
 
-  /* Big role banner: tells at a glance whose screen this is */
-  .role {
-    display: flex; align-items: center; gap: 24px;
-    padding-bottom: 24px; border-bottom: 4px solid var(--accent); margin-bottom: 24px;
-  }
+  /* Big role banner */
+  .role { display: flex; align-items: center; gap: 24px; margin-bottom: 24px; }
   .tile {
     width: 96px; height: 96px; border-radius: 24px; flex: none;
     background: var(--accent); display: grid; place-items: center;
+    box-shadow: 0 8px 20px rgba(0, 55, 104, .18);
   }
   .tile svg { width: 52px; height: 52px; stroke: #fff; fill: none; stroke-width: 1.8; }
-  #headhunter .tile svg { stroke: #111; }
   .role .who { font-size: 16px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .role h1 { font-size: 48px; font-weight: 900; margin: 2px 0 0; line-height: 1.05; }
-  .role .kbc { margin-left: auto; font-weight: 900; font-size: 22px; color: var(--blue); }
 
-  /* Customer path: which step of the journey we are on */
-  .path { display: flex; gap: 8px; margin-bottom: 36px; flex-wrap: wrap; }
+  /* Customer path */
+  .path { display: flex; gap: 8px; margin-bottom: 32px; flex-wrap: wrap; }
   .path span {
     flex: 1; min-width: 120px; text-align: center; padding: 10px 8px; border-radius: 999px;
-    background: var(--card); color: var(--muted); font-size: 15px; font-weight: 700;
+    background: var(--card); border: 1px solid var(--line); color: var(--muted); font-size: 15px; font-weight: 700;
   }
-  .path span.on { background: var(--accent); color: #fff; }
-  #headhunter .path span.on { color: #111; }
+  .path span.on { background: var(--accent); border-color: var(--accent); color: #fff; }
 
   .grid { display: grid; gap: 24px; }
   .g-2 { grid-template-columns: 1fr 1fr; }
   .g-3 { grid-template-columns: repeat(3, 1fr); }
-  @media (max-width: 800px) { .g-2, .g-3 { grid-template-columns: 1fr; } main { padding: 24px 16px; } .role h1 { font-size: 34px; } }
+  .g-match { grid-template-columns: 1fr auto 1fr; align-items: center; }
+  @media (max-width: 800px) {
+    .g-2, .g-3, .g-match { grid-template-columns: 1fr; }
+    main, .kbcbar div { padding-left: 16px; padding-right: 16px; }
+    .role h1 { font-size: 34px; }
+  }
 
-  .card { background: var(--card); border-radius: 24px; padding: 28px; }
+  .card { background: var(--card); border-radius: 24px; padding: 28px; box-shadow: 0 2px 10px rgba(0, 55, 104, .06); }
   .card h2 { font-size: 24px; font-weight: 800; margin: 0 0 16px; }
   .label { color: var(--muted); font-size: 17px; margin: 0 0 6px; }
   .huge { font-size: 56px; font-weight: 900; line-height: 1.1; margin: 0 0 20px; }
@@ -83,6 +99,7 @@
     background: var(--blue); color: #fff; border: 0; border-radius: 999px;
     padding: 16px 32px; font: inherit; font-weight: 800; font-size: 20px; cursor: pointer;
   }
+  .btn:hover { background: #0098d2; }
   .done { color: var(--green); font-weight: 800; font-size: 20px; }
 
   .score {
@@ -90,54 +107,87 @@
     display: grid; place-items: center; font-weight: 900; font-size: 34px;
     background: var(--accent); color: #fff;
   }
-  .score.low { background: var(--card-2); }
+  .score.low { background: var(--soft); color: var(--navy); }
   .row { display: flex; align-items: center; gap: 20px; }
   .name { font-size: 26px; font-weight: 800; }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 22px; }
-  .chip { background: var(--card-2); border-radius: 999px; padding: 8px 16px; font-size: 17px; }
+  .chip { background: var(--soft); border-radius: 999px; padding: 8px 16px; font-size: 17px; }
 
   .choices { display: flex; gap: 10px; flex-wrap: wrap; }
   .choices button {
     font: inherit; font-size: 18px; font-weight: 700; padding: 14px 22px; border-radius: 999px;
-    background: var(--card-2); color: var(--text); border: 2px solid transparent; cursor: pointer;
+    background: var(--soft); color: var(--navy); border: 2px solid transparent; cursor: pointer;
   }
-  .choices button.on { border-color: var(--blue); color: var(--blue); }
+  .choices button.on { background: var(--blue-soft); border-color: var(--blue); }
 
-  .lock { color: var(--yellow); font-weight: 800; }
+  .lock { color: #b07f00; font-weight: 800; }
 
   .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .fact { background: var(--card-2); border-radius: 18px; padding: 20px; }
+  .fact { background: var(--soft); border-radius: 18px; padding: 20px; }
   .fact b { display: block; font-size: 26px; font-weight: 900; }
 
   .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; text-align: center; }
   .step .dot {
     width: 72px; height: 72px; margin: 0 auto 12px; border-radius: 50%;
     display: grid; place-items: center; font-size: 30px; font-weight: 900;
-    border: 3px solid var(--line); color: var(--muted);
+    border: 3px solid var(--line); color: var(--muted); background: #fff;
   }
   .step.ok .dot { background: var(--green); border-color: var(--green); color: #fff; }
   .step.now .dot { border-color: var(--green); color: var(--green); }
   .step b { font-size: 19px; }
+
+  /* Step 6: owner <-> successor */
+  .person { text-align: center; }
+  .person .face {
+    width: 96px; height: 96px; border-radius: 50%; margin: 0 auto 12px;
+    display: grid; place-items: center; font-size: 34px; font-weight: 900; color: #fff;
+  }
+  .person .facts1 { margin-top: 14px; display: grid; gap: 8px; }
+  .person .facts1 span { background: var(--soft); border-radius: 12px; padding: 8px 12px; font-size: 16px; }
+  .link { text-align: center; }
+  .link .fit {
+    width: 120px; height: 120px; border-radius: 50%; margin: 0 auto;
+    background: var(--blue); color: #fff; display: grid; place-items: center; align-content: center;
+    font-size: 40px; font-weight: 900; line-height: 1;
+  }
+  .link .fit small { font-size: 14px; font-weight: 700; }
+  .link .arrows { font-size: 28px; color: var(--blue); margin: 8px 0; }
+
+  .checklist { list-style: none; padding: 0; margin: 0; }
+  .checklist li { display: flex; align-items: center; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); font-weight: 700; }
+  .checklist li:last-child { border-bottom: 0; }
+  .checklist .c { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; flex: none; border: 2px solid var(--line); color: var(--muted); font-size: 16px; }
+  .checklist .ok .c { background: var(--green); border-color: var(--green); color: #fff; }
+  .checklist .now .c { border-color: var(--blue); color: var(--blue); }
+
+  .money { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .money div { border-radius: 18px; padding: 16px; background: var(--soft); }
+  .money b { display: block; font-size: 28px; font-weight: 900; }
+  .money .main { background: var(--navy); color: #fff; }
+  .money .main .label { color: #b9cde0; }
+  .gain { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+  .gain span { background: var(--green-soft); color: var(--green); border-radius: 999px; padding: 8px 14px; font-size: 16px; font-weight: 800; }
 </style>
 </head>
 <body>
 
-<!-- Demo-only control (not part of the product) -->
+<!-- Demo-only control (not part of the product), in journey order -->
 <div class="demo-bar">
   DEMO · view as:
-  <button data-role="rm" class="active" onclick="show('rm')">Relationship Manager</button>
-  <button data-role="owner" onclick="show('owner')">Owner</button>
-  <button data-role="headhunter" onclick="show('headhunter')">Headhunter</button>
-  <button data-role="candidate" onclick="show('candidate')">Candidate</button>
+  <button data-role="rm" class="active" onclick="show('rm')">1–2 Relationship Manager</button>
+  <button data-role="owner" onclick="show('owner')">3 Owner</button>
+  <button data-role="headhunter" onclick="show('headhunter')">4 Headhunter</button>
+  <button data-role="candidate" onclick="show('candidate')">5 Candidate</button>
+  <button data-role="deal" onclick="show('deal')">6 Relationship Manager</button>
 </div>
 
-<!-- 1. Relationship Manager Cockpit (steps 1-2) -->
-<section id="rm">
+<!-- 1. Relationship Manager: Succession Radar (steps 1-2) -->
+<section id="rm" class="rm">
+<div class="kbcbar"><div><span class="wordmark">K<i>B</i>C</span><span class="app">Succession Radar · internal</span><span class="user"><span class="avatar">EJ</span>Els Janssens</span></div></div>
 <main>
   <div class="role">
     <div class="tile"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
     <div><div class="who">For the KBC relationship manager</div><h1>Succession Radar</h1></div>
-    <div class="kbc">KBC</div>
   </div>
   <div class="path"><span class="on">1 · Signal</span><span class="on">2 · Conversation</span><span>3 · Explore</span><span>4 · Search</span><span>5 · Ready-to-Own</span><span>6 · Match &amp; deal</span></div>
 
@@ -159,11 +209,11 @@
 
 <!-- 2. Owner Space (step 3, star screen) -->
 <section id="owner" hidden>
+<div class="kbcbar"><div><span class="wordmark">K<i>B</i>C</span><span class="app">KBC Business</span><span class="user"><span class="avatar">JP</span>Jan Peeters</span></div></div>
 <main>
   <div class="role">
     <div class="tile"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/><path d="M9 20v-6h6v6"/></svg></div>
     <div><div class="who">For the business owner</div><h1>Next Owner</h1></div>
-    <div class="kbc">KBC Business</div>
   </div>
   <div class="path"><span>1 · Signal</span><span>2 · Conversation</span><span class="on">3 · Explore</span><span>4 · Search</span><span>5 · Ready-to-Own</span><span>6 · Match &amp; deal</span></div>
 
@@ -171,7 +221,7 @@
     <div class="card">
       <p class="label">Bakkerij Peeters is worth about <span class="tag">[Person A]</span></p>
       <div class="huge">€2.4M – €3.6M</div>
-      <p class="label">Profit expected to grow to <b style="color:#fff">€620k</b> by 2028</p>
+      <p class="label">Profit expected to grow to <b style="color:var(--navy)">€620k</b> by 2028</p>
     </div>
     <div class="card">
       <h2>When do you want to sell?</h2>
@@ -199,11 +249,11 @@
 
 <!-- 3. Headhunter Portal (step 4) -->
 <section id="headhunter" hidden>
+<div class="kbcbar"><div><span class="wordmark">K<i>B</i>C</span><span class="app">Partner Portal</span><span class="user"><span class="avatar">SP</span>Search Partners BV</span></div></div>
 <main>
   <div class="role">
     <div class="tile"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></div>
     <div><div class="who">For the headhunting partner</div><h1>Partner Portal</h1></div>
-    <div class="kbc">KBC</div>
   </div>
   <div class="path"><span>1 · Signal</span><span>2 · Conversation</span><span>3 · Explore</span><span class="on">4 · Search</span><span>5 · Ready-to-Own</span><span>6 · Match &amp; deal</span></div>
 
@@ -232,11 +282,11 @@
 
 <!-- 4. Ready-to-Own Candidate Portal (step 5) -->
 <section id="candidate" hidden>
+<div class="kbcbar"><div><span class="wordmark">K<i>B</i>C</span><span class="app">Ready-to-Own</span><span class="user"><span class="avatar">SM</span>Sarah Maes</span></div></div>
 <main>
   <div class="role">
     <div class="tile"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM6 10v5c2 2 10 2 12 0v-5"/></svg></div>
     <div><div class="who">For the future owner (candidate)</div><h1>Ready-to-Own</h1></div>
-    <div class="kbc">KBC</div>
   </div>
   <div class="path"><span>1 · Signal</span><span>2 · Conversation</span><span>3 · Explore</span><span>4 · Search</span><span class="on">5 · Ready-to-Own</span><span>6 · Match &amp; deal</span></div>
 
@@ -256,6 +306,71 @@
       <div class="score">86</div>
       <div style="flex:1"><div class="name">Food production · Antwerp</div><div class="label">€2–5M revenue · owner wants to stay as adviser</div></div>
       <button class="btn" onclick="this.outerHTML='<span class=done>✓ Interest sent</span>'">I'm interested</button>
+    </div>
+  </div>
+</main>
+</section>
+
+<!-- 5. Relationship Manager: Deal Room (step 6) -->
+<section id="deal" class="rm" hidden>
+<div class="kbcbar"><div><span class="wordmark">K<i>B</i>C</span><span class="app">Deal Room · internal</span><span class="user"><span class="avatar">EJ</span>Els Janssens</span></div></div>
+<main>
+  <div class="role">
+    <div class="tile"><svg viewBox="0 0 24 24"><path d="M2 12l4-4 4 2 4-2 4 2 4-2M6 8v6l4 4 2-2 2 2 4-4V8"/></svg></div>
+    <div><div class="who">For the KBC relationship manager</div><h1>Deal Room</h1></div>
+  </div>
+  <div class="path"><span>1 · Signal</span><span>2 · Conversation</span><span>3 · Explore</span><span>4 · Search</span><span>5 · Ready-to-Own</span><span class="on">6 · Match &amp; deal</span></div>
+
+  <!-- The match: owner and successor -->
+  <div class="card">
+    <div class="grid g-match">
+      <div class="person">
+        <div class="face" style="background:var(--blue)">JP</div>
+        <div class="name">Jan Peeters</div>
+        <div class="label">Owner · Bakkerij Peeters</div>
+        <div class="facts1"><span>Value €2.4M – €3.6M</span><span>Sell in 1–3 years</span><span>Stays as adviser</span></div>
+      </div>
+      <div class="link">
+        <div class="fit">86<small>% fit</small></div>
+        <div class="arrows">⟵ ⟶</div>
+        <div class="tag">Match Engine [Person A]</div>
+      </div>
+      <div class="person">
+        <div class="face" style="background:var(--green)">SM</div>
+        <div class="name">Sarah Maes</div>
+        <div class="label">Successor · Ready-to-Own</div>
+        <div class="facts1"><span>Ex-ops manager, food</span><span>Own funds €250k</span><span>Loan pre-approved</span></div>
+      </div>
+    </div>
+    <p style="text-align:center;margin:28px 0 0">
+      <button class="btn" onclick="this.outerHTML='<span class=done>✓ Introduction planned · Tue 4 Nov, 10:00 · KBC Antwerp</span>'">Plan introduction meeting</button>
+    </p>
+  </div>
+
+  <div class="grid g-2" style="margin-top:24px">
+    <!-- Deal progress -->
+    <div class="card">
+      <h2>Deal progress</h2>
+      <ul class="checklist">
+        <li class="ok"><span class="c">✓</span>NDA signed by both</li>
+        <li class="ok"><span class="c">✓</span>Data room opened</li>
+        <li class="now"><span class="c">3</span>First meeting</li>
+        <li><span class="c">4</span>Price and phased transfer agreed</li>
+        <li><span class="c">5</span>Loan and insurance signed</li>
+      </ul>
+    </div>
+
+    <!-- Financing summary -->
+    <div class="card">
+      <h2>Proposed financing</h2>
+      <p class="label">Price</p>
+      <div class="huge" style="font-size:44px;margin-bottom:16px">€3.0M</div>
+      <div class="money">
+        <div class="main"><span class="label">KBC loan</span><b>€1.95M</b></div>
+        <div><span class="label">Vendor loan</span><b>€0.8M</b></div>
+        <div><span class="label">Own funds</span><b>€0.25M</b></div>
+      </div>
+      <div class="gain"><span>Owner: wealth plan for €2.2M</span><span>Key-person insurance</span><span>KBC success fee</span></div>
     </div>
   </div>
 </main>
