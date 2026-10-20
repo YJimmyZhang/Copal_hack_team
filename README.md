@@ -19,7 +19,7 @@ Many healthy Flemish SMEs close because nobody takes over. Advice exists; what i
 
 **Demo:** open `demo/index.html` in a browser. Use the grey bar at the top to switch between roles.
 
-**Engine** (Python 3.10+ with numpy: `pip install numpy`):
+**Engine** (Python 3.10+; install with `pip install -r requirements.txt`):
 
 ```bash
 cd engine
