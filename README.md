@@ -30,6 +30,15 @@ This generates fake data, runs all steps and writes `engine/out/*.json`. `engine
 
 **Slides** (optional, needs Playwright with Chromium): `python slides/make_data_flow.py` rebuilds the data chart from the engine output; `python slides/render_all.py` renders all slide HTML files to PNG.
 
+**Tests** (standard library only, 12 tests):
+
+```bash
+cd engine
+python -m unittest -v
+```
+
+They check the core rules: fit is always the lower of the two views, blocked candidates never show up, the price split always adds up and stays within the limits, owner wishes are respected, and the hero case gives exactly the numbers in the demo.
+
 ## How the engine decides
 
 1. **Readiness Radar** (`readiness.py`): 9 weighted rules (owner 60+, no family heir among shareholders, no investment loan for years, investment falling, cash piling up…) give a score 0–100 with the reasons. 60+ goes to the relationship manager. No trained model on purpose: successions are rare and noisy, and a wrong flag only costs a free conversation.
